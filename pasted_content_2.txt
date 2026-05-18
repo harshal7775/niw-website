@@ -1,0 +1,152 @@
+Main focus:
+Create the best possible hero section for NIW with self-generated premium visuals/video and scroll-based storytelling parallax.
+
+Brand:
+NIW / Next In Wave — AI-powered digital marketing and growth systems for local businesses.
+
+Hero goal:
+The hero should feel like a premium AI Growth Command Center for local businesses. It should not look like a basic agency banner.
+
+You may generate or create your own hero visuals/assets if your environment supports it. If direct AI image/video generation is not available, create premium HTML/CSS/SVG dashboard visuals instead.
+
+Hero style:
+- Ultra-premium luxury light AI SaaS aesthetic
+- Pearl white / ice-blue background
+- Deep navy typography
+- Platinum glass dashboard cards
+- Soft cyan, blue, and violet gradients
+- Smooth 3D depth
+- Apple / Linear / Awwwards-level polish
+- No dark neon cyberpunk look
+- No random stock image feel
+
+Hero concept:
+“AI Growth Command Center”
+
+Visual idea:
+A futuristic but clean dashboard world showing:
+- Lead flow
+- CRM pipeline
+- WhatsApp follow-up
+- AI assistant
+- Google growth
+- Social media marketing
+- Conversion tracking
+- Booking/enquiry system
+
+Important visual rule:
+Do not include readable fake text inside background images/video.
+Real website text must be HTML overlay only.
+
+Hero scroll storytelling:
+Make the hero a sticky scroll section.
+
+Structure:
+- Outer hero section height: 350vh to 450vh
+- Inner wrapper: sticky top-0 h-screen overflow-hidden
+- Background/visual layers move with parallax depth
+- Text appears in stages as user scrolls
+- UI cards/dashboard elements move at different speeds
+- Smooth transitions, no lag
+
+Text stages:
+Stage 1:
+“Growth Systems for Local Businesses”
+Description:
+“Built to attract attention, generate enquiries, and convert leads.”
+
+Stage 2:
+“More Leads. More Customers. More Sales.”
+Trust line:
+“Starting from ₹3,990/week • Setup in 48 Hours • Built for Local Businesses”
+
+Stage 3:
+“Social. Google. WhatsApp. CRM. AI.”
+Description:
+“Connect your content, campaigns, follow-ups, and customer journeys into one growth engine.”
+
+Stage 4:
+“Ready to Build Your Growth System?”
+Buttons:
+- Get Started -> /contact
+- View Packages -> /pricing
+
+Animation:
+Use Framer Motion:
+- useScroll
+- useTransform
+- useSpring
+- opacity
+- translateX
+- translateY
+- scale
+
+Hero text behavior:
+- Stage 1 visible at the start
+- Stage 2 appears after scroll
+- Stage 3 appears after more scroll
+- Stage 4 appears near the end
+- Only one stage clearly visible at a time
+- No big static text box
+- Text should feel cinematic and premium
+
+Visual layers:
+Create parallax layers such as:
+- soft mesh gradient background
+- floating dashboard panel
+- floating phone/card panel
+- CRM pipeline cards
+- lead/enquiry cards
+- AI assistant card
+- glowing automation nodes
+- subtle grid
+- soft orbs
+
+Depth:
+- background moves slow
+- dashboard moves medium
+- foreground cards move slightly faster
+- text fades/slides smoothly
+
+If generating video:
+- Generate a no-text 6–8 sec hero video
+- Convert to frame sequence if possible
+- Use frames for scroll animation
+- Keep safe space for text
+- No readable words in video
+- No fake “Analytics / Automation / Instagram Ads” text
+
+If not generating video:
+- Build hero with HTML/CSS/SVG dashboard visuals and Framer Motion parallax layers.
+
+Header behavior:
+- Header should stay clean and readable over hero.
+- No ugly dark/solid navbar during hero.
+- Use premium transparent/light glass header.
+
+Mobile:
+- Disable heavy sticky parallax if needed.
+- Use simpler hero with stacked text and static/soft animated dashboard visual.
+- No horizontal overflow.
+- No lag.
+
+After hero:
+Ensure transition into next section is smooth.
+
+Do not break:
+- Other pages
+- Header/footer
+- Pricing toggle
+- FAQ accordion
+- Forms
+- Mobile layout
+
+After finishing:
+Run npm run build.
+
+Final response:
+- What hero assets/visuals were created
+- Hero animation approach
+- Files changed
+- Mobile handling
+- Build result
