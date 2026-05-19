@@ -559,6 +559,7 @@
 }
 
 .retro-screen-wipe{
+  display:none;
   position:fixed;
   z-index:6;
   left:63.5vw;
@@ -882,27 +883,27 @@
 
 .retro-hero-image{
   position:absolute;
-  inset:-2.5%;
+  inset:0;
   z-index:1;
-  width:105%;
-  height:105%;
+  width:100%;
+  height:100%;
   object-fit:cover;
   object-position:center center;
   max-width:none;
   user-select:none;
   pointer-events:none;
-  transform-origin:76.9% 42.8%;
+  transform-origin:70.5% 39.5%;
   will-change:transform;
 }
 
 @media (min-width:1024px){
   .retro-hero-image{
-    inset:-3% -2% -3% -2%;
-    width:104%;
-    height:106%;
+    inset:0;
+    width:100%;
+    height:100%;
     object-fit:cover;
     object-position:center center;
-    transform-origin:76.9% 42.8%;
+    transform-origin:70.5% 39.5%;
   }
 }
 
@@ -915,14 +916,14 @@
 @media (max-width:1023px){
   .retro-hero-image{
     object-position:center center;
-    transform-origin:72% 42%;
+    transform-origin:50% 46%;
   }
 }
 
 /* CAMERA PASS: keep CRT staged, then travel into the monitor screen */
 @media (min-width:1024px){
   .retro-hero{
-    min-height:310svh;
+    min-height:188svh;
   }
 
   .retro-hero-inner{
@@ -956,20 +957,21 @@
   }
 
   .retro-hero-image{
-    inset:-4% -3% -4% -3%;
-    width:106%;
-    height:108%;
+    inset:0;
+    width:100%;
+    height:100%;
     object-fit:cover;
     object-position:center center;
-    transform-origin:73.7% 38.6%;
+    transform-origin:70.5% 39.5%;
   }
 
   .retro-screen-wipe{
-    left:68.9vw;
-    top:31.1vh;
-    width:min(19.8vw,20.5rem);
-    height:min(14.1vw,14.6rem);
-    border-radius:2rem;
+    left:70.5vw;
+    top:39.5vh;
+    width:min(20.4vw,21rem);
+    height:min(14.2vw,14.4rem);
+    border-radius:2.1rem;
+    translate:-50% -50%;
   }
 
   .retro-work{
@@ -981,7 +983,7 @@
 .retro-portal-preview{
   position:fixed;
   inset:0;
-  z-index:10;
+  z-index:18;
   pointer-events:none;
   overflow:hidden;
   color:#f3eadf;
@@ -989,7 +991,14 @@
     radial-gradient(circle at 50% 18%,rgba(143,194,244,.56),transparent 31%),
     radial-gradient(ellipse at 50% 54%,rgba(69,135,202,.36),transparent 45%),
     linear-gradient(180deg,#070807 0%,#111a34 28%,#5b92ca 100%);
-  will-change:clip-path,opacity;
+  box-shadow:
+    inset 0 0 0 1px rgba(255,255,255,.04),
+    inset 0 0 90px rgba(4,6,9,.42);
+  contain:layout paint style;
+  transform:translateZ(0);
+  transform-origin:50% 50%;
+  backface-visibility:hidden;
+  will-change:transform,opacity;
 }
 
 .retro-portal-preview::before{
@@ -1017,6 +1026,8 @@
   margin:0 auto;
   padding-top:17vh;
   text-align:center;
+  transform:translateZ(0);
+  backface-visibility:hidden;
 }
 
 .retro-portal-heading p{
@@ -1045,8 +1056,9 @@
   gap:0;
   margin-top:7vh;
   padding-left:5.5vw;
-  filter:drop-shadow(0 36px 44px rgba(0,0,0,.52));
+  filter:none;
   transform:rotate(-7.5deg);
+  backface-visibility:hidden;
   will-change:transform;
 }
 
@@ -1063,6 +1075,7 @@
     linear-gradient(135deg,rgba(242,236,222,.94),rgba(84,106,115,.34));
   padding:3.2rem 2rem;
   color:#101011;
+  box-shadow:0 30px 42px rgba(0,0,0,.36);
   transform:rotate(4deg);
 }
 
@@ -1087,7 +1100,19 @@
 
 @media (min-width:1024px){
   .retro-screen-wipe{
-    left:68.5vw;
-    top:29.9vh;
+    left:70.5vw;
+    top:39.5vh;
+  }
+
+  .retro-hero-reveal{
+    display:none!important;
+  }
+
+  .retro-work-grid{
+    filter:none;
+  }
+
+  .retro-work-card{
+    box-shadow:0 30px 42px rgba(0,0,0,.34);
   }
 }
