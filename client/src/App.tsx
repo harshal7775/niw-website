@@ -1,7 +1,7 @@
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
-import { Route, Switch } from "wouter";
+import { Route, Switch, useLocation } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Header from "./components/Header";
@@ -19,10 +19,13 @@ import Contact from "./pages/Contact";
 import FAQ from "./pages/FAQ";
 
 function Router() {
+  const [location] = useLocation();
+  const isHome = location === "/";
+
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <main className="flex-1 pt-20">
+      <main className={`flex-1 ${isHome ? "pt-0" : "pt-20"}`}>
         <Switch>
           <Route path={"/"} component={Home} />
           <Route path={"/services"} component={Services} />
@@ -40,7 +43,7 @@ function Router() {
           <Route component={NotFound} />
         </Switch>
       </main>
-      <Footer />
+      {!isHome && <Footer />}
     </div>
   );
 }

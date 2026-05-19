@@ -1,0 +1,212 @@
+import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/src/components/TimelineProgress.tsx");import __vite__cjsImport0_react_jsxDevRuntime from "/@fs/C:/Users/badgu/Desktop/all new niw/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=04b549ff"; const jsxDEV = __vite__cjsImport0_react_jsxDevRuntime["jsxDEV"];
+var _s2 = $RefreshSig$();
+import { motion, useScroll, useTransform } from "/@fs/C:/Users/badgu/Desktop/all new niw/node_modules/.vite/deps/framer-motion.js?v=04b549ff";
+import __vite__cjsImport2_react from "/@fs/C:/Users/badgu/Desktop/all new niw/node_modules/.vite/deps/react.js?v=04b549ff"; const useRef = __vite__cjsImport2_react["useRef"]; const useMemo = __vite__cjsImport2_react["useMemo"];
+import { useIsMobile } from "/src/hooks/useMobile.tsx";
+export default function TimelineProgress({ items }) {
+  _s2();
+  var _s = $RefreshSig$();
+  const containerRef = useRef(null);
+  const isMobile = useIsMobile();
+  const prefersReducedMotion = useMemo(() => {
+    if (typeof window === "undefined") return false;
+    return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  }, []);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start center", "end center"]
+  });
+  const shouldAnimate = !isMobile && !prefersReducedMotion;
+  const lineHeight = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+  return /* @__PURE__ */ jsxDEV("section", { "data-loc": "client\\src\\components\\TimelineProgress.tsx:34", ref: containerRef, className: "surface-band py-24", children: /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\components\\TimelineProgress.tsx:35", className: "container", children: [
+    /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\components\\TimelineProgress.tsx:36", className: "text-center mb-16", children: [
+      /* @__PURE__ */ jsxDEV("h2", { "data-loc": "client\\src\\components\\TimelineProgress.tsx:37", className: "text-4xl md:text-5xl font-bold text-foreground mb-4", children: "Your Growth Timeline" }, void 0, false, {
+        fileName: "C:/Users/badgu/Desktop/all new niw/client/src/components/TimelineProgress.tsx",
+        lineNumber: 37,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV("p", { "data-loc": "client\\src\\components\\TimelineProgress.tsx:40", className: "text-xl text-foreground/70 max-w-2xl mx-auto", children: "Here's a typical timeline for seeing results" }, void 0, false, {
+        fileName: "C:/Users/badgu/Desktop/all new niw/client/src/components/TimelineProgress.tsx",
+        lineNumber: 40,
+        columnNumber: 11
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/badgu/Desktop/all new niw/client/src/components/TimelineProgress.tsx",
+      lineNumber: 36,
+      columnNumber: 9
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\components\\TimelineProgress.tsx:45", className: "relative mt-16", children: [
+      /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\components\\TimelineProgress.tsx:47", className: "hidden md:block absolute left-1/2 top-0 bottom-0 w-1 -translate-x-1/2", children: [
+        /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\components\\TimelineProgress.tsx:49", className: "absolute inset-0 rounded-full bg-gradient-to-b from-cyan-500/20 to-violet-600/20" }, void 0, false, {
+          fileName: "C:/Users/badgu/Desktop/all new niw/client/src/components/TimelineProgress.tsx",
+          lineNumber: 49,
+          columnNumber: 13
+        }, this),
+        shouldAnimate && /* @__PURE__ */ jsxDEV(
+          motion.div,
+          {
+            "data-loc": "client\\src\\components\\TimelineProgress.tsx:53",
+            className: "absolute inset-0 rounded-full bg-gradient-to-b from-cyan-500 to-violet-600",
+            style: { height: lineHeight }
+          },
+          void 0,
+          false,
+          {
+            fileName: "C:/Users/badgu/Desktop/all new niw/client/src/components/TimelineProgress.tsx",
+            lineNumber: 53,
+            columnNumber: 13
+          },
+          this
+        )
+      ] }, void 0, true, {
+        fileName: "C:/Users/badgu/Desktop/all new niw/client/src/components/TimelineProgress.tsx",
+        lineNumber: 47,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\components\\TimelineProgress.tsx:61", className: "space-y-8", children: _s(items.map(_s((item, idx) => {
+        _s();
+        const itemProgress = useTransform(scrollYProgress, [idx * 0.15, (idx + 1) * 0.15], [0, 1]);
+        const itemScale = useTransform(itemProgress, [0, 0.5, 1], [0.8, 1.1, 1]);
+        const itemOpacity = useTransform(itemProgress, [0, 0.3, 1], [0, 1, 1]);
+        return /* @__PURE__ */ jsxDEV(
+          motion.div,
+          {
+            "data-loc": "client\\src\\components\\TimelineProgress.tsx:68",
+            className: "relative",
+            style: shouldAnimate ? {
+              scale: itemScale,
+              opacity: itemOpacity
+            } : {},
+            initial: !shouldAnimate ? { opacity: 0, scale: 0.8 } : void 0,
+            whileInView: !shouldAnimate ? { opacity: 1, scale: 1 } : void 0,
+            transition: !shouldAnimate ? { duration: 0.6, delay: idx * 0.1 } : void 0,
+            viewport: { once: true },
+            children: /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\components\\TimelineProgress.tsx:84", className: `flex gap-8 items-start ${idx % 2 === 0 ? "md:flex-row-reverse" : ""}`, children: [
+              /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\components\\TimelineProgress.tsx:86", className: "hidden md:flex flex-shrink-0 w-12 h-12 rounded-full bg-background border-4 border-gradient-to-r from-cyan-500 to-violet-600 flex items-center justify-center absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-6 z-10", children: /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\components\\TimelineProgress.tsx:87", className: "w-4 h-4 rounded-full bg-gradient-to-r from-cyan-500 to-violet-600" }, void 0, false, {
+                fileName: "C:/Users/badgu/Desktop/all new niw/client/src/components/TimelineProgress.tsx",
+                lineNumber: 87,
+                columnNumber: 23
+              }, this) }, void 0, false, {
+                fileName: "C:/Users/badgu/Desktop/all new niw/client/src/components/TimelineProgress.tsx",
+                lineNumber: 86,
+                columnNumber: 21
+              }, this),
+              /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\components\\TimelineProgress.tsx:91", className: `flex-1 md:w-1/2 ${idx % 2 === 0 ? "md:text-right md:pr-16" : "md:pl-16"}`, children: /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\components\\TimelineProgress.tsx:92", className: "glass-card p-6", children: [
+                /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\components\\TimelineProgress.tsx:93", className: "flex items-center gap-4 mb-3", children: [
+                  /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\components\\TimelineProgress.tsx:94", className: "w-20 h-20 rounded-lg bg-gradient-to-br from-cyan-500/20 to-violet-600/20 flex items-center justify-center flex-shrink-0 md:hidden", children: /* @__PURE__ */ jsxDEV("span", { "data-loc": "client\\src\\components\\TimelineProgress.tsx:95", className: "text-lg font-bold text-foreground", children: item.period }, void 0, false, {
+                    fileName: "C:/Users/badgu/Desktop/all new niw/client/src/components/TimelineProgress.tsx",
+                    lineNumber: 95,
+                    columnNumber: 29
+                  }, this) }, void 0, false, {
+                    fileName: "C:/Users/badgu/Desktop/all new niw/client/src/components/TimelineProgress.tsx",
+                    lineNumber: 94,
+                    columnNumber: 27
+                  }, this),
+                  /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\components\\TimelineProgress.tsx:97", className: "hidden md:block", children: /* @__PURE__ */ jsxDEV("p", { "data-loc": "client\\src\\components\\TimelineProgress.tsx:98", className: "text-sm text-cyan-600 font-semibold", children: item.period }, void 0, false, {
+                    fileName: "C:/Users/badgu/Desktop/all new niw/client/src/components/TimelineProgress.tsx",
+                    lineNumber: 98,
+                    columnNumber: 29
+                  }, this) }, void 0, false, {
+                    fileName: "C:/Users/badgu/Desktop/all new niw/client/src/components/TimelineProgress.tsx",
+                    lineNumber: 97,
+                    columnNumber: 27
+                  }, this)
+                ] }, void 0, true, {
+                  fileName: "C:/Users/badgu/Desktop/all new niw/client/src/components/TimelineProgress.tsx",
+                  lineNumber: 93,
+                  columnNumber: 25
+                }, this),
+                /* @__PURE__ */ jsxDEV("h3", { "data-loc": "client\\src\\components\\TimelineProgress.tsx:101", className: "text-lg font-semibold text-foreground mb-2", children: item.milestone }, void 0, false, {
+                  fileName: "C:/Users/badgu/Desktop/all new niw/client/src/components/TimelineProgress.tsx",
+                  lineNumber: 101,
+                  columnNumber: 25
+                }, this),
+                /* @__PURE__ */ jsxDEV("p", { "data-loc": "client\\src\\components\\TimelineProgress.tsx:104", className: "text-foreground/70", children: item.description }, void 0, false, {
+                  fileName: "C:/Users/badgu/Desktop/all new niw/client/src/components/TimelineProgress.tsx",
+                  lineNumber: 104,
+                  columnNumber: 25
+                }, this)
+              ] }, void 0, true, {
+                fileName: "C:/Users/badgu/Desktop/all new niw/client/src/components/TimelineProgress.tsx",
+                lineNumber: 92,
+                columnNumber: 23
+              }, this) }, void 0, false, {
+                fileName: "C:/Users/badgu/Desktop/all new niw/client/src/components/TimelineProgress.tsx",
+                lineNumber: 91,
+                columnNumber: 21
+              }, this),
+              /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\components\\TimelineProgress.tsx:109", className: "md:hidden flex-shrink-0 w-4 h-4 rounded-full bg-gradient-to-r from-cyan-500 to-violet-600 mt-6" }, void 0, false, {
+                fileName: "C:/Users/badgu/Desktop/all new niw/client/src/components/TimelineProgress.tsx",
+                lineNumber: 109,
+                columnNumber: 21
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/badgu/Desktop/all new niw/client/src/components/TimelineProgress.tsx",
+              lineNumber: 84,
+              columnNumber: 19
+            }, this)
+          },
+          idx,
+          false,
+          {
+            fileName: "C:/Users/badgu/Desktop/all new niw/client/src/components/TimelineProgress.tsx",
+            lineNumber: 68,
+            columnNumber: 17
+          },
+          this
+        );
+      }, "qQ8N09mXzLlxf6KLucYwN+fFfkI=", false, function() {
+        return [useTransform, useTransform, useTransform];
+      })), "qQ8N09mXzLlxf6KLucYwN+fFfkI=", false, function() {
+        return [useTransform, useTransform, useTransform];
+      }) }, void 0, false, {
+        fileName: "C:/Users/badgu/Desktop/all new niw/client/src/components/TimelineProgress.tsx",
+        lineNumber: 61,
+        columnNumber: 11
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/badgu/Desktop/all new niw/client/src/components/TimelineProgress.tsx",
+      lineNumber: 45,
+      columnNumber: 9
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/Users/badgu/Desktop/all new niw/client/src/components/TimelineProgress.tsx",
+    lineNumber: 35,
+    columnNumber: 7
+  }, this) }, void 0, false, {
+    fileName: "C:/Users/badgu/Desktop/all new niw/client/src/components/TimelineProgress.tsx",
+    lineNumber: 34,
+    columnNumber: 5
+  }, this);
+}
+_s2(TimelineProgress, "izg4QQD9RD4Laf27eblWcqyx4WI=", false, function() {
+  return [useIsMobile, useScroll, useTransform];
+});
+_c = TimelineProgress;
+var _c;
+$RefreshReg$(_c, "TimelineProgress");
+import * as RefreshRuntime from "/@react-refresh";
+const inWebWorker = typeof WorkerGlobalScope !== "undefined" && self instanceof WorkerGlobalScope;
+if (import.meta.hot && !inWebWorker) {
+  if (!window.$RefreshReg$) {
+    throw new Error(
+      "@vitejs/plugin-react can't detect preamble. Something is wrong."
+    );
+  }
+  RefreshRuntime.__hmr_import(import.meta.url).then((currentExports) => {
+    RefreshRuntime.registerExportsForReactRefresh("C:/Users/badgu/Desktop/all new niw/client/src/components/TimelineProgress.tsx", currentExports);
+    import.meta.hot.accept((nextExports) => {
+      if (!nextExports) return;
+      const invalidateMessage = RefreshRuntime.validateRefreshBoundaryAndEnqueueUpdate("C:/Users/badgu/Desktop/all new niw/client/src/components/TimelineProgress.tsx", currentExports, nextExports);
+      if (invalidateMessage) import.meta.hot.invalidate(invalidateMessage);
+    });
+  });
+}
+function $RefreshReg$(type, id) {
+  return RefreshRuntime.register(type, "C:/Users/badgu/Desktop/all new niw/client/src/components/TimelineProgress.tsx " + id);
+}
+function $RefreshSig$() {
+  return RefreshRuntime.createSignatureFunctionForTransform();
+}
+
+//# sourceMappingURL=data:application/json;base64,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QUFBLGlCQXpCbEg7QUFBQTtBQUFBO0FBQUE7QUFBQSxtQkEwQkE7QUFBQTtBQUFBLFVBekNLWjtBQUFBQSxVQURQO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsUUEyQ0E7QUFBQSxNQUVKLEdBQUM7QUFBQSxnQkFsRHNCdkIsY0FDSEEsY0FDRUEsWUFBWTtBQUFBLFFBZ0RqQyxHQUFDO0FBQUEsZ0JBbERxQkEsY0FDSEEsY0FDRUEsWUFBWTtBQUFBLFlBSnBDO0FBQUE7QUFBQTtBQUFBO0FBQUEsYUFxREE7QUFBQSxTQXJFRjtBQUFBO0FBQUE7QUFBQTtBQUFBLFdBc0VBO0FBQUEsT0FoRkY7QUFBQTtBQUFBO0FBQUE7QUFBQSxTQWlGQSxLQWxGRjtBQUFBO0FBQUE7QUFBQTtBQUFBLFNBbUZBO0FBRUo7QUFBQ00sSUF4R3VCRixrQkFBZ0I7QUFBQSxVQUVyQkQsYUFNV0osV0FRVEMsWUFBWTtBQUFBO0FBQUEsS0FoQlRJO0FBQWdCLElBQUFnQztBQUFBLGFBQUFBLElBQUEiLCJuYW1lcyI6WyJtb3Rpb24iLCJ1c2VTY3JvbGwiLCJ1c2VUcmFuc2Zvcm0iLCJ1c2VSZWYiLCJ1c2VNZW1vIiwidXNlSXNNb2JpbGUiLCJUaW1lbGluZVByb2dyZXNzIiwiaXRlbXMiLCJfczIiLCJfcyIsIiRSZWZyZXNoU2lnJCIsImNvbnRhaW5lclJlZiIsImlzTW9iaWxlIiwicHJlZmVyc1JlZHVjZWRNb3Rpb24iLCJ3aW5kb3ciLCJtYXRjaE1lZGlhIiwibWF0Y2hlcyIsInNjcm9sbFlQcm9ncmVzcyIsInRhcmdldCIsIm9mZnNldCIsInNob3VsZEFuaW1hdGUiLCJsaW5lSGVpZ2h0IiwiaGVpZ2h0IiwibWFwIiwiaXRlbSIsImlkeCIsIml0ZW1Qcm9ncmVzcyIsIml0ZW1TY2FsZSIsIml0ZW1PcGFjaXR5Iiwic2NhbGUiLCJvcGFjaXR5IiwidW5kZWZpbmVkIiwiZHVyYXRpb24iLCJkZWxheSIsIm9uY2UiLCJwZXJpb2QiLCJtaWxlc3RvbmUiLCJkZXNjcmlwdGlvbiIsIl9jIl0sImlnbm9yZUxpc3QiOltdLCJzb3VyY2VzIjpbIlRpbWVsaW5lUHJvZ3Jlc3MudHN4Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IG1vdGlvbiwgdXNlU2Nyb2xsLCB1c2VUcmFuc2Zvcm0gfSBmcm9tICdmcmFtZXItbW90aW9uJztcbmltcG9ydCB7IHVzZVJlZiwgdXNlTWVtbyB9IGZyb20gJ3JlYWN0JztcbmltcG9ydCB7IHVzZUlzTW9iaWxlIH0gZnJvbSAnQC9ob29rcy91c2VNb2JpbGUnO1xuXG5pbnRlcmZhY2UgVGltZWxpbmVJdGVtIHtcbiAgcGVyaW9kOiBzdHJpbmc7XG4gIG1pbGVzdG9uZTogc3RyaW5nO1xuICBkZXNjcmlwdGlvbjogc3RyaW5nO1xufVxuXG5pbnRlcmZhY2UgVGltZWxpbmVQcm9ncmVzc1Byb3BzIHtcbiAgaXRlbXM6IFRpbWVsaW5lSXRlbVtdO1xufVxuXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBUaW1lbGluZVByb2dyZXNzKHsgaXRlbXMgfTogVGltZWxpbmVQcm9ncmVzc1Byb3BzKSB7XG4gIGNvbnN0IGNvbnRhaW5lclJlZiA9IHVzZVJlZjxIVE1MRGl2RWxlbWVudD4obnVsbCk7XG4gIGNvbnN0IGlzTW9iaWxlID0gdXNlSXNNb2JpbGUoKTtcbiAgY29uc3QgcHJlZmVyc1JlZHVjZWRNb3Rpb24gPSB1c2VNZW1vKCgpID0+IHtcbiAgICBpZiAodHlwZW9mIHdpbmRvdyA9PT0gJ3VuZGVmaW5lZCcpIHJldHVybiBmYWxzZTtcbiAgICByZXR1cm4gd2luZG93Lm1hdGNoTWVkaWEoJyhwcmVmZXJzLXJlZHVjZWQtbW90aW9uOiByZWR1Y2UpJykubWF0Y2hlcztcbiAgfSwgW10pO1xuXG4gIGNvbnN0IHsgc2Nyb2xsWVByb2dyZXNzIH0gPSB1c2VTY3JvbGwoe1xuICAgIHRhcmdldDogY29udGFpbmVyUmVmLFxuICAgIG9mZnNldDogWydzdGFydCBjZW50ZXInLCAnZW5kIGNlbnRlciddLFxuICB9KTtcblxuICBjb25zdCBzaG91bGRBbmltYXRlID0gIWlzTW9iaWxlICYmICFwcmVmZXJzUmVkdWNlZE1vdGlvbjtcblxuICAvLyBQcm9ncmVzcyBsaW5lIGhlaWdodFxuICBjb25zdCBsaW5lSGVpZ2h0ID0gdXNlVHJhbnNmb3JtKHNjcm9sbFlQcm9ncmVzcywgWzAsIDFdLCBbJzAlJywgJzEwMCUnXSk7XG5cbiAgcmV0dXJuIChcbiAgICA8c2VjdGlvbiByZWY9e2NvbnRhaW5lclJlZn0gY2xhc3NOYW1lPVwic3VyZmFjZS1iYW5kIHB5LTI0XCI+XG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbnRhaW5lclwiPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInRleHQtY2VudGVyIG1iLTE2XCI+XG4gICAgICAgICAgPGgyIGNsYXNzTmFtZT1cInRleHQtNHhsIG1kOnRleHQtNXhsIGZvbnQtYm9sZCB0ZXh0LWZvcmVncm91bmQgbWItNFwiPlxuICAgICAgICAgICAgWW91ciBHcm93dGggVGltZWxpbmVcbiAgICAgICAgICA8L2gyPlxuICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQteGwgdGV4dC1mb3JlZ3JvdW5kLzcwIG1heC13LTJ4bCBteC1hdXRvXCI+XG4gICAgICAgICAgICBIZXJlJ3MgYSB0eXBpY2FsIHRpbWVsaW5lIGZvciBzZWVpbmcgcmVzdWx0c1xuICAgICAgICAgIDwvcD5cbiAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJyZWxhdGl2ZSBtdC0xNlwiPlxuICAgICAgICAgIHsvKiBQcm9ncmVzcyBMaW5lICovfVxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiaGlkZGVuIG1kOmJsb2NrIGFic29sdXRlIGxlZnQtMS8yIHRvcC0wIGJvdHRvbS0wIHctMSAtdHJhbnNsYXRlLXgtMS8yXCI+XG4gICAgICAgICAgICB7LyogQmFja2dyb3VuZCBsaW5lICovfVxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJhYnNvbHV0ZSBpbnNldC0wIHJvdW5kZWQtZnVsbCBiZy1ncmFkaWVudC10by1iIGZyb20tY3lhbi01MDAvMjAgdG8tdmlvbGV0LTYwMC8yMFwiPjwvZGl2PlxuXG4gICAgICAgICAgICB7LyogQW5pbWF0ZWQgcHJvZ3Jlc3MgbGluZSAqL31cbiAgICAgICAgICAgIHtzaG91bGRBbmltYXRlICYmIChcbiAgICAgICAgICAgICAgPG1vdGlvbi5kaXZcbiAgICAgICAgICAgICAgICBjbGFzc05hbWU9XCJhYnNvbHV0ZSBpbnNldC0wIHJvdW5kZWQtZnVsbCBiZy1ncmFkaWVudC10by1iIGZyb20tY3lhbi01MDAgdG8tdmlvbGV0LTYwMFwiXG4gICAgICAgICAgICAgICAgc3R5bGU9e3sgaGVpZ2h0OiBsaW5lSGVpZ2h0IGFzIGFueSB9fVxuICAgICAgICAgICAgICAvPlxuICAgICAgICAgICAgKX1cbiAgICAgICAgICA8L2Rpdj5cblxuICAgICAgICAgIHsvKiBUaW1lbGluZSBJdGVtcyAqL31cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInNwYWNlLXktOFwiPlxuICAgICAgICAgICAge2l0ZW1zLm1hcCgoaXRlbSwgaWR4KSA9PiB7XG4gICAgICAgICAgICAgIGNvbnN0IGl0ZW1Qcm9ncmVzcyA9IHVzZVRyYW5zZm9ybShzY3JvbGxZUHJvZ3Jlc3MsIFtpZHggKiAwLjE1LCAoaWR4ICsgMSkgKiAwLjE1XSwgWzAsIDFdKTtcbiAgICAgICAgICAgICAgY29uc3QgaXRlbVNjYWxlID0gdXNlVHJhbnNmb3JtKGl0ZW1Qcm9ncmVzcywgWzAsIDAuNSwgMV0sIFswLjgsIDEuMSwgMV0pO1xuICAgICAgICAgICAgICBjb25zdCBpdGVtT3BhY2l0eSA9IHVzZVRyYW5zZm9ybShpdGVtUHJvZ3Jlc3MsIFswLCAwLjMsIDFdLCBbMCwgMSwgMV0pO1xuXG4gICAgICAgICAgICAgIHJldHVybiAoXG4gICAgICAgICAgICAgICAgPG1vdGlvbi5kaXZcbiAgICAgICAgICAgICAgICAgIGtleT17aWR4fVxuICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPVwicmVsYXRpdmVcIlxuICAgICAgICAgICAgICAgICAgc3R5bGU9e1xuICAgICAgICAgICAgICAgICAgICBzaG91bGRBbmltYXRlXG4gICAgICAgICAgICAgICAgICAgICAgPyB7XG4gICAgICAgICAgICAgICAgICAgICAgICAgIHNjYWxlOiBpdGVtU2NhbGUgYXMgYW55LFxuICAgICAgICAgICAgICAgICAgICAgICAgICBvcGFjaXR5OiBpdGVtT3BhY2l0eSBhcyBhbnksXG4gICAgICAgICAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgICAgICAgOiB7fVxuICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgICAgaW5pdGlhbD17IXNob3VsZEFuaW1hdGUgPyB7IG9wYWNpdHk6IDAsIHNjYWxlOiAwLjggfSA6IHVuZGVmaW5lZH1cbiAgICAgICAgICAgICAgICAgIHdoaWxlSW5WaWV3PXshc2hvdWxkQW5pbWF0ZSA/IHsgb3BhY2l0eTogMSwgc2NhbGU6IDEgfSA6IHVuZGVmaW5lZH1cbiAgICAgICAgICAgICAgICAgIHRyYW5zaXRpb249eyFzaG91bGRBbmltYXRlID8geyBkdXJhdGlvbjogMC42LCBkZWxheTogaWR4ICogMC4xIH0gOiB1bmRlZmluZWR9XG4gICAgICAgICAgICAgICAgICB2aWV3cG9ydD17eyBvbmNlOiB0cnVlIH19XG4gICAgICAgICAgICAgICAgPlxuICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9e2BmbGV4IGdhcC04IGl0ZW1zLXN0YXJ0ICR7aWR4ICUgMiA9PT0gMCA/ICdtZDpmbGV4LXJvdy1yZXZlcnNlJyA6ICcnfWB9PlxuICAgICAgICAgICAgICAgICAgICB7LyogVGltZWxpbmUgZG90ICovfVxuICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImhpZGRlbiBtZDpmbGV4IGZsZXgtc2hyaW5rLTAgdy0xMiBoLTEyIHJvdW5kZWQtZnVsbCBiZy1iYWNrZ3JvdW5kIGJvcmRlci00IGJvcmRlci1ncmFkaWVudC10by1yIGZyb20tY3lhbi01MDAgdG8tdmlvbGV0LTYwMCBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBhYnNvbHV0ZSBsZWZ0LTEvMiAtdHJhbnNsYXRlLXgtMS8yIC10cmFuc2xhdGUteS0xLzIgdG9wLTYgei0xMFwiPlxuICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwidy00IGgtNCByb3VuZGVkLWZ1bGwgYmctZ3JhZGllbnQtdG8tciBmcm9tLWN5YW4tNTAwIHRvLXZpb2xldC02MDBcIj48L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgICAgICAgICAgICAgey8qIENvbnRlbnQgKi99XG4gICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPXtgZmxleC0xIG1kOnctMS8yICR7aWR4ICUgMiA9PT0gMCA/ICdtZDp0ZXh0LXJpZ2h0IG1kOnByLTE2JyA6ICdtZDpwbC0xNid9YH0+XG4gICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJnbGFzcy1jYXJkIHAtNlwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtNCBtYi0zXCI+XG4gICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwidy0yMCBoLTIwIHJvdW5kZWQtbGcgYmctZ3JhZGllbnQtdG8tYnIgZnJvbS1jeWFuLTUwMC8yMCB0by12aW9sZXQtNjAwLzIwIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIGZsZXgtc2hyaW5rLTAgbWQ6aGlkZGVuXCI+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwidGV4dC1sZyBmb250LWJvbGQgdGV4dC1mb3JlZ3JvdW5kXCI+e2l0ZW0ucGVyaW9kfTwvc3Bhbj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiaGlkZGVuIG1kOmJsb2NrXCI+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwidGV4dC1zbSB0ZXh0LWN5YW4tNjAwIGZvbnQtc2VtaWJvbGRcIj57aXRlbS5wZXJpb2R9PC9wPlxuICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgPGgzIGNsYXNzTmFtZT1cInRleHQtbGcgZm9udC1zZW1pYm9sZCB0ZXh0LWZvcmVncm91bmQgbWItMlwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgICB7aXRlbS5taWxlc3RvbmV9XG4gICAgICAgICAgICAgICAgICAgICAgICA8L2gzPlxuICAgICAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwidGV4dC1mb3JlZ3JvdW5kLzcwXCI+e2l0ZW0uZGVzY3JpcHRpb259PC9wPlxuICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cblxuICAgICAgICAgICAgICAgICAgICB7LyogTW9iaWxlIHRpbWVsaW5lIGRvdCAqL31cbiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJtZDpoaWRkZW4gZmxleC1zaHJpbmstMCB3LTQgaC00IHJvdW5kZWQtZnVsbCBiZy1ncmFkaWVudC10by1yIGZyb20tY3lhbi01MDAgdG8tdmlvbGV0LTYwMCBtdC02XCI+PC9kaXY+XG4gICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICA8L21vdGlvbi5kaXY+XG4gICAgICAgICAgICAgICk7XG4gICAgICAgICAgICB9KX1cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L2Rpdj5cbiAgICA8L3NlY3Rpb24+XG4gICk7XG59XG4iXSwiZmlsZSI6IkM6L1VzZXJzL2JhZGd1L0Rlc2t0b3AvYWxsIG5ldyBuaXcvY2xpZW50L3NyYy9jb21wb25lbnRzL1RpbWVsaW5lUHJvZ3Jlc3MudHN4In0=

@@ -1,0 +1,513 @@
+import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/src/pages/About.tsx");import __vite__cjsImport0_react_jsxDevRuntime from "/@fs/C:/Users/badgu/Desktop/all new niw/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=04b549ff"; const jsxDEV = __vite__cjsImport0_react_jsxDevRuntime["jsxDEV"];
+import { motion } from "/@fs/C:/Users/badgu/Desktop/all new niw/node_modules/.vite/deps/framer-motion.js?v=04b549ff";
+import SectionHeading from "/src/components/SectionHeading.tsx";
+import GlassCard from "/src/components/GlassCard.tsx";
+import GradientButton from "/src/components/GradientButton.tsx";
+import ScrollReveal from "/src/components/ScrollReveal.tsx";
+import { Target, Lightbulb, Users, Zap } from "/@fs/C:/Users/badgu/Desktop/all new niw/node_modules/.vite/deps/lucide-react.js?v=04b549ff";
+export default function About() {
+  return /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\About.tsx:10", className: "legacy-page min-h-screen", children: [
+    /* @__PURE__ */ jsxDEV("section", { "data-loc": "client\\src\\pages\\About.tsx:12", className: "relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-20", children: [
+      /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\About.tsx:13", className: "absolute inset-0 -z-10", children: [
+        /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\About.tsx:14", className: "absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-br from-cyan-200/30 to-blue-200/20 rounded-full blur-3xl" }, void 0, false, {
+          fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+          lineNumber: 14,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\About.tsx:15", className: "absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-br from-violet-200/30 to-purple-200/20 rounded-full blur-3xl" }, void 0, false, {
+          fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+          lineNumber: 15,
+          columnNumber: 11
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+        lineNumber: 13,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\About.tsx:18", className: "container", children: /* @__PURE__ */ jsxDEV(
+        motion.div,
+        {
+          "data-loc": "client\\src\\pages\\About.tsx:19",
+          initial: { opacity: 0, y: 20 },
+          animate: { opacity: 1, y: 0 },
+          transition: { duration: 0.8 },
+          children: /* @__PURE__ */ jsxDEV(
+            SectionHeading,
+            {
+              "data-loc": "client\\src\\pages\\About.tsx:24",
+              title: "About NIW",
+              subtitle: "Our Story",
+              description: "Building the future of digital marketing for local businesses",
+              animated: false
+            },
+            void 0,
+            false,
+            {
+              fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+              lineNumber: 24,
+              columnNumber: 13
+            },
+            this
+          )
+        },
+        void 0,
+        false,
+        {
+          fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+          lineNumber: 19,
+          columnNumber: 11
+        },
+        this
+      ) }, void 0, false, {
+        fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+        lineNumber: 18,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+      lineNumber: 12,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("section", { "data-loc": "client\\src\\pages\\About.tsx:35", className: "py-24", children: /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\About.tsx:36", className: "container", children: /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\About.tsx:37", className: "grid grid-cols-1 lg:grid-cols-2 gap-12 items-center", children: [
+      /* @__PURE__ */ jsxDEV(
+        motion.div,
+        {
+          "data-loc": "client\\src\\pages\\About.tsx:38",
+          initial: { opacity: 0, x: -40 },
+          whileInView: { opacity: 1, x: 0 },
+          transition: { duration: 0.6 },
+          viewport: { once: true },
+          children: [
+            /* @__PURE__ */ jsxDEV("h2", { "data-loc": "client\\src\\pages\\About.tsx:44", className: "text-4xl font-bold text-foreground mb-6", children: "Our Story" }, void 0, false, {
+              fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+              lineNumber: 44,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ jsxDEV("p", { "data-loc": "client\\src\\pages\\About.tsx:45", className: "text-lg text-foreground/70 mb-4", children: "NIW was founded with a simple mission: to help local businesses grow through AI-powered digital marketing systems." }, void 0, false, {
+              fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+              lineNumber: 45,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ jsxDEV("p", { "data-loc": "client\\src\\pages\\About.tsx:48", className: "text-lg text-foreground/70 mb-4", children: "We realized that most local businesses struggle with digital marketing. They don't have the time, expertise, or budget for traditional agencies. That's why we created NIW - affordable, transparent, and results-driven." }, void 0, false, {
+              fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+              lineNumber: 48,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ jsxDEV("p", { "data-loc": "client\\src\\pages\\About.tsx:51", className: "text-lg text-foreground/70 mb-4", children: "Today, we've helped hundreds of businesses generate more leads, attract more customers, and increase their sales. And we're just getting started." }, void 0, false, {
+              fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+              lineNumber: 51,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ jsxDEV("p", { "data-loc": "client\\src\\pages\\About.tsx:54", className: "text-lg text-foreground/70", children: "Our team is passionate about helping businesses succeed. We combine AI technology, data-driven strategies, and human expertise to deliver real results." }, void 0, false, {
+              fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+              lineNumber: 54,
+              columnNumber: 15
+            }, this)
+          ]
+        },
+        void 0,
+        true,
+        {
+          fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+          lineNumber: 38,
+          columnNumber: 13
+        },
+        this
+      ),
+      /* @__PURE__ */ jsxDEV(
+        motion.div,
+        {
+          "data-loc": "client\\src\\pages\\About.tsx:59",
+          initial: { opacity: 0, x: 40 },
+          whileInView: { opacity: 1, x: 0 },
+          transition: { duration: 0.6 },
+          viewport: { once: true },
+          className: "hidden lg:block",
+          children: /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\About.tsx:66", className: "glass-card p-12 space-y-8", children: [
+            /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\About.tsx:67", className: "text-center", children: [
+              /* @__PURE__ */ jsxDEV("p", { "data-loc": "client\\src\\pages\\About.tsx:68", className: "text-5xl font-bold text-transparent bg-gradient-to-r from-cyan-500 to-violet-600 bg-clip-text mb-2", children: "500+" }, void 0, false, {
+                fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+                lineNumber: 68,
+                columnNumber: 19
+              }, this),
+              /* @__PURE__ */ jsxDEV("p", { "data-loc": "client\\src\\pages\\About.tsx:71", className: "text-foreground/70", children: "Businesses Helped" }, void 0, false, {
+                fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+                lineNumber: 71,
+                columnNumber: 19
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+              lineNumber: 67,
+              columnNumber: 17
+            }, this),
+            /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\About.tsx:73", className: "text-center", children: [
+              /* @__PURE__ */ jsxDEV("p", { "data-loc": "client\\src\\pages\\About.tsx:74", className: "text-5xl font-bold text-transparent bg-gradient-to-r from-cyan-500 to-violet-600 bg-clip-text mb-2", children: "â‚¹50Cr+" }, void 0, false, {
+                fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+                lineNumber: 74,
+                columnNumber: 19
+              }, this),
+              /* @__PURE__ */ jsxDEV("p", { "data-loc": "client\\src\\pages\\About.tsx:77", className: "text-foreground/70", children: "Revenue Generated" }, void 0, false, {
+                fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+                lineNumber: 77,
+                columnNumber: 19
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+              lineNumber: 73,
+              columnNumber: 17
+            }, this),
+            /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\About.tsx:79", className: "text-center", children: [
+              /* @__PURE__ */ jsxDEV("p", { "data-loc": "client\\src\\pages\\About.tsx:80", className: "text-5xl font-bold text-transparent bg-gradient-to-r from-cyan-500 to-violet-600 bg-clip-text mb-2", children: "98%" }, void 0, false, {
+                fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+                lineNumber: 80,
+                columnNumber: 19
+              }, this),
+              /* @__PURE__ */ jsxDEV("p", { "data-loc": "client\\src\\pages\\About.tsx:83", className: "text-foreground/70", children: "Client Satisfaction" }, void 0, false, {
+                fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+                lineNumber: 83,
+                columnNumber: 19
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+              lineNumber: 79,
+              columnNumber: 17
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+            lineNumber: 66,
+            columnNumber: 15
+          }, this)
+        },
+        void 0,
+        false,
+        {
+          fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+          lineNumber: 59,
+          columnNumber: 13
+        },
+        this
+      )
+    ] }, void 0, true, {
+      fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+      lineNumber: 37,
+      columnNumber: 11
+    }, this) }, void 0, false, {
+      fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+      lineNumber: 36,
+      columnNumber: 9
+    }, this) }, void 0, false, {
+      fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+      lineNumber: 35,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("section", { "data-loc": "client\\src\\pages\\About.tsx:92", className: "bg-gradient-to-b from-white to-slate-50 py-24", children: /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\About.tsx:93", className: "container", children: [
+      /* @__PURE__ */ jsxDEV(
+        SectionHeading,
+        {
+          "data-loc": "client\\src\\pages\\About.tsx:94",
+          title: "Our Values",
+          subtitle: "What We Believe In",
+          description: "These principles guide everything we do"
+        },
+        void 0,
+        false,
+        {
+          fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+          lineNumber: 94,
+          columnNumber: 11
+        },
+        this
+      ),
+      /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\About.tsx:100", className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16", children: [
+        {
+          icon: Target,
+          title: "Results-Driven",
+          description: "We focus on measurable results, not vanity metrics. Your success is our success."
+        },
+        {
+          icon: Lightbulb,
+          title: "Innovation",
+          description: "We stay ahead of trends and use cutting-edge AI technology to help you grow."
+        },
+        {
+          icon: Users,
+          title: "Transparency",
+          description: "No hidden fees, no surprises. You always know what you're getting and why."
+        },
+        {
+          icon: Zap,
+          title: "Speed",
+          description: "We move fast. Setup in 48 hours, results in weeks, not months."
+        }
+      ].map((value, idx) => {
+        const Icon = value.icon;
+        return /* @__PURE__ */ jsxDEV(ScrollReveal, { "data-loc": "client\\src\\pages\\About.tsx:125", delay: idx, direction: "up", children: /* @__PURE__ */ jsxDEV(GlassCard, { "data-loc": "client\\src\\pages\\About.tsx:126", hover: false, children: [
+          /* @__PURE__ */ jsxDEV(Icon, { "data-loc": "client\\src\\pages\\About.tsx:127", size: 32, className: "text-transparent bg-gradient-to-r from-cyan-500 to-violet-600 bg-clip-text mb-4" }, void 0, false, {
+            fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+            lineNumber: 127,
+            columnNumber: 21
+          }, this),
+          /* @__PURE__ */ jsxDEV("h3", { "data-loc": "client\\src\\pages\\About.tsx:128", className: "text-lg font-semibold text-foreground mb-2", children: value.title }, void 0, false, {
+            fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+            lineNumber: 128,
+            columnNumber: 21
+          }, this),
+          /* @__PURE__ */ jsxDEV("p", { "data-loc": "client\\src\\pages\\About.tsx:129", className: "text-foreground/70 text-sm", children: value.description }, void 0, false, {
+            fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+            lineNumber: 129,
+            columnNumber: 21
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+          lineNumber: 126,
+          columnNumber: 19
+        }, this) }, idx, false, {
+          fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+          lineNumber: 125,
+          columnNumber: 17
+        }, this);
+      }) }, void 0, false, {
+        fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+        lineNumber: 100,
+        columnNumber: 11
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+      lineNumber: 93,
+      columnNumber: 9
+    }, this) }, void 0, false, {
+      fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+      lineNumber: 92,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("section", { "data-loc": "client\\src\\pages\\About.tsx:139", className: "py-24", children: /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\About.tsx:140", className: "container", children: [
+      /* @__PURE__ */ jsxDEV(
+        SectionHeading,
+        {
+          "data-loc": "client\\src\\pages\\About.tsx:141",
+          title: "Our Team",
+          subtitle: "Meet the Experts",
+          description: "Experienced professionals dedicated to your success"
+        },
+        void 0,
+        false,
+        {
+          fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+          lineNumber: 141,
+          columnNumber: 11
+        },
+        this
+      ),
+      /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\About.tsx:147", className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16", children: [
+        {
+          name: "Founder & CEO",
+          role: "Digital Marketing Strategist",
+          description: "10+ years of experience in digital marketing and business growth"
+        },
+        {
+          name: "Head of Growth",
+          role: "Growth Strategist",
+          description: "Specialized in scaling businesses and lead generation systems"
+        },
+        {
+          name: "Head of Technology",
+          role: "AI & Automation Expert",
+          description: "Building AI-powered solutions for marketing automation"
+        },
+        {
+          name: "Social Media Manager",
+          role: "Content Strategist",
+          description: "Expert in social media marketing and community building"
+        },
+        {
+          name: "Paid Ads Specialist",
+          role: "Google & Meta Ads Expert",
+          description: "Specializing in high-ROI paid advertising campaigns"
+        },
+        {
+          name: "Client Success Manager",
+          role: "Account Manager",
+          description: "Dedicated to ensuring every client achieves their goals"
+        }
+      ].map(
+        (member, idx) => /* @__PURE__ */ jsxDEV(GlassCard, { "data-loc": "client\\src\\pages\\About.tsx:180", delay: idx, hover: true, children: [
+          /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\About.tsx:181", className: "w-16 h-16 rounded-full bg-gradient-to-br from-cyan-500 to-violet-600 mb-4" }, void 0, false, {
+            fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+            lineNumber: 181,
+            columnNumber: 17
+          }, this),
+          /* @__PURE__ */ jsxDEV("h3", { "data-loc": "client\\src\\pages\\About.tsx:182", className: "text-lg font-semibold text-foreground mb-1", children: member.name }, void 0, false, {
+            fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+            lineNumber: 182,
+            columnNumber: 17
+          }, this),
+          /* @__PURE__ */ jsxDEV("p", { "data-loc": "client\\src\\pages\\About.tsx:183", className: "text-sm text-cyan-600 font-semibold mb-2", children: member.role }, void 0, false, {
+            fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+            lineNumber: 183,
+            columnNumber: 17
+          }, this),
+          /* @__PURE__ */ jsxDEV("p", { "data-loc": "client\\src\\pages\\About.tsx:184", className: "text-sm text-foreground/70", children: member.description }, void 0, false, {
+            fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+            lineNumber: 184,
+            columnNumber: 17
+          }, this)
+        ] }, idx, true, {
+          fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+          lineNumber: 180,
+          columnNumber: 13
+        }, this)
+      ) }, void 0, false, {
+        fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+        lineNumber: 147,
+        columnNumber: 11
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+      lineNumber: 140,
+      columnNumber: 9
+    }, this) }, void 0, false, {
+      fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+      lineNumber: 139,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("section", { "data-loc": "client\\src\\pages\\About.tsx:192", className: "bg-gradient-to-b from-white to-slate-50 py-24", children: /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\About.tsx:193", className: "container", children: [
+      /* @__PURE__ */ jsxDEV(
+        SectionHeading,
+        {
+          "data-loc": "client\\src\\pages\\About.tsx:194",
+          title: "Why Choose NIW",
+          subtitle: "Our Competitive Advantage",
+          description: "Here's what sets us apart"
+        },
+        void 0,
+        false,
+        {
+          fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+          lineNumber: 194,
+          columnNumber: 11
+        },
+        this
+      ),
+      /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\About.tsx:200", className: "grid grid-cols-1 md:grid-cols-2 gap-8 mt-16", children: [
+        {
+          title: "Affordable Pricing",
+          description: "Premium services at prices that work for growing businesses. Starting from â‚¹3,990/week."
+        },
+        {
+          title: "Quick Setup",
+          description: "Get started in 48 hours. No long onboarding process or delays."
+        },
+        {
+          title: "Transparent Reporting",
+          description: "Real-time dashboards and monthly reports. You always know what's working."
+        },
+        {
+          title: "AI-Powered Systems",
+          description: "Leverage cutting-edge AI technology for faster, smarter marketing."
+        },
+        {
+          title: "Proven Results",
+          description: "Hundreds of successful campaigns across all industries. See our case studies."
+        },
+        {
+          title: "Dedicated Support",
+          description: "Your own account manager available 24/7 to help you succeed."
+        }
+      ].map(
+        (item, idx) => /* @__PURE__ */ jsxDEV(ScrollReveal, { "data-loc": "client\\src\\pages\\About.tsx:227", delay: idx, direction: "up", children: /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\About.tsx:228", className: "glass-card p-8", children: [
+          /* @__PURE__ */ jsxDEV("h3", { "data-loc": "client\\src\\pages\\About.tsx:229", className: "text-lg font-semibold text-foreground mb-3", children: item.title }, void 0, false, {
+            fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+            lineNumber: 229,
+            columnNumber: 19
+          }, this),
+          /* @__PURE__ */ jsxDEV("p", { "data-loc": "client\\src\\pages\\About.tsx:230", className: "text-foreground/70", children: item.description }, void 0, false, {
+            fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+            lineNumber: 230,
+            columnNumber: 19
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+          lineNumber: 228,
+          columnNumber: 17
+        }, this) }, idx, false, {
+          fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+          lineNumber: 227,
+          columnNumber: 13
+        }, this)
+      ) }, void 0, false, {
+        fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+        lineNumber: 200,
+        columnNumber: 11
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+      lineNumber: 193,
+      columnNumber: 9
+    }, this) }, void 0, false, {
+      fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+      lineNumber: 192,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("section", { "data-loc": "client\\src\\pages\\About.tsx:239", className: "py-24", children: /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\About.tsx:240", className: "container", children: /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\About.tsx:241", className: "glass-card p-12 md:p-16 text-center", children: [
+      /* @__PURE__ */ jsxDEV("h2", { "data-loc": "client\\src\\pages\\About.tsx:242", className: "text-4xl md:text-5xl font-bold text-foreground mb-6", children: "Ready to Join Our Success Stories?" }, void 0, false, {
+        fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+        lineNumber: 242,
+        columnNumber: 13
+      }, this),
+      /* @__PURE__ */ jsxDEV("p", { "data-loc": "client\\src\\pages\\About.tsx:245", className: "text-xl text-foreground/70 mb-8 max-w-2xl mx-auto", children: "Let's work together to grow your business and achieve your goals." }, void 0, false, {
+        fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+        lineNumber: 245,
+        columnNumber: 13
+      }, this),
+      /* @__PURE__ */ jsxDEV(GradientButton, { "data-loc": "client\\src\\pages\\About.tsx:248", href: "/contact", size: "lg", children: "Get Started Today" }, void 0, false, {
+        fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+        lineNumber: 248,
+        columnNumber: 13
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+      lineNumber: 241,
+      columnNumber: 11
+    }, this) }, void 0, false, {
+      fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+      lineNumber: 240,
+      columnNumber: 9
+    }, this) }, void 0, false, {
+      fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+      lineNumber: 239,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx",
+    lineNumber: 10,
+    columnNumber: 5
+  }, this);
+}
+_c = About;
+var _c;
+$RefreshReg$(_c, "About");
+import * as RefreshRuntime from "/@react-refresh";
+const inWebWorker = typeof WorkerGlobalScope !== "undefined" && self instanceof WorkerGlobalScope;
+if (import.meta.hot && !inWebWorker) {
+  if (!window.$RefreshReg$) {
+    throw new Error(
+      "@vitejs/plugin-react can't detect preamble. Something is wrong."
+    );
+  }
+  RefreshRuntime.__hmr_import(import.meta.url).then((currentExports) => {
+    RefreshRuntime.registerExportsForReactRefresh("C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx", currentExports);
+    import.meta.hot.accept((nextExports) => {
+      if (!nextExports) return;
+      const invalidateMessage = RefreshRuntime.validateRefreshBoundaryAndEnqueueUpdate("C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx", currentExports, nextExports);
+      if (invalidateMessage) import.meta.hot.invalidate(invalidateMessage);
+    });
+  });
+}
+function $RefreshReg$(type, id) {
+  return RefreshRuntime.register(type, "C:/Users/badgu/Desktop/all new niw/client/src/pages/About.tsx " + id);
+}
+function $RefreshSig$() {
+  return RefreshRuntime.createSignatureFunctionForTransform();
+}
+
+//# sourceMappingURL=data:application/json;base64,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QUksV0FBVSxrQkFDYjtBQUFBLGlDQUFDLHlEQUFHLFdBQVUsOENBQThDSyxlQUFLVCxTQUFqRTtBQUFBO0FBQUE7QUFBQTtBQUFBLGlCQUF1RTtBQUFBLFVBQ3ZFLHVCQUFDLHdEQUFFLFdBQVUsc0JBQXNCUyxlQUFLUixlQUF4QztBQUFBO0FBQUE7QUFBQTtBQUFBLGlCQUFvRDtBQUFBLGFBRnREO0FBQUE7QUFBQTtBQUFBO0FBQUEsZUFHQSxLQUppQkcsS0FBbkI7QUFBQTtBQUFBO0FBQUE7QUFBQSxlQUtBO0FBQUEsTUFDRCxLQWpDSDtBQUFBO0FBQUE7QUFBQTtBQUFBLGFBa0NBO0FBQUEsU0F6Q0Y7QUFBQTtBQUFBO0FBQUE7QUFBQSxXQTBDQSxLQTNDRjtBQUFBO0FBQUE7QUFBQTtBQUFBLFdBNENBO0FBQUEsSUFHQSx1QkFBQyw4REFBUSxXQUFVLFNBQ2pCLGlDQUFDLDBEQUFJLFdBQVUsYUFDYixpQ0FBQywwREFBSSxXQUFVLHVDQUNiO0FBQUEsNkJBQUMseURBQUcsV0FBVSx1REFBcUQsa0RBQW5FO0FBQUE7QUFBQTtBQUFBO0FBQUEsYUFFQTtBQUFBLE1BQ0EsdUJBQUMsd0RBQUUsV0FBVSxxREFBbUQsaUZBQWhFO0FBQUE7QUFBQTtBQUFBO0FBQUEsYUFFQTtBQUFBLE1BQ0EsdUJBQUMsbUVBQWUsTUFBSyxZQUFXLE1BQUssTUFBSSxpQ0FBekM7QUFBQTtBQUFBO0FBQUE7QUFBQSxhQUVBO0FBQUEsU0FURjtBQUFBO0FBQUE7QUFBQTtBQUFBLFdBVUEsS0FYRjtBQUFBO0FBQUE7QUFBQTtBQUFBLFdBWUEsS0FiRjtBQUFBO0FBQUE7QUFBQTtBQUFBLFdBY0E7QUFBQSxPQW5QRjtBQUFBO0FBQUE7QUFBQTtBQUFBLFNBb1BBO0FBRUo7QUFBQ00sS0F4UHVCakI7QUFBSyxJQUFBaUI7QUFBQSxhQUFBQSxJQUFBIiwibmFtZXMiOlsibW90aW9uIiwiU2VjdGlvbkhlYWRpbmciLCJHbGFzc0NhcmQiLCJHcmFkaWVudEJ1dHRvbiIsIlNjcm9sbFJldmVhbCIsIlRhcmdldCIsIkxpZ2h0YnVsYiIsIlVzZXJzIiwiWmFwIiwiQWJvdXQiLCJvcGFjaXR5IiwieSIsImR1cmF0aW9uIiwieCIsIm9uY2UiLCJpY29uIiwidGl0bGUiLCJkZXNjcmlwdGlvbiIsIm1hcCIsInZhbHVlIiwiaWR4IiwiSWNvbiIsIm5hbWUiLCJyb2xlIiwibWVtYmVyIiwiaXRlbSIsIl9jIl0sImlnbm9yZUxpc3QiOltdLCJzb3VyY2VzIjpbIkFib3V0LnRzeCJdLCJzb3VyY2VzQ29udGVudCI6WyLvu79pbXBvcnQgeyBtb3Rpb24gfSBmcm9tICdmcmFtZXItbW90aW9uJztcbmltcG9ydCBTZWN0aW9uSGVhZGluZyBmcm9tICdAL2NvbXBvbmVudHMvU2VjdGlvbkhlYWRpbmcnO1xuaW1wb3J0IEdsYXNzQ2FyZCBmcm9tICdAL2NvbXBvbmVudHMvR2xhc3NDYXJkJztcbmltcG9ydCBHcmFkaWVudEJ1dHRvbiBmcm9tICdAL2NvbXBvbmVudHMvR3JhZGllbnRCdXR0b24nO1xuaW1wb3J0IFNjcm9sbFJldmVhbCBmcm9tICdAL2NvbXBvbmVudHMvU2Nyb2xsUmV2ZWFsJztcbmltcG9ydCB7IFRhcmdldCwgTGlnaHRidWxiLCBVc2VycywgWmFwIH0gZnJvbSAnbHVjaWRlLXJlYWN0JztcblxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gQWJvdXQoKSB7XG4gIHJldHVybiAoXG4gICAgPGRpdiBjbGFzc05hbWU9XCJsZWdhY3ktcGFnZSBtaW4taC1zY3JlZW5cIj5cbiAgICAgIHsvKiBIZXJvIFNlY3Rpb24gKi99XG4gICAgICA8c2VjdGlvbiBjbGFzc05hbWU9XCJyZWxhdGl2ZSBtaW4taC1bNjB2aF0gZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgb3ZlcmZsb3ctaGlkZGVuIHB0LTIwXCI+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYWJzb2x1dGUgaW5zZXQtMCAtei0xMFwiPlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYWJzb2x1dGUgdG9wLTAgbGVmdC0xLzQgdy05NiBoLTk2IGJnLWdyYWRpZW50LXRvLWJyIGZyb20tY3lhbi0yMDAvMzAgdG8tYmx1ZS0yMDAvMjAgcm91bmRlZC1mdWxsIGJsdXItM3hsXCI+PC9kaXY+XG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJhYnNvbHV0ZSBib3R0b20tMS80IHJpZ2h0LTEvNCB3LTk2IGgtOTYgYmctZ3JhZGllbnQtdG8tYnIgZnJvbS12aW9sZXQtMjAwLzMwIHRvLXB1cnBsZS0yMDAvMjAgcm91bmRlZC1mdWxsIGJsdXItM3hsXCI+PC9kaXY+XG4gICAgICAgIDwvZGl2PlxuXG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY29udGFpbmVyXCI+XG4gICAgICAgICAgPG1vdGlvbi5kaXZcbiAgICAgICAgICAgIGluaXRpYWw9e3sgb3BhY2l0eTogMCwgeTogMjAgfX1cbiAgICAgICAgICAgIGFuaW1hdGU9e3sgb3BhY2l0eTogMSwgeTogMCB9fVxuICAgICAgICAgICAgdHJhbnNpdGlvbj17eyBkdXJhdGlvbjogMC44IH19XG4gICAgICAgICAgPlxuICAgICAgICAgICAgPFNlY3Rpb25IZWFkaW5nXG4gICAgICAgICAgICAgIHRpdGxlPVwiQWJvdXQgTklXXCJcbiAgICAgICAgICAgICAgc3VidGl0bGU9XCJPdXIgU3RvcnlcIlxuICAgICAgICAgICAgICBkZXNjcmlwdGlvbj1cIkJ1aWxkaW5nIHRoZSBmdXR1cmUgb2YgZGlnaXRhbCBtYXJrZXRpbmcgZm9yIGxvY2FsIGJ1c2luZXNzZXNcIlxuICAgICAgICAgICAgICBhbmltYXRlZD17ZmFsc2V9XG4gICAgICAgICAgICAvPlxuICAgICAgICAgIDwvbW90aW9uLmRpdj5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L3NlY3Rpb24+XG5cbiAgICAgIHsvKiBPdXIgU3RvcnkgKi99XG4gICAgICA8c2VjdGlvbiBjbGFzc05hbWU9XCJweS0yNFwiPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbnRhaW5lclwiPlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZ3JpZCBncmlkLWNvbHMtMSBsZzpncmlkLWNvbHMtMiBnYXAtMTIgaXRlbXMtY2VudGVyXCI+XG4gICAgICAgICAgICA8bW90aW9uLmRpdlxuICAgICAgICAgICAgICBpbml0aWFsPXt7IG9wYWNpdHk6IDAsIHg6IC00MCB9fVxuICAgICAgICAgICAgICB3aGlsZUluVmlldz17eyBvcGFjaXR5OiAxLCB4OiAwIH19XG4gICAgICAgICAgICAgIHRyYW5zaXRpb249e3sgZHVyYXRpb246IDAuNiB9fVxuICAgICAgICAgICAgICB2aWV3cG9ydD17eyBvbmNlOiB0cnVlIH19XG4gICAgICAgICAgICA+XG4gICAgICAgICAgICAgIDxoMiBjbGFzc05hbWU9XCJ0ZXh0LTR4bCBmb250LWJvbGQgdGV4dC1mb3JlZ3JvdW5kIG1iLTZcIj5PdXIgU3Rvcnk8L2gyPlxuICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LWxnIHRleHQtZm9yZWdyb3VuZC83MCBtYi00XCI+XG4gICAgICAgICAgICAgICAgTklXIHdhcyBmb3VuZGVkIHdpdGggYSBzaW1wbGUgbWlzc2lvbjogdG8gaGVscCBsb2NhbCBidXNpbmVzc2VzIGdyb3cgdGhyb3VnaCBBSS1wb3dlcmVkIGRpZ2l0YWwgbWFya2V0aW5nIHN5c3RlbXMuXG4gICAgICAgICAgICAgIDwvcD5cbiAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwidGV4dC1sZyB0ZXh0LWZvcmVncm91bmQvNzAgbWItNFwiPlxuICAgICAgICAgICAgICAgIFdlIHJlYWxpemVkIHRoYXQgbW9zdCBsb2NhbCBidXNpbmVzc2VzIHN0cnVnZ2xlIHdpdGggZGlnaXRhbCBtYXJrZXRpbmcuIFRoZXkgZG9uJ3QgaGF2ZSB0aGUgdGltZSwgZXhwZXJ0aXNlLCBvciBidWRnZXQgZm9yIHRyYWRpdGlvbmFsIGFnZW5jaWVzLiBUaGF0J3Mgd2h5IHdlIGNyZWF0ZWQgTklXIC0gYWZmb3JkYWJsZSwgdHJhbnNwYXJlbnQsIGFuZCByZXN1bHRzLWRyaXZlbi5cbiAgICAgICAgICAgICAgPC9wPlxuICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LWxnIHRleHQtZm9yZWdyb3VuZC83MCBtYi00XCI+XG4gICAgICAgICAgICAgICAgVG9kYXksIHdlJ3ZlIGhlbHBlZCBodW5kcmVkcyBvZiBidXNpbmVzc2VzIGdlbmVyYXRlIG1vcmUgbGVhZHMsIGF0dHJhY3QgbW9yZSBjdXN0b21lcnMsIGFuZCBpbmNyZWFzZSB0aGVpciBzYWxlcy4gQW5kIHdlJ3JlIGp1c3QgZ2V0dGluZyBzdGFydGVkLlxuICAgICAgICAgICAgICA8L3A+XG4gICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQtbGcgdGV4dC1mb3JlZ3JvdW5kLzcwXCI+XG4gICAgICAgICAgICAgICAgT3VyIHRlYW0gaXMgcGFzc2lvbmF0ZSBhYm91dCBoZWxwaW5nIGJ1c2luZXNzZXMgc3VjY2VlZC4gV2UgY29tYmluZSBBSSB0ZWNobm9sb2d5LCBkYXRhLWRyaXZlbiBzdHJhdGVnaWVzLCBhbmQgaHVtYW4gZXhwZXJ0aXNlIHRvIGRlbGl2ZXIgcmVhbCByZXN1bHRzLlxuICAgICAgICAgICAgICA8L3A+XG4gICAgICAgICAgICA8L21vdGlvbi5kaXY+XG5cbiAgICAgICAgICAgIDxtb3Rpb24uZGl2XG4gICAgICAgICAgICAgIGluaXRpYWw9e3sgb3BhY2l0eTogMCwgeDogNDAgfX1cbiAgICAgICAgICAgICAgd2hpbGVJblZpZXc9e3sgb3BhY2l0eTogMSwgeDogMCB9fVxuICAgICAgICAgICAgICB0cmFuc2l0aW9uPXt7IGR1cmF0aW9uOiAwLjYgfX1cbiAgICAgICAgICAgICAgdmlld3BvcnQ9e3sgb25jZTogdHJ1ZSB9fVxuICAgICAgICAgICAgICBjbGFzc05hbWU9XCJoaWRkZW4gbGc6YmxvY2tcIlxuICAgICAgICAgICAgPlxuICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImdsYXNzLWNhcmQgcC0xMiBzcGFjZS15LThcIj5cbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInRleHQtY2VudGVyXCI+XG4gICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LTV4bCBmb250LWJvbGQgdGV4dC10cmFuc3BhcmVudCBiZy1ncmFkaWVudC10by1yIGZyb20tY3lhbi01MDAgdG8tdmlvbGV0LTYwMCBiZy1jbGlwLXRleHQgbWItMlwiPlxuICAgICAgICAgICAgICAgICAgICA1MDArXG4gICAgICAgICAgICAgICAgICA8L3A+XG4gICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LWZvcmVncm91bmQvNzBcIj5CdXNpbmVzc2VzIEhlbHBlZDwvcD5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInRleHQtY2VudGVyXCI+XG4gICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LTV4bCBmb250LWJvbGQgdGV4dC10cmFuc3BhcmVudCBiZy1ncmFkaWVudC10by1yIGZyb20tY3lhbi01MDAgdG8tdmlvbGV0LTYwMCBiZy1jbGlwLXRleHQgbWItMlwiPlxuICAgICAgICAgICAgICAgICAgICDDouKAmsK5NTBDcitcbiAgICAgICAgICAgICAgICAgIDwvcD5cbiAgICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQtZm9yZWdyb3VuZC83MFwiPlJldmVudWUgR2VuZXJhdGVkPC9wPlxuICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwidGV4dC1jZW50ZXJcIj5cbiAgICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQtNXhsIGZvbnQtYm9sZCB0ZXh0LXRyYW5zcGFyZW50IGJnLWdyYWRpZW50LXRvLXIgZnJvbS1jeWFuLTUwMCB0by12aW9sZXQtNjAwIGJnLWNsaXAtdGV4dCBtYi0yXCI+XG4gICAgICAgICAgICAgICAgICAgIDk4JVxuICAgICAgICAgICAgICAgICAgPC9wPlxuICAgICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwidGV4dC1mb3JlZ3JvdW5kLzcwXCI+Q2xpZW50IFNhdGlzZmFjdGlvbjwvcD5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8L21vdGlvbi5kaXY+XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9zZWN0aW9uPlxuXG4gICAgICB7LyogT3VyIFZhbHVlcyAqL31cbiAgICAgIDxzZWN0aW9uIGNsYXNzTmFtZT1cImJnLWdyYWRpZW50LXRvLWIgZnJvbS13aGl0ZSB0by1zbGF0ZS01MCBweS0yNFwiPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbnRhaW5lclwiPlxuICAgICAgICAgIDxTZWN0aW9uSGVhZGluZ1xuICAgICAgICAgICAgdGl0bGU9XCJPdXIgVmFsdWVzXCJcbiAgICAgICAgICAgIHN1YnRpdGxlPVwiV2hhdCBXZSBCZWxpZXZlIEluXCJcbiAgICAgICAgICAgIGRlc2NyaXB0aW9uPVwiVGhlc2UgcHJpbmNpcGxlcyBndWlkZSBldmVyeXRoaW5nIHdlIGRvXCJcbiAgICAgICAgICAvPlxuXG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJncmlkIGdyaWQtY29scy0xIG1kOmdyaWQtY29scy0yIGxnOmdyaWQtY29scy00IGdhcC02IG10LTE2XCI+XG4gICAgICAgICAgICB7W1xuICAgICAgICAgICAgICB7XG4gICAgICAgICAgICAgICAgaWNvbjogVGFyZ2V0LFxuICAgICAgICAgICAgICAgIHRpdGxlOiAnUmVzdWx0cy1Ecml2ZW4nLFxuICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uOiAnV2UgZm9jdXMgb24gbWVhc3VyYWJsZSByZXN1bHRzLCBub3QgdmFuaXR5IG1ldHJpY3MuIFlvdXIgc3VjY2VzcyBpcyBvdXIgc3VjY2Vzcy4nLFxuICAgICAgICAgICAgICB9LFxuICAgICAgICAgICAgICB7XG4gICAgICAgICAgICAgICAgaWNvbjogTGlnaHRidWxiLFxuICAgICAgICAgICAgICAgIHRpdGxlOiAnSW5ub3ZhdGlvbicsXG4gICAgICAgICAgICAgICAgZGVzY3JpcHRpb246ICdXZSBzdGF5IGFoZWFkIG9mIHRyZW5kcyBhbmQgdXNlIGN1dHRpbmctZWRnZSBBSSB0ZWNobm9sb2d5IHRvIGhlbHAgeW91IGdyb3cuJyxcbiAgICAgICAgICAgICAgfSxcbiAgICAgICAgICAgICAge1xuICAgICAgICAgICAgICAgIGljb246IFVzZXJzLFxuICAgICAgICAgICAgICAgIHRpdGxlOiAnVHJhbnNwYXJlbmN5JyxcbiAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbjogJ05vIGhpZGRlbiBmZWVzLCBubyBzdXJwcmlzZXMuIFlvdSBhbHdheXMga25vdyB3aGF0IHlvdVxcJ3JlIGdldHRpbmcgYW5kIHdoeS4nLFxuICAgICAgICAgICAgICB9LFxuICAgICAgICAgICAgICB7XG4gICAgICAgICAgICAgICAgaWNvbjogWmFwLFxuICAgICAgICAgICAgICAgIHRpdGxlOiAnU3BlZWQnLFxuICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uOiAnV2UgbW92ZSBmYXN0LiBTZXR1cCBpbiA0OCBob3VycywgcmVzdWx0cyBpbiB3ZWVrcywgbm90IG1vbnRocy4nLFxuICAgICAgICAgICAgICB9LFxuICAgICAgICAgICAgXS5tYXAoKHZhbHVlLCBpZHgpID0+IHtcbiAgICAgICAgICAgICAgY29uc3QgSWNvbiA9IHZhbHVlLmljb247XG4gICAgICAgICAgICAgIHJldHVybiAoXG4gICAgICAgICAgICAgICAgPFNjcm9sbFJldmVhbCBrZXk9e2lkeH0gZGVsYXk9e2lkeH0gZGlyZWN0aW9uPVwidXBcIj5cbiAgICAgICAgICAgICAgICAgIDxHbGFzc0NhcmQgaG92ZXI9e2ZhbHNlfT5cbiAgICAgICAgICAgICAgICAgICAgPEljb24gc2l6ZT17MzJ9IGNsYXNzTmFtZT1cInRleHQtdHJhbnNwYXJlbnQgYmctZ3JhZGllbnQtdG8tciBmcm9tLWN5YW4tNTAwIHRvLXZpb2xldC02MDAgYmctY2xpcC10ZXh0IG1iLTRcIiAvPlxuICAgICAgICAgICAgICAgICAgICA8aDMgY2xhc3NOYW1lPVwidGV4dC1sZyBmb250LXNlbWlib2xkIHRleHQtZm9yZWdyb3VuZCBtYi0yXCI+e3ZhbHVlLnRpdGxlfTwvaDM+XG4gICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQtZm9yZWdyb3VuZC83MCB0ZXh0LXNtXCI+e3ZhbHVlLmRlc2NyaXB0aW9ufTwvcD5cbiAgICAgICAgICAgICAgICAgIDwvR2xhc3NDYXJkPlxuICAgICAgICAgICAgICAgIDwvU2Nyb2xsUmV2ZWFsPlxuICAgICAgICAgICAgICApO1xuICAgICAgICAgICAgfSl9XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9zZWN0aW9uPlxuXG4gICAgICB7LyogT3VyIFRlYW0gKi99XG4gICAgICA8c2VjdGlvbiBjbGFzc05hbWU9XCJweS0yNFwiPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbnRhaW5lclwiPlxuICAgICAgICAgIDxTZWN0aW9uSGVhZGluZ1xuICAgICAgICAgICAgdGl0bGU9XCJPdXIgVGVhbVwiXG4gICAgICAgICAgICBzdWJ0aXRsZT1cIk1lZXQgdGhlIEV4cGVydHNcIlxuICAgICAgICAgICAgZGVzY3JpcHRpb249XCJFeHBlcmllbmNlZCBwcm9mZXNzaW9uYWxzIGRlZGljYXRlZCB0byB5b3VyIHN1Y2Nlc3NcIlxuICAgICAgICAgIC8+XG5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImdyaWQgZ3JpZC1jb2xzLTEgbWQ6Z3JpZC1jb2xzLTIgbGc6Z3JpZC1jb2xzLTMgZ2FwLTggbXQtMTZcIj5cbiAgICAgICAgICAgIHtbXG4gICAgICAgICAgICAgIHtcbiAgICAgICAgICAgICAgICBuYW1lOiAnRm91bmRlciAmIENFTycsXG4gICAgICAgICAgICAgICAgcm9sZTogJ0RpZ2l0YWwgTWFya2V0aW5nIFN0cmF0ZWdpc3QnLFxuICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uOiAnMTArIHllYXJzIG9mIGV4cGVyaWVuY2UgaW4gZGlnaXRhbCBtYXJrZXRpbmcgYW5kIGJ1c2luZXNzIGdyb3d0aCcsXG4gICAgICAgICAgICAgIH0sXG4gICAgICAgICAgICAgIHtcbiAgICAgICAgICAgICAgICBuYW1lOiAnSGVhZCBvZiBHcm93dGgnLFxuICAgICAgICAgICAgICAgIHJvbGU6ICdHcm93dGggU3RyYXRlZ2lzdCcsXG4gICAgICAgICAgICAgICAgZGVzY3JpcHRpb246ICdTcGVjaWFsaXplZCBpbiBzY2FsaW5nIGJ1c2luZXNzZXMgYW5kIGxlYWQgZ2VuZXJhdGlvbiBzeXN0ZW1zJyxcbiAgICAgICAgICAgICAgfSxcbiAgICAgICAgICAgICAge1xuICAgICAgICAgICAgICAgIG5hbWU6ICdIZWFkIG9mIFRlY2hub2xvZ3knLFxuICAgICAgICAgICAgICAgIHJvbGU6ICdBSSAmIEF1dG9tYXRpb24gRXhwZXJ0JyxcbiAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbjogJ0J1aWxkaW5nIEFJLXBvd2VyZWQgc29sdXRpb25zIGZvciBtYXJrZXRpbmcgYXV0b21hdGlvbicsXG4gICAgICAgICAgICAgIH0sXG4gICAgICAgICAgICAgIHtcbiAgICAgICAgICAgICAgICBuYW1lOiAnU29jaWFsIE1lZGlhIE1hbmFnZXInLFxuICAgICAgICAgICAgICAgIHJvbGU6ICdDb250ZW50IFN0cmF0ZWdpc3QnLFxuICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uOiAnRXhwZXJ0IGluIHNvY2lhbCBtZWRpYSBtYXJrZXRpbmcgYW5kIGNvbW11bml0eSBidWlsZGluZycsXG4gICAgICAgICAgICAgIH0sXG4gICAgICAgICAgICAgIHtcbiAgICAgICAgICAgICAgICBuYW1lOiAnUGFpZCBBZHMgU3BlY2lhbGlzdCcsXG4gICAgICAgICAgICAgICAgcm9sZTogJ0dvb2dsZSAmIE1ldGEgQWRzIEV4cGVydCcsXG4gICAgICAgICAgICAgICAgZGVzY3JpcHRpb246ICdTcGVjaWFsaXppbmcgaW4gaGlnaC1ST0kgcGFpZCBhZHZlcnRpc2luZyBjYW1wYWlnbnMnLFxuICAgICAgICAgICAgICB9LFxuICAgICAgICAgICAgICB7XG4gICAgICAgICAgICAgICAgbmFtZTogJ0NsaWVudCBTdWNjZXNzIE1hbmFnZXInLFxuICAgICAgICAgICAgICAgIHJvbGU6ICdBY2NvdW50IE1hbmFnZXInLFxuICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uOiAnRGVkaWNhdGVkIHRvIGVuc3VyaW5nIGV2ZXJ5IGNsaWVudCBhY2hpZXZlcyB0aGVpciBnb2FscycsXG4gICAgICAgICAgICAgIH0sXG4gICAgICAgICAgICBdLm1hcCgobWVtYmVyLCBpZHgpID0+IChcbiAgICAgICAgICAgICAgPEdsYXNzQ2FyZCBrZXk9e2lkeH0gZGVsYXk9e2lkeH0gaG92ZXI+XG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJ3LTE2IGgtMTYgcm91bmRlZC1mdWxsIGJnLWdyYWRpZW50LXRvLWJyIGZyb20tY3lhbi01MDAgdG8tdmlvbGV0LTYwMCBtYi00XCI+PC9kaXY+XG4gICAgICAgICAgICAgICAgPGgzIGNsYXNzTmFtZT1cInRleHQtbGcgZm9udC1zZW1pYm9sZCB0ZXh0LWZvcmVncm91bmQgbWItMVwiPnttZW1iZXIubmFtZX08L2gzPlxuICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQtc20gdGV4dC1jeWFuLTYwMCBmb250LXNlbWlib2xkIG1iLTJcIj57bWVtYmVyLnJvbGV9PC9wPlxuICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQtc20gdGV4dC1mb3JlZ3JvdW5kLzcwXCI+e21lbWJlci5kZXNjcmlwdGlvbn08L3A+XG4gICAgICAgICAgICAgIDwvR2xhc3NDYXJkPlxuICAgICAgICAgICAgKSl9XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9zZWN0aW9uPlxuXG4gICAgICB7LyogV2h5IENob29zZSBVcyAqL31cbiAgICAgIDxzZWN0aW9uIGNsYXNzTmFtZT1cImJnLWdyYWRpZW50LXRvLWIgZnJvbS13aGl0ZSB0by1zbGF0ZS01MCBweS0yNFwiPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbnRhaW5lclwiPlxuICAgICAgICAgIDxTZWN0aW9uSGVhZGluZ1xuICAgICAgICAgICAgdGl0bGU9XCJXaHkgQ2hvb3NlIE5JV1wiXG4gICAgICAgICAgICBzdWJ0aXRsZT1cIk91ciBDb21wZXRpdGl2ZSBBZHZhbnRhZ2VcIlxuICAgICAgICAgICAgZGVzY3JpcHRpb249XCJIZXJlJ3Mgd2hhdCBzZXRzIHVzIGFwYXJ0XCJcbiAgICAgICAgICAvPlxuXG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJncmlkIGdyaWQtY29scy0xIG1kOmdyaWQtY29scy0yIGdhcC04IG10LTE2XCI+XG4gICAgICAgICAgICB7W1xuICAgICAgICAgICAgICB7XG4gICAgICAgICAgICAgICAgdGl0bGU6ICdBZmZvcmRhYmxlIFByaWNpbmcnLFxuICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uOiAnUHJlbWl1bSBzZXJ2aWNlcyBhdCBwcmljZXMgdGhhdCB3b3JrIGZvciBncm93aW5nIGJ1c2luZXNzZXMuIFN0YXJ0aW5nIGZyb20gw6LigJrCuTMsOTkwL3dlZWsuJyxcbiAgICAgICAgICAgICAgfSxcbiAgICAgICAgICAgICAge1xuICAgICAgICAgICAgICAgIHRpdGxlOiAnUXVpY2sgU2V0dXAnLFxuICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uOiAnR2V0IHN0YXJ0ZWQgaW4gNDggaG91cnMuIE5vIGxvbmcgb25ib2FyZGluZyBwcm9jZXNzIG9yIGRlbGF5cy4nLFxuICAgICAgICAgICAgICB9LFxuICAgICAgICAgICAgICB7XG4gICAgICAgICAgICAgICAgdGl0bGU6ICdUcmFuc3BhcmVudCBSZXBvcnRpbmcnLFxuICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uOiAnUmVhbC10aW1lIGRhc2hib2FyZHMgYW5kIG1vbnRobHkgcmVwb3J0cy4gWW91IGFsd2F5cyBrbm93IHdoYXRcXCdzIHdvcmtpbmcuJyxcbiAgICAgICAgICAgICAgfSxcbiAgICAgICAgICAgICAge1xuICAgICAgICAgICAgICAgIHRpdGxlOiAnQUktUG93ZXJlZCBTeXN0ZW1zJyxcbiAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbjogJ0xldmVyYWdlIGN1dHRpbmctZWRnZSBBSSB0ZWNobm9sb2d5IGZvciBmYXN0ZXIsIHNtYXJ0ZXIgbWFya2V0aW5nLicsXG4gICAgICAgICAgICAgIH0sXG4gICAgICAgICAgICAgIHtcbiAgICAgICAgICAgICAgICB0aXRsZTogJ1Byb3ZlbiBSZXN1bHRzJyxcbiAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbjogJ0h1bmRyZWRzIG9mIHN1Y2Nlc3NmdWwgY2FtcGFpZ25zIGFjcm9zcyBhbGwgaW5kdXN0cmllcy4gU2VlIG91ciBjYXNlIHN0dWRpZXMuJyxcbiAgICAgICAgICAgICAgfSxcbiAgICAgICAgICAgICAge1xuICAgICAgICAgICAgICAgIHRpdGxlOiAnRGVkaWNhdGVkIFN1cHBvcnQnLFxuICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uOiAnWW91ciBvd24gYWNjb3VudCBtYW5hZ2VyIGF2YWlsYWJsZSAyNC83IHRvIGhlbHAgeW91IHN1Y2NlZWQuJyxcbiAgICAgICAgICAgICAgfSxcbiAgICAgICAgICAgIF0ubWFwKChpdGVtLCBpZHgpID0+IChcbiAgICAgICAgICAgICAgPFNjcm9sbFJldmVhbCBrZXk9e2lkeH0gZGVsYXk9e2lkeH0gZGlyZWN0aW9uPVwidXBcIj5cbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImdsYXNzLWNhcmQgcC04XCI+XG4gICAgICAgICAgICAgICAgICA8aDMgY2xhc3NOYW1lPVwidGV4dC1sZyBmb250LXNlbWlib2xkIHRleHQtZm9yZWdyb3VuZCBtYi0zXCI+e2l0ZW0udGl0bGV9PC9oMz5cbiAgICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQtZm9yZWdyb3VuZC83MFwiPntpdGVtLmRlc2NyaXB0aW9ufTwvcD5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgPC9TY3JvbGxSZXZlYWw+XG4gICAgICAgICAgICApKX1cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L3NlY3Rpb24+XG5cbiAgICAgIHsvKiBDVEEgKi99XG4gICAgICA8c2VjdGlvbiBjbGFzc05hbWU9XCJweS0yNFwiPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbnRhaW5lclwiPlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZ2xhc3MtY2FyZCBwLTEyIG1kOnAtMTYgdGV4dC1jZW50ZXJcIj5cbiAgICAgICAgICAgIDxoMiBjbGFzc05hbWU9XCJ0ZXh0LTR4bCBtZDp0ZXh0LTV4bCBmb250LWJvbGQgdGV4dC1mb3JlZ3JvdW5kIG1iLTZcIj5cbiAgICAgICAgICAgICAgUmVhZHkgdG8gSm9pbiBPdXIgU3VjY2VzcyBTdG9yaWVzP1xuICAgICAgICAgICAgPC9oMj5cbiAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQteGwgdGV4dC1mb3JlZ3JvdW5kLzcwIG1iLTggbWF4LXctMnhsIG14LWF1dG9cIj5cbiAgICAgICAgICAgICAgTGV0J3Mgd29yayB0b2dldGhlciB0byBncm93IHlvdXIgYnVzaW5lc3MgYW5kIGFjaGlldmUgeW91ciBnb2Fscy5cbiAgICAgICAgICAgIDwvcD5cbiAgICAgICAgICAgIDxHcmFkaWVudEJ1dHRvbiBocmVmPVwiL2NvbnRhY3RcIiBzaXplPVwibGdcIj5cbiAgICAgICAgICAgICAgR2V0IFN0YXJ0ZWQgVG9kYXlcbiAgICAgICAgICAgIDwvR3JhZGllbnRCdXR0b24+XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9zZWN0aW9uPlxuICAgIDwvZGl2PlxuICApO1xufVxuXHJcbiJdLCJmaWxlIjoiQzovVXNlcnMvYmFkZ3UvRGVza3RvcC9hbGwgbmV3IG5pdy9jbGllbnQvc3JjL3BhZ2VzL0Fib3V0LnRzeCJ9

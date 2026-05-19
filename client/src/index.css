@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500&family=STIX+Two+Text:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -481,6 +481,54 @@
     padding: 0;
   }
 
+  .retro-page{min-height:100vh;overflow:hidden;color:#f3eadf;background:radial-gradient(circle at 68% 22%,rgba(180,128,92,.18),transparent 26%),radial-gradient(circle at 18% 8%,rgba(84,58,36,.24),transparent 24%),linear-gradient(180deg,#070604 0%,#0c0907 42%,#090705 100%);font-family:'STIX Two Text',serif}
+  .retro-page::before{content:"";position:fixed;inset:0;z-index:20;pointer-events:none;opacity:.08;mix-blend-mode:screen;background-image:radial-gradient(rgba(255,255,255,.24) 1px,transparent 1px),radial-gradient(rgba(255,255,255,.12) 1px,transparent 1px);background-position:0 0,12px 12px;background-size:24px 24px}
+  .retro-header{position:fixed;inset:0 0 auto;z-index:40;color:#f3eadf;background:linear-gradient(180deg,rgba(8,6,4,.9),rgba(8,6,4,.48),transparent)}
+  .retro-header::after{content:"";position:absolute;right:0;bottom:0;left:0;height:1px;background:rgba(243,234,223,.12)}
+  .retro-header-inner{display:flex;width:min(1200px,calc(100% - 4rem));height:6.55rem;margin:0 auto;align-items:center;justify-content:space-between}
+  .retro-brand{display:inline-flex;align-items:center;gap:.8rem;color:#f3eadf;font-size:1.3rem;font-style:italic;letter-spacing:.04em;filter:drop-shadow(1px 0 rgba(255,90,44,.35)) drop-shadow(-1px 0 rgba(80,190,255,.35))}
+  .retro-brand span{display:inline-block;width:2.3rem;height:1rem;background:repeating-linear-gradient(180deg,#f0dfcf 0 2px,transparent 2px 5px);border-radius:999px;filter:drop-shadow(0 0 8px rgba(255,228,205,.34))}
+  .retro-nav{align-items:center;gap:2.5rem}.retro-nav-link,.retro-call-link{color:rgba(243,234,223,.96);font-size:1.08rem;text-decoration-line:underline;text-decoration-thickness:1px;text-underline-offset:.24rem;transition:opacity .18s ease}.retro-nav-link:hover,.retro-call-link:hover{opacity:.74}.retro-call-link{display:inline-flex;align-items:center;gap:.7rem}.retro-menu-toggle{color:#f3eadf}.retro-mobile-panel{border-top:1px solid rgba(243,234,223,.14);background:rgba(8,6,4,.94);backdrop-filter:blur(18px)}.retro-mobile-nav{display:flex;flex-direction:column;gap:.9rem;padding:1rem 2rem 1.25rem}.retro-mobile-link{color:#f3eadf;font-size:1.1rem}
+  .standard-header{position:fixed;inset:0 0 auto;z-index:40;border-bottom:1px solid rgba(255,255,255,.55);background:rgba(255,255,255,.58);box-shadow:0 14px 40px rgba(42,69,111,.08);backdrop-filter:blur(24px)}
+  .retro-hero{position:relative;min-height:220svh;isolation:isolate;overflow:hidden}.retro-hero-scene{position:sticky;top:0;height:100svh;background:linear-gradient(90deg,rgba(7,6,4,.98) 0%,rgba(7,6,4,.9) 26%,rgba(7,6,4,.35) 51%,rgba(7,6,4,.04) 100%),url('/niw-hero-final-crt.png') center/cover no-repeat;transform-origin:68% 58%;will-change:transform}
+  .retro-hero-fog,.retro-hero-noise,.retro-hero-scan{position:absolute;inset:0;pointer-events:none}.retro-hero-fog{z-index:2;background:linear-gradient(90deg,rgba(0,0,0,.34) 0%,rgba(0,0,0,.16) 26%,transparent 58%),radial-gradient(ellipse at 70% 84%,rgba(141,247,255,.28),transparent 38%),radial-gradient(ellipse at 73% 34%,rgba(151,231,238,.20),transparent 32%),radial-gradient(ellipse at 59% 55%,rgba(231,213,188,.10),transparent 38%),linear-gradient(180deg,rgba(255,242,222,.03),transparent 24%,rgba(0,0,0,.22))}.retro-screen-wipe{position:absolute;z-index:4;left:63.5vw;top:27vh;width:min(24vw,23rem);height:min(17vw,16rem);border-radius:2.2rem;background:radial-gradient(circle at 50% 45%,rgba(184,252,255,.96),rgba(76,205,221,.78) 46%,rgba(23,55,74,.92) 100%);box-shadow:0 0 42px rgba(113,239,255,.48),0 0 130px rgba(97,214,233,.30);transform-origin:center center;mix-blend-mode:screen;will-change:transform,opacity}.retro-screen-wipe::after{content:"";position:absolute;inset:-12%;border-radius:inherit;background:repeating-linear-gradient(180deg,rgba(255,255,255,.16) 0 1px,transparent 1px 5px);opacity:.28}
+.retro-hero-noise{z-index:3;opacity:.08;mix-blend-mode:screen;background-image:radial-gradient(rgba(255,255,255,.24) 1px,transparent 1px),radial-gradient(rgba(255,255,255,.12) 1px,transparent 1px);background-position:0 0,12px 12px;background-size:24px 24px}.retro-hero-scan{z-index:5;background:linear-gradient(180deg,transparent 0%,rgba(131,236,247,.12) 44%,rgba(131,236,247,.22) 50%,transparent 58%);mix-blend-mode:screen}
+  .retro-hero-inner{position:relative;z-index:4;display:grid;width:min(1200px,calc(100% - 4rem));min-height:100svh;margin:-100svh auto 0;grid-template-columns:minmax(0,.78fr) minmax(30rem,.94fr);align-items:center;gap:2.25rem;padding-top:7rem}.retro-hero-copy h1{max-width:52rem;font-size:clamp(3.6rem,5.45vw,6.55rem);font-weight:500;line-height:.94;letter-spacing:.012em;text-shadow:1.7px 0 rgba(255,93,48,.5),-1.7px 0 rgba(79,185,255,.4),0 0 12px rgba(255,235,214,.34),0 0 42px rgba(255,235,214,.2)}.hero-line-nowrap{white-space:nowrap}.retro-title-compact{display:none}.retro-title-desktop{display:block}.retro-hero-copy p{max-width:34rem;margin-top:1.55rem;color:rgba(243,234,223,.78);font-size:1.08rem;line-height:1.68}.retro-scroll-link{display:inline-flex;align-items:center;gap:.8rem;margin-top:1.85rem;color:#f3eadf;font-size:1.2rem;text-decoration-line:underline;text-decoration-thickness:1px;text-underline-offset:.28rem}.retro-hand-cues{margin-left:1.1rem;font-size:1.15em;letter-spacing:.35rem;text-decoration:none;filter:drop-shadow(1px 0 rgba(255,90,44,.55)) drop-shadow(-1px 0 rgba(80,190,255,.48))}.retro-hero-object{min-height:1px}.retro-hero-reveal{position:absolute;right:2rem;bottom:11rem;z-index:6;display:flex;align-items:center;gap:1.2rem;color:rgba(243,234,223,.86);font-family:'IBM Plex Mono',monospace;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase}.retro-hero-reveal span{display:block;width:5rem;height:1px;background:rgba(243,234,223,.4)}
+  .retro-section{width:min(1200px,calc(100% - 4rem));margin:0 auto;padding:7rem 0}.retro-section-heading p,.retro-contact p,.retro-transition-copy p,.retro-story-copy p{margin-bottom:1rem;color:rgba(243,234,223,.64);font-family:'IBM Plex Mono',monospace;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase}.retro-section-heading h2,.retro-story h2,.retro-contact h2{max-width:48rem;font-size:clamp(2rem,3vw,3.2rem);font-weight:500;line-height:1.08}.retro-work{overflow:hidden}.retro-work-grid{display:grid;grid-template-columns:repeat(3,minmax(18rem,1fr));gap:1.25rem;margin-top:2.6rem;will-change:transform}.retro-work-card{min-height:16rem;border:1px solid rgba(243,234,223,.16);background:linear-gradient(180deg,rgba(255,246,236,.065),rgba(255,246,236,.022));padding:1.5rem;box-shadow:inset 0 0 0 1px rgba(255,255,255,.025),0 24px 60px rgba(0,0,0,.2)}.retro-work-card span{color:rgba(243,234,223,.56);font-family:'IBM Plex Mono',monospace;font-size:.76rem}.retro-work-card h3{margin-top:3rem;font-size:1.55rem;font-weight:500}.retro-work-card p{margin-top:1rem;color:rgba(243,234,223,.72);line-height:1.7}
+  .retro-transition-panel{width:min(1200px,calc(100% - 4rem));margin:-1rem auto 0;padding:1.4rem 0 7rem;border-top:1px solid rgba(243,234,223,.16)}.retro-transition-copy{display:flex;justify-content:space-between;gap:2rem;align-items:end}.retro-transition-copy h2{max-width:34rem;font-size:clamp(1.7rem,2.45vw,2.55rem);font-weight:500;line-height:1.08}.retro-transition-rail{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:2.2rem}.retro-transition-rail span{display:flex;flex-direction:column;gap:.55rem;border-top:1px solid rgba(243,234,223,.2);padding-top:.9rem;color:rgba(243,234,223,.88);font-size:1.15rem}.retro-transition-rail i{color:rgba(243,234,223,.52);font-family:'IBM Plex Mono',monospace;font-size:.72rem;font-style:normal;letter-spacing:.16em}.retro-story{display:grid;grid-template-columns:1fr 1fr;gap:3rem}.retro-story-body{display:grid;gap:1.2rem;align-content:end;color:rgba(243,234,223,.76);font-size:1.08rem;line-height:1.8}.retro-capability-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem;margin-top:2.3rem}.retro-capability-grid span{border-top:1px solid rgba(243,234,223,.2);padding-top:1rem;font-size:1.2rem}.retro-contact{padding-bottom:9rem}.retro-contact-actions{display:flex;gap:1.4rem;margin-top:2rem}.retro-contact-actions a{color:#f3eadf;text-decoration-line:underline;text-underline-offset:.28rem}
+  .retro-boot-overlay{position:fixed;inset:0;z-index:60;display:grid;place-items:center;background:#050403}.retro-boot-card{display:flex;width:min(62rem,calc(100% - 2rem));min-height:min(78vh,40rem);flex-direction:column;align-items:center;justify-content:center;border-radius:2.2rem;color:#eadfca;background:radial-gradient(circle at 50% 35%,rgba(110,108,236,.36),transparent 28%),linear-gradient(180deg,#111373,#1a1a83 48%,#141460 100%);box-shadow:inset 0 0 0 2px rgba(232,214,182,.08),inset 0 0 80px rgba(0,0,0,.5),0 0 0 1px rgba(31,20,10,.8),0 0 40px rgba(59,57,178,.2);text-align:center}.retro-boot-logo{display:flex;align-items:center;gap:1rem;font-size:clamp(3rem,7vw,5.4rem);font-style:italic;letter-spacing:.04em}.retro-boot-logo span{display:inline-block;width:5.6rem;height:2.2rem;background:repeating-linear-gradient(180deg,#eadfca 0 3px,transparent 3px 7px);border-radius:999px}.retro-boot-card p,.retro-boot-card small{font-family:'IBM Plex Mono',monospace;letter-spacing:.12em}.retro-boot-card p:first-of-type{margin-top:2rem}.retro-loader{display:flex;gap:.18rem;width:min(28rem,calc(100% - 3rem));margin:3rem 0 5rem;padding:.28rem;border:2px solid rgba(234,223,202,.88)}.retro-loader span{flex:1;height:1.75rem;background:#eadfca}
+
+
+  @media (min-width:1024px){
+    .retro-work{position:relative;width:100%;max-width:none;min-height:105svh;margin-top:-2rem;overflow:hidden;padding:8rem 0 7rem;background:radial-gradient(circle at 50% 8%,rgba(95,154,213,.54),transparent 30%),linear-gradient(180deg,#060605 0%,#111933 32%,#5d92c6 100%)}
+    .retro-work::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 50% 18%,rgba(255,255,255,.12),transparent 34%),linear-gradient(180deg,rgba(0,0,0,.14),transparent 45%,rgba(0,0,0,.22));z-index:0}
+    .retro-work .retro-section-heading{position:relative;z-index:2;width:min(1200px,calc(100% - 4rem));margin:0 auto;text-align:center;transform:translateY(-1rem)}
+    .retro-work .retro-section-heading h2{max-width:62rem;margin:0 auto;font-size:clamp(3.8rem,7.4vw,8.8rem);line-height:.9;text-shadow:2px 0 rgba(255,80,45,.42),-2px 0 rgba(72,203,255,.44),0 0 32px rgba(255,244,224,.2)}
+    .retro-work-grid{position:relative;z-index:1;display:flex;width:max-content;gap:0;margin-top:4rem;padding-left:7vw;filter:drop-shadow(0 36px 44px rgba(0,0,0,.52));transform:rotate(-8deg)}
+    .retro-work-card{position:relative;width:34rem;min-height:21rem;flex:0 0 auto;margin-right:-.9rem;border:0;border-radius:.16rem;background:linear-gradient(180deg,rgba(7,6,4,.98) 0 10%,transparent 10% 90%,rgba(7,6,4,.98) 90% 100%),linear-gradient(135deg,rgba(242,236,222,.94),rgba(84,106,115,.34));padding:3.2rem 2rem;color:#101011;transform:rotate(4deg)}
+    .retro-work-card:nth-child(2){z-index:2;transform:rotate(-1deg) scale(1.08)}
+    .retro-work-card:nth-child(3){transform:rotate(5deg)}
+    .retro-work-card::before,.retro-work-card::after{content:"";position:absolute;right:0;left:0;height:.9rem;background:repeating-linear-gradient(90deg,#050505 0 .58rem,transparent .58rem 1.18rem);opacity:.96}
+    .retro-work-card::before{top:.5rem}.retro-work-card::after{bottom:.5rem}
+    .retro-work-card span,.retro-work-card p{color:rgba(16,16,17,.72)}
+    .retro-work-card h3{color:#101011;font-size:2rem;text-shadow:1px 0 rgba(255,80,45,.25),-1px 0 rgba(72,203,255,.25)}
+  }
+
+  @media (min-width:768px) and (max-width:1023px){
+    .retro-header-inner{height:5.1rem;width:min(100% - 3.5rem,100%)}
+    .retro-hero{min-height:210svh}
+    .retro-hero-scene{background:linear-gradient(90deg,rgba(7,6,4,.98) 0%,rgba(7,6,4,.86) 28%,rgba(7,6,4,.28) 58%,rgba(7,6,4,.03) 100%),url('/niw-hero-final-crt.png') right center/auto 88% no-repeat;transform-origin:78% 60%}
+    .retro-hero-fog{background:linear-gradient(90deg,rgba(0,0,0,.30) 0%,rgba(0,0,0,.12) 30%,transparent 62%),radial-gradient(ellipse at 74% 84%,rgba(141,247,255,.24),transparent 38%),radial-gradient(ellipse at 76% 34%,rgba(151,231,238,.16),transparent 34%),linear-gradient(180deg,rgba(255,242,222,.03),transparent 22%,rgba(0,0,0,.18))}.retro-screen-wipe{left:69vw;top:24vh;width:23vw;height:17vw}
+    .retro-hero-inner{width:min(100% - 3.5rem,100%);grid-template-columns:minmax(0,25.5rem) 1fr;gap:1rem;padding-top:5.8rem;align-items:center}
+    .retro-hero-copy{display:grid;justify-items:start;text-align:left}.retro-title-desktop{display:block}.retro-title-compact{display:none}
+    .retro-hero-copy h1{max-width:25.5rem;font-size:clamp(3.15rem,6.7vw,4.25rem);line-height:.98;letter-spacing:.004em}
+    .retro-hero-copy p{max-width:23rem;font-size:.98rem;line-height:1.55;margin-top:1.25rem}
+    .retro-scroll-link{font-size:1.05rem;margin-top:1.35rem;gap:.55rem}.retro-hand-cues{margin-left:.65rem;letter-spacing:.22rem}
+  }
+
+  @media (max-width:767px){.retro-nav{display:none!important}.retro-header .retro-call-link{display:none}.retro-header-inner{height:5.1rem;width:min(100% - 3.5rem,100%)}.retro-hero{min-height:210svh}.retro-hero-scene{background:linear-gradient(180deg,rgba(7,6,4,.56) 0%,rgba(7,6,4,.18) 34%,rgba(7,6,4,.06) 68%,rgba(7,6,4,.42) 100%),url('/niw-hero-final-crt.png') 69% bottom/auto 86% no-repeat;transform-origin:50% 86%}.retro-hero-fog{background:radial-gradient(ellipse at 52% 84%,rgba(138,245,255,.32),transparent 34%),radial-gradient(circle at 56% 58%,rgba(124,220,230,.2),transparent 34%),linear-gradient(180deg,rgba(0,0,0,.04),transparent 24%,rgba(0,0,0,.18))}.retro-screen-wipe{left:50%;top:50vh;width:42vw;height:29vw;translate:-50% 0}.retro-hero-inner,.retro-section{width:min(100% - 2rem,100%)}.retro-hero-inner{grid-template-columns:1fr;align-content:start;justify-items:center;padding-top:clamp(5.4rem,8.2vh,6rem);padding-bottom:4rem}.retro-hero-copy{display:grid;justify-items:center;text-align:center}.retro-title-desktop{display:none}.retro-title-compact{display:block}.retro-hero-copy h1{max-width:min(54rem,96vw);font-size:clamp(2.45rem,10.2vw,3.45rem);line-height:1.02;letter-spacing:0}.retro-hero-copy p{display:none}.retro-scroll-link{justify-content:center;margin-top:clamp(1rem,2.25vh,1.55rem);font-size:clamp(1.05rem,3vw,1.36rem);text-align:center}.retro-hero-reveal{right:1rem;bottom:4.8rem;left:1rem;justify-content:center}.retro-work{width:100%;margin:0;overflow:hidden;padding:4.8rem 1rem 6rem;background:radial-gradient(circle at 48% 8%,rgba(102,165,226,.55),transparent 30%),linear-gradient(180deg,#090807 0%,#10182e 34%,#5c91c4 100%)}.retro-work .retro-section-heading{text-align:center}.retro-work .retro-section-heading h2{margin-inline:auto;font-size:clamp(2.05rem,7vw,3.7rem);text-shadow:1px 0 rgba(255,70,40,.48),-1px 0 rgba(72,204,255,.44),0 0 22px rgba(255,244,224,.18)}.retro-work-grid{display:flex;width:max-content;max-width:none;gap:0;margin-top:3.4rem;padding-right:1rem;filter:drop-shadow(0 30px 40px rgba(0,0,0,.5));transform-origin:50% 50%}.retro-work-card{position:relative;width:min(76vw,26rem);min-height:min(58vw,19rem);flex:0 0 auto;margin-right:-.8rem;border:0;border-radius:.18rem;background:linear-gradient(180deg,rgba(7,6,4,.96) 0 10%,transparent 10% 90%,rgba(7,6,4,.96) 90% 100%),linear-gradient(135deg,rgba(241,234,218,.92),rgba(62,87,100,.34));padding:2.5rem 1.4rem;transform:rotate(-7deg)}.retro-work-card:nth-child(2){z-index:2;transform:rotate(2deg) scale(1.06)}.retro-work-card:nth-child(3){transform:rotate(8deg)}.retro-work-card::before,.retro-work-card::after{content:"";position:absolute;right:0;left:0;height:.7rem;background:repeating-linear-gradient(90deg,#0b0907 0 .5rem,transparent .5rem 1.05rem);opacity:.92}.retro-work-card::before{top:.45rem}.retro-work-card::after{bottom:.45rem}.retro-work-card h3{margin-top:2rem;color:#101011;font-size:clamp(1.4rem,5vw,2rem);text-shadow:1px 0 rgba(255,70,40,.35),-1px 0 rgba(72,204,255,.35)}.retro-work-card span,.retro-work-card p{color:rgba(16,16,17,.72)}.retro-story,.retro-capability-grid,.retro-transition-rail{grid-template-columns:1fr}.retro-transition-panel{width:min(100% - 2rem,100%)}.retro-transition-copy{display:grid;gap:1rem}}
+  @media (max-width:560px){.retro-header-inner{width:min(100% - 2rem,100%)}.retro-hero-copy h1{max-width:96vw;font-size:clamp(2.72rem,13vw,4rem)}.retro-scroll-link{max-width:92vw;flex-wrap:wrap;gap:.45rem .7rem}}
+
   /* Parallax Layer Base */
   .parallax-layer {
     @apply will-change-transform;
@@ -501,5 +549,545 @@
     * {
       @apply !animate-none !transition-none;
     }
+  }
+}
+
+
+/* Desktop-first Shader-style scroll refinements */
+.retro-hero-scene{
+  transform-origin:74% 38%;
+}
+
+.retro-screen-wipe{
+  position:fixed;
+  z-index:6;
+  left:63.5vw;
+  top:24.5vh;
+  width:min(24vw,23rem);
+  height:min(17vw,16rem);
+  border-radius:2.35rem;
+  background:
+    radial-gradient(circle at 50% 45%,rgba(190,251,255,.94),rgba(73,199,215,.76) 42%,rgba(26,56,82,.95) 100%);
+  box-shadow:
+    0 0 34px rgba(109,230,244,.40),
+    0 0 120px rgba(89,204,224,.22),
+    inset 0 0 42px rgba(255,255,255,.14);
+  transform-origin:center center;
+  mix-blend-mode:screen;
+  pointer-events:none;
+}
+
+.retro-hero-reveal{
+  position:fixed;
+  right:2rem;
+  bottom:7.5rem;
+}
+
+@media (min-width:1024px){
+  .retro-hero-scene{
+    background:
+      linear-gradient(90deg,rgba(7,6,4,.98) 0%,rgba(7,6,4,.88) 24%,rgba(7,6,4,.26) 52%,rgba(7,6,4,.03) 100%),
+      url('/niw-hero-final-crt.png') right center/auto 91% no-repeat;
+    transform-origin:73.5% 36.5%;
+  }
+
+  .retro-hero-inner{
+    width:min(1240px,calc(100% - 4rem));
+    grid-template-columns:minmax(0,.86fr) minmax(31rem,.92fr);
+    gap:1.6rem;
+  }
+
+  .retro-hero-copy h1{
+    max-width:48rem;
+    font-size:clamp(4.1rem,5.38vw,6.38rem);
+    line-height:.94;
+  }
+
+  .retro-hero-copy p{
+    max-width:36rem;
+  }
+
+  .retro-work{
+    min-height:112svh;
+    margin-top:-.25rem;
+    padding-top:8.6rem;
+    background:
+      radial-gradient(circle at 50% 10%,rgba(123,180,232,.58),transparent 30%),
+      radial-gradient(ellipse at 50% 48%,rgba(73,141,203,.34),transparent 42%),
+      linear-gradient(180deg,#060605 0%,#101832 28%,#5a91c9 100%);
+  }
+
+  .retro-work-grid{
+    margin-top:4.2rem;
+    padding-left:5.5vw;
+    transform:rotate(-7.5deg);
+  }
+
+  .retro-work-card{
+    width:32.5rem;
+    min-height:20.5rem;
+  }
+}
+
+@media (min-width:768px) and (max-width:1023px){
+  .retro-hero-scene{
+    transform-origin:74% 38%;
+  }
+  .retro-screen-wipe{
+    left:66vw;
+    top:25vh;
+    width:24vw;
+    height:17vw;
+  }
+}
+
+@media (max-width:767px){
+  .retro-hero-scene{
+    transform-origin:50% 70%;
+  }
+  .retro-screen-wipe{
+    left:50%;
+    top:45vh;
+    width:42vw;
+    height:29vw;
+    translate:-50% 0;
+  }
+  .retro-hero-reveal{
+    position:absolute;
+    right:1rem;
+    bottom:4.8rem;
+  }
+}
+
+/* Scroll pass 2: keep camera on CRT screen and bring work section earlier */
+.retro-hero{
+  min-height:182svh;
+}
+
+@media (min-width:1024px){
+  .retro-hero{
+    min-height:182svh;
+  }
+
+  .retro-hero-scene{
+    background:
+      linear-gradient(90deg,rgba(7,6,4,.98) 0%,rgba(7,6,4,.88) 24%,rgba(7,6,4,.25) 52%,rgba(7,6,4,.035) 100%),
+      url('/niw-hero-final-crt.png') right center/auto 88.5% no-repeat;
+    transform-origin:72.8% 36.5%;
+  }
+
+  .retro-screen-wipe{
+    left:63.1vw;
+    top:25.1vh;
+    width:min(22.6vw,21.5rem);
+    height:min(15.8vw,15rem);
+  }
+
+  .retro-work{
+    margin-top:-2.4rem;
+  }
+}
+
+@media (min-width:768px) and (max-width:1023px){
+  .retro-hero{
+    min-height:184svh;
+  }
+}
+
+@media (max-width:767px){
+  .retro-hero{
+    min-height:205svh;
+  }
+}
+
+/* Critical camera fix: the CRT scene must not release before the screen transition */
+.retro-page{
+  overflow-x:hidden;
+  overflow-y:visible;
+}
+
+.retro-hero{
+  min-height:205svh;
+  overflow:visible;
+}
+
+.retro-hero-scene{
+  position:fixed;
+  inset:0;
+  top:0;
+  height:100svh;
+  z-index:0;
+  pointer-events:none;
+  will-change:transform,opacity;
+}
+
+.retro-hero-fog,
+.retro-hero-noise,
+.retro-hero-scan{
+  position:fixed;
+  z-index:1;
+}
+
+.retro-hero-inner{
+  position:sticky;
+  top:0;
+  margin-top:0;
+  z-index:5;
+}
+
+.retro-screen-wipe{
+  z-index:7;
+}
+
+.retro-work,
+.retro-transition-panel,
+.retro-story,
+.retro-capabilities,
+.retro-contact{
+  position:relative;
+  z-index:12;
+}
+
+@media (min-width:1024px){
+  .retro-hero{
+    min-height:205svh;
+  }
+
+  .retro-hero-scene{
+    background:
+      linear-gradient(90deg,rgba(7,6,4,.98) 0%,rgba(7,6,4,.89) 24%,rgba(7,6,4,.25) 52%,rgba(7,6,4,.035) 100%),
+      url('/niw-hero-final-crt.png') right center/auto 88% no-repeat;
+    transform-origin:75.2% 40.3%;
+  }
+
+  .retro-screen-wipe{
+    left:69.5vw;
+    top:35.5vh;
+    width:min(18.6vw,19rem);
+    height:min(13.2vw,13.6rem);
+    border-radius:2rem;
+  }
+
+  .retro-work{
+    margin-top:-1px;
+    min-height:112svh;
+  }
+}
+
+/* Scroll pass 3: delay the page reveal until the CRT screen is the camera target */
+.retro-hero{
+  min-height:245svh;
+}
+
+@media (min-width:1024px){
+  .retro-hero{
+    min-height:245svh;
+  }
+}
+
+@media (min-width:768px) and (max-width:1023px){
+  .retro-hero{
+    min-height:235svh;
+  }
+}
+
+/* FINAL DESKTOP LOCK: fit hero and make scroll camera enter the CRT screen */
+@media (min-width:1024px){
+  .retro-header-inner{
+    width:min(1500px,calc(100% - 13.5rem));
+    height:6.15rem;
+  }
+
+  .retro-hero{
+    min-height:258svh;
+  }
+
+  .retro-hero-inner{
+    width:min(1500px,calc(100% - 13.5rem));
+    min-height:100svh;
+    grid-template-columns:minmax(31rem,42rem) minmax(38rem,1fr);
+    gap:2.5rem;
+    align-items:center;
+    padding-top:5.25rem;
+    padding-bottom:3.2rem;
+  }
+
+  .retro-hero-copy{
+    align-self:center;
+    transform:translateY(-.8rem);
+  }
+
+  .retro-hero-copy h1{
+    max-width:42rem;
+    font-size:clamp(4.25rem,4.75vw,5.82rem);
+    line-height:.955;
+    letter-spacing:.006em;
+  }
+
+  .retro-hero-copy p{
+    max-width:42rem;
+    margin-top:1.25rem;
+    font-size:1.02rem;
+    line-height:1.58;
+  }
+
+  .retro-scroll-link{
+    margin-top:1.35rem;
+    font-size:1.12rem;
+  }
+
+  .retro-hero-scene{
+    background:
+      linear-gradient(90deg,rgba(7,6,4,.99) 0%,rgba(7,6,4,.9) 25%,rgba(7,6,4,.22) 53%,rgba(7,6,4,.035) 100%),
+      url('/niw-hero-final-crt.png') right center/auto 82.5% no-repeat;
+    transform-origin:76.9% 42.8%;
+  }
+
+  .retro-screen-wipe{
+    left:70.8vw;
+    top:36.6vh;
+    width:min(17.4vw,18.4rem);
+    height:min(12.3vw,13rem);
+    border-radius:1.8rem;
+  }
+
+  .retro-work{
+    margin-top:0;
+    padding-top:9rem;
+  }
+}
+
+@media (min-width:1440px){
+  .retro-hero-copy h1{
+    font-size:clamp(4.35rem,4.55vw,5.9rem);
+  }
+}
+
+/* REAL CAMERA LAYER: CRT is no longer a scrolling CSS background */
+.retro-hero-scene{
+  background:none!important;
+  overflow:hidden;
+}
+
+.retro-hero-scene::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:2;
+  pointer-events:none;
+  background:
+    linear-gradient(90deg,rgba(7,6,4,.99) 0%,rgba(7,6,4,.9) 25%,rgba(7,6,4,.18) 55%,rgba(7,6,4,.02) 100%),
+    linear-gradient(180deg,rgba(0,0,0,.2),transparent 28%,rgba(0,0,0,.18) 100%);
+}
+
+.retro-hero-image{
+  position:absolute;
+  inset:-2.5%;
+  z-index:1;
+  width:105%;
+  height:105%;
+  object-fit:cover;
+  object-position:center center;
+  max-width:none;
+  user-select:none;
+  pointer-events:none;
+  transform-origin:76.9% 42.8%;
+  will-change:transform;
+}
+
+@media (min-width:1024px){
+  .retro-hero-image{
+    inset:-3% -2% -3% -2%;
+    width:104%;
+    height:106%;
+    object-fit:cover;
+    object-position:center center;
+    transform-origin:76.9% 42.8%;
+  }
+}
+
+@media (min-width:1600px){
+  .retro-hero-image{
+    object-position:center center;
+  }
+}
+
+@media (max-width:1023px){
+  .retro-hero-image{
+    object-position:center center;
+    transform-origin:72% 42%;
+  }
+}
+
+/* CAMERA PASS: keep CRT staged, then travel into the monitor screen */
+@media (min-width:1024px){
+  .retro-hero{
+    min-height:310svh;
+  }
+
+  .retro-hero-inner{
+    width:min(1500px,calc(100% - 12rem));
+    grid-template-columns:minmax(30rem,41rem) minmax(42rem,1fr);
+    padding-top:5.2rem;
+  }
+
+  .retro-hero-copy{
+    transform:translateY(-.4rem);
+  }
+
+  .retro-hero-copy h1{
+    max-width:41rem;
+    font-size:clamp(4.05rem,4.45vw,5.55rem);
+    line-height:.96;
+  }
+
+  .retro-hero-copy p{
+    margin-top:1.15rem;
+    font-size:1rem;
+    line-height:1.55;
+  }
+
+  .retro-scroll-link{
+    margin-top:1.2rem;
+  }
+
+  .retro-hero-scene{
+    background:none!important;
+  }
+
+  .retro-hero-image{
+    inset:-4% -3% -4% -3%;
+    width:106%;
+    height:108%;
+    object-fit:cover;
+    object-position:center center;
+    transform-origin:73.7% 38.6%;
+  }
+
+  .retro-screen-wipe{
+    left:68.9vw;
+    top:31.1vh;
+    width:min(19.8vw,20.5rem);
+    height:min(14.1vw,14.6rem);
+    border-radius:2rem;
+  }
+
+  .retro-work{
+    margin-top:0;
+  }
+}
+
+/* Portal reveal: blue page opens from the CRT screen instead of pushing from below */
+.retro-portal-preview{
+  position:fixed;
+  inset:0;
+  z-index:10;
+  pointer-events:none;
+  overflow:hidden;
+  color:#f3eadf;
+  background:
+    radial-gradient(circle at 50% 18%,rgba(143,194,244,.56),transparent 31%),
+    radial-gradient(ellipse at 50% 54%,rgba(69,135,202,.36),transparent 45%),
+    linear-gradient(180deg,#070807 0%,#111a34 28%,#5b92ca 100%);
+  will-change:clip-path,opacity;
+}
+
+.retro-portal-preview::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  opacity:.11;
+  background-image:radial-gradient(rgba(255,255,255,.3) 1px,transparent 1px);
+  background-size:22px 22px;
+}
+
+.retro-portal-preview::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:linear-gradient(180deg,rgba(0,0,0,.18),transparent 34%,rgba(0,0,0,.18));
+}
+
+.retro-portal-heading{
+  position:relative;
+  z-index:2;
+  width:min(1280px,calc(100% - 4rem));
+  margin:0 auto;
+  padding-top:17vh;
+  text-align:center;
+}
+
+.retro-portal-heading p{
+  margin-bottom:1rem;
+  font-family:'IBM Plex Mono',monospace;
+  font-size:.78rem;
+  letter-spacing:.24em;
+  text-transform:uppercase;
+  color:rgba(243,234,223,.68);
+}
+
+.retro-portal-heading h2{
+  max-width:68rem;
+  margin:0 auto;
+  font-size:clamp(4rem,7.4vw,8.9rem);
+  font-weight:500;
+  line-height:.9;
+  text-shadow:2px 0 rgba(255,80,45,.42),-2px 0 rgba(72,203,255,.44),0 0 32px rgba(255,244,224,.2);
+}
+
+.retro-portal-film{
+  position:relative;
+  z-index:2;
+  display:flex;
+  width:max-content;
+  gap:0;
+  margin-top:7vh;
+  padding-left:5.5vw;
+  filter:drop-shadow(0 36px 44px rgba(0,0,0,.52));
+  transform:rotate(-7.5deg);
+  will-change:transform;
+}
+
+.retro-portal-card{
+  position:relative;
+  width:32.5rem;
+  min-height:20.5rem;
+  flex:0 0 auto;
+  margin-right:-.9rem;
+  border:0;
+  border-radius:.16rem;
+  background:
+    linear-gradient(180deg,rgba(7,6,4,.98) 0 10%,transparent 10% 90%,rgba(7,6,4,.98) 90% 100%),
+    linear-gradient(135deg,rgba(242,236,222,.94),rgba(84,106,115,.34));
+  padding:3.2rem 2rem;
+  color:#101011;
+  transform:rotate(4deg);
+}
+
+.retro-portal-card:nth-child(2){z-index:2;transform:rotate(-1deg) scale(1.08)}
+.retro-portal-card:nth-child(3){transform:rotate(5deg)}
+.retro-portal-card::before,
+.retro-portal-card::after{
+  content:"";
+  position:absolute;
+  right:0;
+  left:0;
+  height:.9rem;
+  background:repeating-linear-gradient(90deg,#050505 0 .58rem,transparent .58rem 1.18rem);
+  opacity:.96;
+}
+.retro-portal-card::before{top:.5rem}
+.retro-portal-card::after{bottom:.5rem}
+.retro-portal-card span,
+.retro-portal-card p{color:rgba(16,16,17,.72)}
+.retro-portal-card h3{margin-top:3rem;color:#101011;font-size:2rem;font-weight:500;text-shadow:1px 0 rgba(255,80,45,.25),-1px 0 rgba(72,203,255,.25)}
+.retro-portal-card p{margin-top:1rem;line-height:1.65}
+
+@media (min-width:1024px){
+  .retro-screen-wipe{
+    left:68.5vw;
+    top:29.9vh;
   }
 }

@@ -1,0 +1,363 @@
+import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/src/pages/Affiliate.tsx");import __vite__cjsImport0_react_jsxDevRuntime from "/@fs/C:/Users/badgu/Desktop/all new niw/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=04b549ff"; const jsxDEV = __vite__cjsImport0_react_jsxDevRuntime["jsxDEV"];
+import { motion } from "/@fs/C:/Users/badgu/Desktop/all new niw/node_modules/.vite/deps/framer-motion.js?v=04b549ff";
+import SectionHeading from "/src/components/SectionHeading.tsx";
+import GlassCard from "/src/components/GlassCard.tsx";
+import GradientButton from "/src/components/GradientButton.tsx";
+import ScrollReveal from "/src/components/ScrollReveal.tsx";
+import { TrendingUp, Users, Zap, Award } from "/@fs/C:/Users/badgu/Desktop/all new niw/node_modules/.vite/deps/lucide-react.js?v=04b549ff";
+export default function Affiliate() {
+  return /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Affiliate.tsx:10", className: "min-h-screen", children: [
+    /* @__PURE__ */ jsxDEV("section", { "data-loc": "client\\src\\pages\\Affiliate.tsx:12", className: "relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-20", children: [
+      /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Affiliate.tsx:13", className: "absolute inset-0 -z-10", children: [
+        /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Affiliate.tsx:14", className: "absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-br from-cyan-200/30 to-blue-200/20 rounded-full blur-3xl" }, void 0, false, {
+          fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Affiliate.tsx",
+          lineNumber: 14,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Affiliate.tsx:15", className: "absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-br from-violet-200/30 to-purple-200/20 rounded-full blur-3xl" }, void 0, false, {
+          fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Affiliate.tsx",
+          lineNumber: 15,
+          columnNumber: 11
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Affiliate.tsx",
+        lineNumber: 13,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Affiliate.tsx:18", className: "container", children: /* @__PURE__ */ jsxDEV(
+        motion.div,
+        {
+          "data-loc": "client\\src\\pages\\Affiliate.tsx:19",
+          initial: { opacity: 0, y: 20 },
+          animate: { opacity: 1, y: 0 },
+          transition: { duration: 0.8 },
+          children: /* @__PURE__ */ jsxDEV(
+            SectionHeading,
+            {
+              "data-loc": "client\\src\\pages\\Affiliate.tsx:24",
+              title: "Affiliate Program",
+              subtitle: "Earn with NIW",
+              description: "Join our partner program and earn recurring commissions",
+              animated: false
+            },
+            void 0,
+            false,
+            {
+              fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Affiliate.tsx",
+              lineNumber: 24,
+              columnNumber: 13
+            },
+            this
+          )
+        },
+        void 0,
+        false,
+        {
+          fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Affiliate.tsx",
+          lineNumber: 19,
+          columnNumber: 11
+        },
+        this
+      ) }, void 0, false, {
+        fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Affiliate.tsx",
+        lineNumber: 18,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Affiliate.tsx",
+      lineNumber: 12,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("section", { "data-loc": "client\\src\\pages\\Affiliate.tsx:35", className: "py-24", children: /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Affiliate.tsx:36", className: "container", children: [
+      /* @__PURE__ */ jsxDEV(
+        SectionHeading,
+        {
+          "data-loc": "client\\src\\pages\\Affiliate.tsx:37",
+          title: "How It Works",
+          subtitle: "Simple & Transparent",
+          description: "Earn recurring commissions for every referral"
+        },
+        void 0,
+        false,
+        {
+          fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Affiliate.tsx",
+          lineNumber: 37,
+          columnNumber: 11
+        },
+        this
+      ),
+      /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Affiliate.tsx:43", className: "grid grid-cols-1 md:grid-cols-3 gap-8 mt-16", children: [
+        {
+          title: "Silver Plan",
+          commission: "â‚¹500",
+          recurring: "per month",
+          description: "Earn â‚¹500 for every Silver plan referral"
+        },
+        {
+          title: "Gold Plan",
+          commission: "â‚¹1,000",
+          recurring: "per month",
+          description: "Earn â‚¹1,000 for every Gold plan referral"
+        },
+        {
+          title: "Diamond Plan",
+          commission: "â‚¹2,000",
+          recurring: "per month",
+          description: "Earn â‚¹2,000 for every Diamond plan referral"
+        }
+      ].map(
+        (plan, idx) => /* @__PURE__ */ jsxDEV(ScrollReveal, { "data-loc": "client\\src\\pages\\Affiliate.tsx:64", delay: idx, direction: "up", children: /* @__PURE__ */ jsxDEV(GlassCard, { "data-loc": "client\\src\\pages\\Affiliate.tsx:65", hover: false, children: [
+          /* @__PURE__ */ jsxDEV("h3", { "data-loc": "client\\src\\pages\\Affiliate.tsx:66", className: "text-xl font-bold text-foreground mb-2", children: plan.title }, void 0, false, {
+            fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Affiliate.tsx",
+            lineNumber: 66,
+            columnNumber: 19
+          }, this),
+          /* @__PURE__ */ jsxDEV("p", { "data-loc": "client\\src\\pages\\Affiliate.tsx:67", className: "text-4xl font-bold text-transparent bg-gradient-to-r from-cyan-500 to-violet-600 bg-clip-text mb-1", children: plan.commission }, void 0, false, {
+            fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Affiliate.tsx",
+            lineNumber: 67,
+            columnNumber: 19
+          }, this),
+          /* @__PURE__ */ jsxDEV("p", { "data-loc": "client\\src\\pages\\Affiliate.tsx:70", className: "text-sm text-foreground/60 mb-4", children: plan.recurring }, void 0, false, {
+            fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Affiliate.tsx",
+            lineNumber: 70,
+            columnNumber: 19
+          }, this),
+          /* @__PURE__ */ jsxDEV("p", { "data-loc": "client\\src\\pages\\Affiliate.tsx:71", className: "text-foreground/70 text-sm", children: plan.description }, void 0, false, {
+            fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Affiliate.tsx",
+            lineNumber: 71,
+            columnNumber: 19
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Affiliate.tsx",
+          lineNumber: 65,
+          columnNumber: 17
+        }, this) }, idx, false, {
+          fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Affiliate.tsx",
+          lineNumber: 64,
+          columnNumber: 13
+        }, this)
+      ) }, void 0, false, {
+        fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Affiliate.tsx",
+        lineNumber: 43,
+        columnNumber: 11
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Affiliate.tsx",
+      lineNumber: 36,
+      columnNumber: 9
+    }, this) }, void 0, false, {
+      fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Affiliate.tsx",
+      lineNumber: 35,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("section", { "data-loc": "client\\src\\pages\\Affiliate.tsx:80", className: "surface-band py-24", children: /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Affiliate.tsx:81", className: "container", children: [
+      /* @__PURE__ */ jsxDEV(
+        SectionHeading,
+        {
+          "data-loc": "client\\src\\pages\\Affiliate.tsx:82",
+          title: "Why Join Our Affiliate Program",
+          subtitle: "Partner Benefits",
+          description: "Everything you need to succeed as an affiliate"
+        },
+        void 0,
+        false,
+        {
+          fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Affiliate.tsx",
+          lineNumber: 82,
+          columnNumber: 11
+        },
+        this
+      ),
+      /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Affiliate.tsx:88", className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16", children: [
+        { icon: TrendingUp, title: "Recurring Income", description: "Earn commissions every month for each referral" },
+        { icon: Users, title: "Easy Sharing", description: "Get your unique referral link and start earning" },
+        { icon: Zap, title: "Fast Payouts", description: "Get paid every month via bank transfer or UPI" },
+        { icon: Award, title: "Top Performer Bonuses", description: "Extra bonuses for top-performing affiliates" }
+      ].map((item, idx) => {
+        const Icon = item.icon;
+        return /* @__PURE__ */ jsxDEV(GlassCard, { "data-loc": "client\\src\\pages\\Affiliate.tsx:97", delay: idx, hover: false, children: [
+          /* @__PURE__ */ jsxDEV(Icon, { "data-loc": "client\\src\\pages\\Affiliate.tsx:98", size: 32, className: "text-transparent bg-gradient-to-r from-cyan-500 to-violet-600 bg-clip-text mb-4" }, void 0, false, {
+            fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Affiliate.tsx",
+            lineNumber: 98,
+            columnNumber: 19
+          }, this),
+          /* @__PURE__ */ jsxDEV("h3", { "data-loc": "client\\src\\pages\\Affiliate.tsx:99", className: "text-lg font-semibold text-foreground mb-2", children: item.title }, void 0, false, {
+            fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Affiliate.tsx",
+            lineNumber: 99,
+            columnNumber: 19
+          }, this),
+          /* @__PURE__ */ jsxDEV("p", { "data-loc": "client\\src\\pages\\Affiliate.tsx:100", className: "text-foreground/70 text-sm", children: item.description }, void 0, false, {
+            fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Affiliate.tsx",
+            lineNumber: 100,
+            columnNumber: 19
+          }, this)
+        ] }, idx, true, {
+          fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Affiliate.tsx",
+          lineNumber: 97,
+          columnNumber: 17
+        }, this);
+      }) }, void 0, false, {
+        fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Affiliate.tsx",
+        lineNumber: 88,
+        columnNumber: 11
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Affiliate.tsx",
+      lineNumber: 81,
+      columnNumber: 9
+    }, this) }, void 0, false, {
+      fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Affiliate.tsx",
+      lineNumber: 80,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("section", { "data-loc": "client\\src\\pages\\Affiliate.tsx:109", className: "py-24", children: /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Affiliate.tsx:110", className: "container", children: [
+      /* @__PURE__ */ jsxDEV(
+        SectionHeading,
+        {
+          "data-loc": "client\\src\\pages\\Affiliate.tsx:111",
+          title: "Get Started in 3 Steps",
+          subtitle: "Easy Process",
+          description: "Start earning today"
+        },
+        void 0,
+        false,
+        {
+          fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Affiliate.tsx",
+          lineNumber: 111,
+          columnNumber: 11
+        },
+        this
+      ),
+      /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Affiliate.tsx:117", className: "grid grid-cols-1 md:grid-cols-3 gap-8 mt-16", children: [
+        {
+          number: "01",
+          title: "Sign Up",
+          description: "Fill out the affiliate form and get approved"
+        },
+        {
+          number: "02",
+          title: "Get Your Link",
+          description: "Receive your unique referral link and marketing materials"
+        },
+        {
+          number: "03",
+          title: "Start Earning",
+          description: "Share with your network and earn recurring commissions"
+        }
+      ].map(
+        (step, idx) => /* @__PURE__ */ jsxDEV(
+          motion.div,
+          {
+            "data-loc": "client\\src\\pages\\Affiliate.tsx:135",
+            initial: { opacity: 0, y: 20 },
+            whileInView: { opacity: 1, y: 0 },
+            transition: { duration: 0.6, delay: idx * 0.1 },
+            viewport: { once: true },
+            children: /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Affiliate.tsx:142", className: "glass-card p-8 text-center", children: [
+              /* @__PURE__ */ jsxDEV("p", { "data-loc": "client\\src\\pages\\Affiliate.tsx:143", className: "text-4xl font-bold text-transparent bg-gradient-to-r from-cyan-500 to-violet-600 bg-clip-text mb-4", children: step.number }, void 0, false, {
+                fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Affiliate.tsx",
+                lineNumber: 143,
+                columnNumber: 19
+              }, this),
+              /* @__PURE__ */ jsxDEV("h3", { "data-loc": "client\\src\\pages\\Affiliate.tsx:146", className: "text-lg font-semibold text-foreground mb-2", children: step.title }, void 0, false, {
+                fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Affiliate.tsx",
+                lineNumber: 146,
+                columnNumber: 19
+              }, this),
+              /* @__PURE__ */ jsxDEV("p", { "data-loc": "client\\src\\pages\\Affiliate.tsx:147", className: "text-foreground/70 text-sm", children: step.description }, void 0, false, {
+                fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Affiliate.tsx",
+                lineNumber: 147,
+                columnNumber: 19
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Affiliate.tsx",
+              lineNumber: 142,
+              columnNumber: 17
+            }, this)
+          },
+          idx,
+          false,
+          {
+            fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Affiliate.tsx",
+            lineNumber: 135,
+            columnNumber: 13
+          },
+          this
+        )
+      ) }, void 0, false, {
+        fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Affiliate.tsx",
+        lineNumber: 117,
+        columnNumber: 11
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Affiliate.tsx",
+      lineNumber: 110,
+      columnNumber: 9
+    }, this) }, void 0, false, {
+      fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Affiliate.tsx",
+      lineNumber: 109,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("section", { "data-loc": "client\\src\\pages\\Affiliate.tsx:156", className: "surface-band py-24", children: /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Affiliate.tsx:157", className: "container", children: /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Affiliate.tsx:158", className: "glass-card p-12 md:p-16 text-center", children: [
+      /* @__PURE__ */ jsxDEV("h2", { "data-loc": "client\\src\\pages\\Affiliate.tsx:159", className: "text-4xl md:text-5xl font-bold text-foreground mb-6", children: "Ready to Earn Passive Income?" }, void 0, false, {
+        fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Affiliate.tsx",
+        lineNumber: 159,
+        columnNumber: 13
+      }, this),
+      /* @__PURE__ */ jsxDEV("p", { "data-loc": "client\\src\\pages\\Affiliate.tsx:162", className: "text-xl text-foreground/70 mb-8 max-w-2xl mx-auto", children: "Join our affiliate program and start earning recurring commissions today." }, void 0, false, {
+        fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Affiliate.tsx",
+        lineNumber: 162,
+        columnNumber: 13
+      }, this),
+      /* @__PURE__ */ jsxDEV(GradientButton, { "data-loc": "client\\src\\pages\\Affiliate.tsx:165", href: "/contact", size: "lg", children: "Apply Now" }, void 0, false, {
+        fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Affiliate.tsx",
+        lineNumber: 165,
+        columnNumber: 13
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Affiliate.tsx",
+      lineNumber: 158,
+      columnNumber: 11
+    }, this) }, void 0, false, {
+      fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Affiliate.tsx",
+      lineNumber: 157,
+      columnNumber: 9
+    }, this) }, void 0, false, {
+      fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Affiliate.tsx",
+      lineNumber: 156,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Affiliate.tsx",
+    lineNumber: 10,
+    columnNumber: 5
+  }, this);
+}
+_c = Affiliate;
+var _c;
+$RefreshReg$(_c, "Affiliate");
+import * as RefreshRuntime from "/@react-refresh";
+const inWebWorker = typeof WorkerGlobalScope !== "undefined" && self instanceof WorkerGlobalScope;
+if (import.meta.hot && !inWebWorker) {
+  if (!window.$RefreshReg$) {
+    throw new Error(
+      "@vitejs/plugin-react can't detect preamble. Something is wrong."
+    );
+  }
+  RefreshRuntime.__hmr_import(import.meta.url).then((currentExports) => {
+    RefreshRuntime.registerExportsForReactRefresh("C:/Users/badgu/Desktop/all new niw/client/src/pages/Affiliate.tsx", currentExports);
+    import.meta.hot.accept((nextExports) => {
+      if (!nextExports) return;
+      const invalidateMessage = RefreshRuntime.validateRefreshBoundaryAndEnqueueUpdate("C:/Users/badgu/Desktop/all new niw/client/src/pages/Affiliate.tsx", currentExports, nextExports);
+      if (invalidateMessage) import.meta.hot.invalidate(invalidateMessage);
+    });
+  });
+}
+function $RefreshReg$(type, id) {
+  return RefreshRuntime.register(type, "C:/Users/badgu/Desktop/all new niw/client/src/pages/Affiliate.tsx " + id);
+}
+function $RefreshSig$() {
+  return RefreshRuntime.createSignatureFunctionForTransform();
+}
+
+//# sourceMappingURL=data:application/json;base64,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dHRvbiIsIlNjcm9sbFJldmVhbCIsIlRyZW5kaW5nVXAiLCJVc2VycyIsIlphcCIsIkF3YXJkIiwiQWZmaWxpYXRlIiwib3BhY2l0eSIsInkiLCJkdXJhdGlvbiIsInRpdGxlIiwiY29tbWlzc2lvbiIsInJlY3VycmluZyIsImRlc2NyaXB0aW9uIiwibWFwIiwicGxhbiIsImlkeCIsImljb24iLCJpdGVtIiwiSWNvbiIsIm51bWJlciIsInN0ZXAiLCJkZWxheSIsIm9uY2UiLCJfYyJdLCJpZ25vcmVMaXN0IjpbXSwic291cmNlcyI6WyJBZmZpbGlhdGUudHN4Il0sInNvdXJjZXNDb250ZW50IjpbIu+7v2ltcG9ydCB7IG1vdGlvbiB9IGZyb20gJ2ZyYW1lci1tb3Rpb24nO1xuaW1wb3J0IFNlY3Rpb25IZWFkaW5nIGZyb20gJ0AvY29tcG9uZW50cy9TZWN0aW9uSGVhZGluZyc7XG5pbXBvcnQgR2xhc3NDYXJkIGZyb20gJ0AvY29tcG9uZW50cy9HbGFzc0NhcmQnO1xuaW1wb3J0IEdyYWRpZW50QnV0dG9uIGZyb20gJ0AvY29tcG9uZW50cy9HcmFkaWVudEJ1dHRvbic7XG5pbXBvcnQgU2Nyb2xsUmV2ZWFsIGZyb20gJ0AvY29tcG9uZW50cy9TY3JvbGxSZXZlYWwnO1xuaW1wb3J0IHsgVHJlbmRpbmdVcCwgVXNlcnMsIFphcCwgQXdhcmQgfSBmcm9tICdsdWNpZGUtcmVhY3QnO1xuXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBBZmZpbGlhdGUoKSB7XG4gIHJldHVybiAoXG4gICAgPGRpdiBjbGFzc05hbWU9XCJtaW4taC1zY3JlZW5cIj5cbiAgICAgIHsvKiBIZXJvIFNlY3Rpb24gKi99XG4gICAgICA8c2VjdGlvbiBjbGFzc05hbWU9XCJyZWxhdGl2ZSBtaW4taC1bNjB2aF0gZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgb3ZlcmZsb3ctaGlkZGVuIHB0LTIwXCI+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYWJzb2x1dGUgaW5zZXQtMCAtei0xMFwiPlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYWJzb2x1dGUgdG9wLTAgbGVmdC0xLzQgdy05NiBoLTk2IGJnLWdyYWRpZW50LXRvLWJyIGZyb20tY3lhbi0yMDAvMzAgdG8tYmx1ZS0yMDAvMjAgcm91bmRlZC1mdWxsIGJsdXItM3hsXCI+PC9kaXY+XG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJhYnNvbHV0ZSBib3R0b20tMS80IHJpZ2h0LTEvNCB3LTk2IGgtOTYgYmctZ3JhZGllbnQtdG8tYnIgZnJvbS12aW9sZXQtMjAwLzMwIHRvLXB1cnBsZS0yMDAvMjAgcm91bmRlZC1mdWxsIGJsdXItM3hsXCI+PC9kaXY+XG4gICAgICAgIDwvZGl2PlxuXG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY29udGFpbmVyXCI+XG4gICAgICAgICAgPG1vdGlvbi5kaXZcbiAgICAgICAgICAgIGluaXRpYWw9e3sgb3BhY2l0eTogMCwgeTogMjAgfX1cbiAgICAgICAgICAgIGFuaW1hdGU9e3sgb3BhY2l0eTogMSwgeTogMCB9fVxuICAgICAgICAgICAgdHJhbnNpdGlvbj17eyBkdXJhdGlvbjogMC44IH19XG4gICAgICAgICAgPlxuICAgICAgICAgICAgPFNlY3Rpb25IZWFkaW5nXG4gICAgICAgICAgICAgIHRpdGxlPVwiQWZmaWxpYXRlIFByb2dyYW1cIlxuICAgICAgICAgICAgICBzdWJ0aXRsZT1cIkVhcm4gd2l0aCBOSVdcIlxuICAgICAgICAgICAgICBkZXNjcmlwdGlvbj1cIkpvaW4gb3VyIHBhcnRuZXIgcHJvZ3JhbSBhbmQgZWFybiByZWN1cnJpbmcgY29tbWlzc2lvbnNcIlxuICAgICAgICAgICAgICBhbmltYXRlZD17ZmFsc2V9XG4gICAgICAgICAgICAvPlxuICAgICAgICAgIDwvbW90aW9uLmRpdj5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L3NlY3Rpb24+XG5cbiAgICAgIHsvKiBDb21taXNzaW9uIFN0cnVjdHVyZSAqL31cbiAgICAgIDxzZWN0aW9uIGNsYXNzTmFtZT1cInB5LTI0XCI+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY29udGFpbmVyXCI+XG4gICAgICAgICAgPFNlY3Rpb25IZWFkaW5nXG4gICAgICAgICAgICB0aXRsZT1cIkhvdyBJdCBXb3Jrc1wiXG4gICAgICAgICAgICBzdWJ0aXRsZT1cIlNpbXBsZSAmIFRyYW5zcGFyZW50XCJcbiAgICAgICAgICAgIGRlc2NyaXB0aW9uPVwiRWFybiByZWN1cnJpbmcgY29tbWlzc2lvbnMgZm9yIGV2ZXJ5IHJlZmVycmFsXCJcbiAgICAgICAgICAvPlxuXG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJncmlkIGdyaWQtY29scy0xIG1kOmdyaWQtY29scy0zIGdhcC04IG10LTE2XCI+XG4gICAgICAgICAgICB7W1xuICAgICAgICAgICAgICB7XG4gICAgICAgICAgICAgICAgdGl0bGU6ICdTaWx2ZXIgUGxhbicsXG4gICAgICAgICAgICAgICAgY29tbWlzc2lvbjogJ8Oi4oCawrk1MDAnLFxuICAgICAgICAgICAgICAgIHJlY3VycmluZzogJ3BlciBtb250aCcsXG4gICAgICAgICAgICAgICAgZGVzY3JpcHRpb246ICdFYXJuIMOi4oCawrk1MDAgZm9yIGV2ZXJ5IFNpbHZlciBwbGFuIHJlZmVycmFsJyxcbiAgICAgICAgICAgICAgfSxcbiAgICAgICAgICAgICAge1xuICAgICAgICAgICAgICAgIHRpdGxlOiAnR29sZCBQbGFuJyxcbiAgICAgICAgICAgICAgICBjb21taXNzaW9uOiAnw6LigJrCuTEsMDAwJyxcbiAgICAgICAgICAgICAgICByZWN1cnJpbmc6ICdwZXIgbW9udGgnLFxuICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uOiAnRWFybiDDouKAmsK5MSwwMDAgZm9yIGV2ZXJ5IEdvbGQgcGxhbiByZWZlcnJhbCcsXG4gICAgICAgICAgICAgIH0sXG4gICAgICAgICAgICAgIHtcbiAgICAgICAgICAgICAgICB0aXRsZTogJ0RpYW1vbmQgUGxhbicsXG4gICAgICAgICAgICAgICAgY29tbWlzc2lvbjogJ8Oi4oCawrkyLDAwMCcsXG4gICAgICAgICAgICAgICAgcmVjdXJyaW5nOiAncGVyIG1vbnRoJyxcbiAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbjogJ0Vhcm4gw6LigJrCuTIsMDAwIGZvciBldmVyeSBEaWFtb25kIHBsYW4gcmVmZXJyYWwnLFxuICAgICAgICAgICAgICB9LFxuICAgICAgICAgICAgXS5tYXAoKHBsYW4sIGlkeCkgPT4gKFxuICAgICAgICAgICAgICA8U2Nyb2xsUmV2ZWFsIGtleT17aWR4fSBkZWxheT17aWR4fSBkaXJlY3Rpb249XCJ1cFwiPlxuICAgICAgICAgICAgICAgIDxHbGFzc0NhcmQgaG92ZXI9e2ZhbHNlfT5cbiAgICAgICAgICAgICAgICAgIDxoMyBjbGFzc05hbWU9XCJ0ZXh0LXhsIGZvbnQtYm9sZCB0ZXh0LWZvcmVncm91bmQgbWItMlwiPntwbGFuLnRpdGxlfTwvaDM+XG4gICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LTR4bCBmb250LWJvbGQgdGV4dC10cmFuc3BhcmVudCBiZy1ncmFkaWVudC10by1yIGZyb20tY3lhbi01MDAgdG8tdmlvbGV0LTYwMCBiZy1jbGlwLXRleHQgbWItMVwiPlxuICAgICAgICAgICAgICAgICAgICB7cGxhbi5jb21taXNzaW9ufVxuICAgICAgICAgICAgICAgICAgPC9wPlxuICAgICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwidGV4dC1zbSB0ZXh0LWZvcmVncm91bmQvNjAgbWItNFwiPntwbGFuLnJlY3VycmluZ308L3A+XG4gICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LWZvcmVncm91bmQvNzAgdGV4dC1zbVwiPntwbGFuLmRlc2NyaXB0aW9ufTwvcD5cbiAgICAgICAgICAgICAgICA8L0dsYXNzQ2FyZD5cbiAgICAgICAgICAgICAgPC9TY3JvbGxSZXZlYWw+XG4gICAgICAgICAgICApKX1cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L3NlY3Rpb24+XG5cbiAgICAgIHsvKiBCZW5lZml0cyAqL31cbiAgICAgIDxzZWN0aW9uIGNsYXNzTmFtZT1cInN1cmZhY2UtYmFuZCBweS0yNFwiPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbnRhaW5lclwiPlxuICAgICAgICAgIDxTZWN0aW9uSGVhZGluZ1xuICAgICAgICAgICAgdGl0bGU9XCJXaHkgSm9pbiBPdXIgQWZmaWxpYXRlIFByb2dyYW1cIlxuICAgICAgICAgICAgc3VidGl0bGU9XCJQYXJ0bmVyIEJlbmVmaXRzXCJcbiAgICAgICAgICAgIGRlc2NyaXB0aW9uPVwiRXZlcnl0aGluZyB5b3UgbmVlZCB0byBzdWNjZWVkIGFzIGFuIGFmZmlsaWF0ZVwiXG4gICAgICAgICAgLz5cblxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZ3JpZCBncmlkLWNvbHMtMSBtZDpncmlkLWNvbHMtMiBsZzpncmlkLWNvbHMtNCBnYXAtNiBtdC0xNlwiPlxuICAgICAgICAgICAge1tcbiAgICAgICAgICAgICAgeyBpY29uOiBUcmVuZGluZ1VwLCB0aXRsZTogJ1JlY3VycmluZyBJbmNvbWUnLCBkZXNjcmlwdGlvbjogJ0Vhcm4gY29tbWlzc2lvbnMgZXZlcnkgbW9udGggZm9yIGVhY2ggcmVmZXJyYWwnIH0sXG4gICAgICAgICAgICAgIHsgaWNvbjogVXNlcnMsIHRpdGxlOiAnRWFzeSBTaGFyaW5nJywgZGVzY3JpcHRpb246ICdHZXQgeW91ciB1bmlxdWUgcmVmZXJyYWwgbGluayBhbmQgc3RhcnQgZWFybmluZycgfSxcbiAgICAgICAgICAgICAgeyBpY29uOiBaYXAsIHRpdGxlOiAnRmFzdCBQYXlvdXRzJywgZGVzY3JpcHRpb246ICdHZXQgcGFpZCBldmVyeSBtb250aCB2aWEgYmFuayB0cmFuc2ZlciBvciBVUEknIH0sXG4gICAgICAgICAgICAgIHsgaWNvbjogQXdhcmQsIHRpdGxlOiAnVG9wIFBlcmZvcm1lciBCb251c2VzJywgZGVzY3JpcHRpb246ICdFeHRyYSBib251c2VzIGZvciB0b3AtcGVyZm9ybWluZyBhZmZpbGlhdGVzJyB9LFxuICAgICAgICAgICAgXS5tYXAoKGl0ZW0sIGlkeCkgPT4ge1xuICAgICAgICAgICAgICBjb25zdCBJY29uID0gaXRlbS5pY29uO1xuICAgICAgICAgICAgICByZXR1cm4gKFxuICAgICAgICAgICAgICAgIDxHbGFzc0NhcmQga2V5PXtpZHh9IGRlbGF5PXtpZHh9IGhvdmVyPXtmYWxzZX0+XG4gICAgICAgICAgICAgICAgICA8SWNvbiBzaXplPXszMn0gY2xhc3NOYW1lPVwidGV4dC10cmFuc3BhcmVudCBiZy1ncmFkaWVudC10by1yIGZyb20tY3lhbi01MDAgdG8tdmlvbGV0LTYwMCBiZy1jbGlwLXRleHQgbWItNFwiIC8+XG4gICAgICAgICAgICAgICAgICA8aDMgY2xhc3NOYW1lPVwidGV4dC1sZyBmb250LXNlbWlib2xkIHRleHQtZm9yZWdyb3VuZCBtYi0yXCI+e2l0ZW0udGl0bGV9PC9oMz5cbiAgICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQtZm9yZWdyb3VuZC83MCB0ZXh0LXNtXCI+e2l0ZW0uZGVzY3JpcHRpb259PC9wPlxuICAgICAgICAgICAgICAgIDwvR2xhc3NDYXJkPlxuICAgICAgICAgICAgICApO1xuICAgICAgICAgICAgfSl9XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9zZWN0aW9uPlxuXG4gICAgICB7LyogSG93IHRvIEdldCBTdGFydGVkICovfVxuICAgICAgPHNlY3Rpb24gY2xhc3NOYW1lPVwicHktMjRcIj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb250YWluZXJcIj5cbiAgICAgICAgICA8U2VjdGlvbkhlYWRpbmdcbiAgICAgICAgICAgIHRpdGxlPVwiR2V0IFN0YXJ0ZWQgaW4gMyBTdGVwc1wiXG4gICAgICAgICAgICBzdWJ0aXRsZT1cIkVhc3kgUHJvY2Vzc1wiXG4gICAgICAgICAgICBkZXNjcmlwdGlvbj1cIlN0YXJ0IGVhcm5pbmcgdG9kYXlcIlxuICAgICAgICAgIC8+XG5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImdyaWQgZ3JpZC1jb2xzLTEgbWQ6Z3JpZC1jb2xzLTMgZ2FwLTggbXQtMTZcIj5cbiAgICAgICAgICAgIHtbXG4gICAgICAgICAgICAgIHtcbiAgICAgICAgICAgICAgICBudW1iZXI6ICcwMScsXG4gICAgICAgICAgICAgICAgdGl0bGU6ICdTaWduIFVwJyxcbiAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbjogJ0ZpbGwgb3V0IHRoZSBhZmZpbGlhdGUgZm9ybSBhbmQgZ2V0IGFwcHJvdmVkJyxcbiAgICAgICAgICAgICAgfSxcbiAgICAgICAgICAgICAge1xuICAgICAgICAgICAgICAgIG51bWJlcjogJzAyJyxcbiAgICAgICAgICAgICAgICB0aXRsZTogJ0dldCBZb3VyIExpbmsnLFxuICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uOiAnUmVjZWl2ZSB5b3VyIHVuaXF1ZSByZWZlcnJhbCBsaW5rIGFuZCBtYXJrZXRpbmcgbWF0ZXJpYWxzJyxcbiAgICAgICAgICAgICAgfSxcbiAgICAgICAgICAgICAge1xuICAgICAgICAgICAgICAgIG51bWJlcjogJzAzJyxcbiAgICAgICAgICAgICAgICB0aXRsZTogJ1N0YXJ0IEVhcm5pbmcnLFxuICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uOiAnU2hhcmUgd2l0aCB5b3VyIG5ldHdvcmsgYW5kIGVhcm4gcmVjdXJyaW5nIGNvbW1pc3Npb25zJyxcbiAgICAgICAgICAgICAgfSxcbiAgICAgICAgICAgIF0ubWFwKChzdGVwLCBpZHgpID0+IChcbiAgICAgICAgICAgICAgPG1vdGlvbi5kaXZcbiAgICAgICAgICAgICAgICBrZXk9e2lkeH1cbiAgICAgICAgICAgICAgICBpbml0aWFsPXt7IG9wYWNpdHk6IDAsIHk6IDIwIH19XG4gICAgICAgICAgICAgICAgd2hpbGVJblZpZXc9e3sgb3BhY2l0eTogMSwgeTogMCB9fVxuICAgICAgICAgICAgICAgIHRyYW5zaXRpb249e3sgZHVyYXRpb246IDAuNiwgZGVsYXk6IGlkeCAqIDAuMSB9fVxuICAgICAgICAgICAgICAgIHZpZXdwb3J0PXt7IG9uY2U6IHRydWUgfX1cbiAgICAgICAgICAgICAgPlxuICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZ2xhc3MtY2FyZCBwLTggdGV4dC1jZW50ZXJcIj5cbiAgICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQtNHhsIGZvbnQtYm9sZCB0ZXh0LXRyYW5zcGFyZW50IGJnLWdyYWRpZW50LXRvLXIgZnJvbS1jeWFuLTUwMCB0by12aW9sZXQtNjAwIGJnLWNsaXAtdGV4dCBtYi00XCI+XG4gICAgICAgICAgICAgICAgICAgIHtzdGVwLm51bWJlcn1cbiAgICAgICAgICAgICAgICAgIDwvcD5cbiAgICAgICAgICAgICAgICAgIDxoMyBjbGFzc05hbWU9XCJ0ZXh0LWxnIGZvbnQtc2VtaWJvbGQgdGV4dC1mb3JlZ3JvdW5kIG1iLTJcIj57c3RlcC50aXRsZX08L2gzPlxuICAgICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwidGV4dC1mb3JlZ3JvdW5kLzcwIHRleHQtc21cIj57c3RlcC5kZXNjcmlwdGlvbn08L3A+XG4gICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgIDwvbW90aW9uLmRpdj5cbiAgICAgICAgICAgICkpfVxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvc2VjdGlvbj5cblxuICAgICAgey8qIENUQSAqL31cbiAgICAgIDxzZWN0aW9uIGNsYXNzTmFtZT1cInN1cmZhY2UtYmFuZCBweS0yNFwiPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbnRhaW5lclwiPlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZ2xhc3MtY2FyZCBwLTEyIG1kOnAtMTYgdGV4dC1jZW50ZXJcIj5cbiAgICAgICAgICAgIDxoMiBjbGFzc05hbWU9XCJ0ZXh0LTR4bCBtZDp0ZXh0LTV4bCBmb250LWJvbGQgdGV4dC1mb3JlZ3JvdW5kIG1iLTZcIj5cbiAgICAgICAgICAgICAgUmVhZHkgdG8gRWFybiBQYXNzaXZlIEluY29tZT9cbiAgICAgICAgICAgIDwvaDI+XG4gICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LXhsIHRleHQtZm9yZWdyb3VuZC83MCBtYi04IG1heC13LTJ4bCBteC1hdXRvXCI+XG4gICAgICAgICAgICAgIEpvaW4gb3VyIGFmZmlsaWF0ZSBwcm9ncmFtIGFuZCBzdGFydCBlYXJuaW5nIHJlY3VycmluZyBjb21taXNzaW9ucyB0b2RheS5cbiAgICAgICAgICAgIDwvcD5cbiAgICAgICAgICAgIDxHcmFkaWVudEJ1dHRvbiBocmVmPVwiL2NvbnRhY3RcIiBzaXplPVwibGdcIj5cbiAgICAgICAgICAgICAgQXBwbHkgTm93XG4gICAgICAgICAgICA8L0dyYWRpZW50QnV0dG9uPlxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvc2VjdGlvbj5cbiAgICA8L2Rpdj5cbiAgKTtcbn1cblxyXG4iXSwiZmlsZSI6IkM6L1VzZXJzL2JhZGd1L0Rlc2t0b3AvYWxsIG5ldyBuaXcvY2xpZW50L3NyYy9wYWdlcy9BZmZpbGlhdGUudHN4In0=

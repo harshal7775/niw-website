@@ -1,0 +1,510 @@
+import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/src/pages/AIMarketing.tsx");import __vite__cjsImport0_react_jsxDevRuntime from "/@fs/C:/Users/badgu/Desktop/all new niw/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=04b549ff"; const jsxDEV = __vite__cjsImport0_react_jsxDevRuntime["jsxDEV"];
+import { motion } from "/@fs/C:/Users/badgu/Desktop/all new niw/node_modules/.vite/deps/framer-motion.js?v=04b549ff";
+import SectionHeading from "/src/components/SectionHeading.tsx";
+import GlassCard from "/src/components/GlassCard.tsx";
+import GradientButton from "/src/components/GradientButton.tsx";
+import ScrollReveal from "/src/components/ScrollReveal.tsx";
+import AIWorkflow from "/src/components/AIWorkflow.tsx";
+import { Brain, Zap, Target, TrendingUp } from "/@fs/C:/Users/badgu/Desktop/all new niw/node_modules/.vite/deps/lucide-react.js?v=04b549ff";
+export default function AIMarketing() {
+  return /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\AIMarketing.tsx:11", className: "min-h-screen", children: [
+    /* @__PURE__ */ jsxDEV("section", { "data-loc": "client\\src\\pages\\AIMarketing.tsx:13", className: "relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-20", children: [
+      /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\AIMarketing.tsx:14", className: "absolute inset-0 -z-10", children: [
+        /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\AIMarketing.tsx:15", className: "absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-br from-cyan-200/30 to-blue-200/20 rounded-full blur-3xl" }, void 0, false, {
+          fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+          lineNumber: 15,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\AIMarketing.tsx:16", className: "absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-br from-violet-200/30 to-purple-200/20 rounded-full blur-3xl" }, void 0, false, {
+          fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+          lineNumber: 16,
+          columnNumber: 11
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+        lineNumber: 14,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\AIMarketing.tsx:19", className: "container", children: /* @__PURE__ */ jsxDEV(
+        motion.div,
+        {
+          "data-loc": "client\\src\\pages\\AIMarketing.tsx:20",
+          initial: { opacity: 0, y: 20 },
+          animate: { opacity: 1, y: 0 },
+          transition: { duration: 0.8 },
+          children: /* @__PURE__ */ jsxDEV(
+            SectionHeading,
+            {
+              "data-loc": "client\\src\\pages\\AIMarketing.tsx:25",
+              title: "AI-Powered Marketing",
+              subtitle: "The Future of Growth",
+              description: "Leverage artificial intelligence for smarter, faster, and more effective marketing",
+              animated: false
+            },
+            void 0,
+            false,
+            {
+              fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+              lineNumber: 25,
+              columnNumber: 13
+            },
+            this
+          )
+        },
+        void 0,
+        false,
+        {
+          fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+          lineNumber: 20,
+          columnNumber: 11
+        },
+        this
+      ) }, void 0, false, {
+        fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+        lineNumber: 19,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+      lineNumber: 13,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("section", { "data-loc": "client\\src\\pages\\AIMarketing.tsx:36", className: "py-24", children: /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\AIMarketing.tsx:37", className: "container", children: /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\AIMarketing.tsx:38", className: "grid grid-cols-1 lg:grid-cols-2 gap-12 items-center", children: [
+      /* @__PURE__ */ jsxDEV(
+        motion.div,
+        {
+          "data-loc": "client\\src\\pages\\AIMarketing.tsx:39",
+          initial: { opacity: 0, x: -40 },
+          whileInView: { opacity: 1, x: 0 },
+          transition: { duration: 0.6 },
+          viewport: { once: true },
+          children: [
+            /* @__PURE__ */ jsxDEV("h2", { "data-loc": "client\\src\\pages\\AIMarketing.tsx:45", className: "text-4xl font-bold text-foreground mb-6", children: "What is AI Marketing?" }, void 0, false, {
+              fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+              lineNumber: 45,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ jsxDEV("p", { "data-loc": "client\\src\\pages\\AIMarketing.tsx:46", className: "text-lg text-foreground/70 mb-4", children: "AI Marketing uses artificial intelligence and machine learning to automate, optimize, and personalize marketing campaigns at scale." }, void 0, false, {
+              fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+              lineNumber: 46,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ jsxDEV("p", { "data-loc": "client\\src\\pages\\AIMarketing.tsx:49", className: "text-lg text-foreground/70 mb-4", children: "Instead of manually managing campaigns, AI systems analyze data, predict customer behavior, and automatically optimize for better results." }, void 0, false, {
+              fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+              lineNumber: 49,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ jsxDEV("p", { "data-loc": "client\\src\\pages\\AIMarketing.tsx:52", className: "text-lg text-foreground/70", children: "The result? Faster lead generation, higher conversion rates, and better ROI - all with less manual work." }, void 0, false, {
+              fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+              lineNumber: 52,
+              columnNumber: 15
+            }, this)
+          ]
+        },
+        void 0,
+        true,
+        {
+          fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+          lineNumber: 39,
+          columnNumber: 13
+        },
+        this
+      ),
+      /* @__PURE__ */ jsxDEV(
+        motion.div,
+        {
+          "data-loc": "client\\src\\pages\\AIMarketing.tsx:57",
+          initial: { opacity: 0, x: 40 },
+          whileInView: { opacity: 1, x: 0 },
+          transition: { duration: 0.6 },
+          viewport: { once: true },
+          children: /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\AIMarketing.tsx:63", className: "glass-card p-12 space-y-6", children: [
+            /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\AIMarketing.tsx:64", children: [
+              /* @__PURE__ */ jsxDEV("p", { "data-loc": "client\\src\\pages\\AIMarketing.tsx:65", className: "text-sm text-cyan-600 font-semibold mb-2", children: "45% Faster" }, void 0, false, {
+                fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+                lineNumber: 65,
+                columnNumber: 19
+              }, this),
+              /* @__PURE__ */ jsxDEV("p", { "data-loc": "client\\src\\pages\\AIMarketing.tsx:66", className: "text-foreground/70", children: "Campaign optimization with AI" }, void 0, false, {
+                fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+                lineNumber: 66,
+                columnNumber: 19
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+              lineNumber: 64,
+              columnNumber: 17
+            }, this),
+            /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\AIMarketing.tsx:68", children: [
+              /* @__PURE__ */ jsxDEV("p", { "data-loc": "client\\src\\pages\\AIMarketing.tsx:69", className: "text-sm text-cyan-600 font-semibold mb-2", children: "3x Better" }, void 0, false, {
+                fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+                lineNumber: 69,
+                columnNumber: 19
+              }, this),
+              /* @__PURE__ */ jsxDEV("p", { "data-loc": "client\\src\\pages\\AIMarketing.tsx:70", className: "text-foreground/70", children: "Lead quality and conversion rates" }, void 0, false, {
+                fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+                lineNumber: 70,
+                columnNumber: 19
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+              lineNumber: 68,
+              columnNumber: 17
+            }, this),
+            /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\AIMarketing.tsx:72", children: [
+              /* @__PURE__ */ jsxDEV("p", { "data-loc": "client\\src\\pages\\AIMarketing.tsx:73", className: "text-sm text-cyan-600 font-semibold mb-2", children: "50% Less" }, void 0, false, {
+                fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+                lineNumber: 73,
+                columnNumber: 19
+              }, this),
+              /* @__PURE__ */ jsxDEV("p", { "data-loc": "client\\src\\pages\\AIMarketing.tsx:74", className: "text-foreground/70", children: "Manual work and management time" }, void 0, false, {
+                fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+                lineNumber: 74,
+                columnNumber: 19
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+              lineNumber: 72,
+              columnNumber: 17
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+            lineNumber: 63,
+            columnNumber: 15
+          }, this)
+        },
+        void 0,
+        false,
+        {
+          fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+          lineNumber: 57,
+          columnNumber: 13
+        },
+        this
+      )
+    ] }, void 0, true, {
+      fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+      lineNumber: 38,
+      columnNumber: 11
+    }, this) }, void 0, false, {
+      fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+      lineNumber: 37,
+      columnNumber: 9
+    }, this) }, void 0, false, {
+      fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+      lineNumber: 36,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV(AIWorkflow, { "data-loc": "client\\src\\pages\\AIMarketing.tsx:83" }, void 0, false, {
+      fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+      lineNumber: 83,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("section", { "data-loc": "client\\src\\pages\\AIMarketing.tsx:86", className: "surface-band py-24", children: /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\AIMarketing.tsx:87", className: "container", children: [
+      /* @__PURE__ */ jsxDEV(
+        SectionHeading,
+        {
+          "data-loc": "client\\src\\pages\\AIMarketing.tsx:88",
+          title: "Our AI Marketing Features",
+          subtitle: "Powered by AI",
+          description: "Advanced technology for better results"
+        },
+        void 0,
+        false,
+        {
+          fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+          lineNumber: 88,
+          columnNumber: 11
+        },
+        this
+      ),
+      /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\AIMarketing.tsx:94", className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16", children: [
+        {
+          icon: Brain,
+          title: "Predictive Analytics",
+          description: "AI predicts which leads are most likely to convert"
+        },
+        {
+          icon: Zap,
+          title: "Automated Optimization",
+          description: "AI automatically adjusts campaigns for better performance"
+        },
+        {
+          icon: Target,
+          title: "Smart Targeting",
+          description: "AI identifies and targets your ideal customers"
+        },
+        {
+          icon: TrendingUp,
+          title: "Real-time Insights",
+          description: "AI provides actionable insights in real-time"
+        }
+      ].map((feature, idx) => {
+        const Icon = feature.icon;
+        return /* @__PURE__ */ jsxDEV(ScrollReveal, { "data-loc": "client\\src\\pages\\AIMarketing.tsx:119", delay: idx, direction: "up", children: /* @__PURE__ */ jsxDEV(GlassCard, { "data-loc": "client\\src\\pages\\AIMarketing.tsx:120", hover: false, children: [
+          /* @__PURE__ */ jsxDEV(Icon, { "data-loc": "client\\src\\pages\\AIMarketing.tsx:121", size: 32, className: "text-transparent bg-gradient-to-r from-cyan-500 to-violet-600 bg-clip-text mb-4" }, void 0, false, {
+            fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+            lineNumber: 121,
+            columnNumber: 21
+          }, this),
+          /* @__PURE__ */ jsxDEV("h3", { "data-loc": "client\\src\\pages\\AIMarketing.tsx:122", className: "text-lg font-semibold text-foreground mb-2", children: feature.title }, void 0, false, {
+            fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+            lineNumber: 122,
+            columnNumber: 21
+          }, this),
+          /* @__PURE__ */ jsxDEV("p", { "data-loc": "client\\src\\pages\\AIMarketing.tsx:123", className: "text-foreground/70 text-sm", children: feature.description }, void 0, false, {
+            fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+            lineNumber: 123,
+            columnNumber: 21
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+          lineNumber: 120,
+          columnNumber: 19
+        }, this) }, idx, false, {
+          fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+          lineNumber: 119,
+          columnNumber: 17
+        }, this);
+      }) }, void 0, false, {
+        fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+        lineNumber: 94,
+        columnNumber: 11
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+      lineNumber: 87,
+      columnNumber: 9
+    }, this) }, void 0, false, {
+      fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+      lineNumber: 86,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("section", { "data-loc": "client\\src\\pages\\AIMarketing.tsx:133", className: "py-24", children: /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\AIMarketing.tsx:134", className: "container", children: [
+      /* @__PURE__ */ jsxDEV(
+        SectionHeading,
+        {
+          "data-loc": "client\\src\\pages\\AIMarketing.tsx:135",
+          title: "AI Tools & Technologies",
+          subtitle: "Our Tech Stack",
+          description: "We use the latest AI and machine learning technologies"
+        },
+        void 0,
+        false,
+        {
+          fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+          lineNumber: 135,
+          columnNumber: 11
+        },
+        this
+      ),
+      /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\AIMarketing.tsx:141", className: "grid grid-cols-1 md:grid-cols-2 gap-8 mt-16", children: [
+        {
+          title: "AI Chatbots",
+          description: "Automated customer service and lead qualification 24/7"
+        },
+        {
+          title: "Predictive Lead Scoring",
+          description: "AI identifies which leads are most likely to buy"
+        },
+        {
+          title: "Automated Email Sequences",
+          description: "AI-powered email campaigns that adapt to user behavior"
+        },
+        {
+          title: "Smart Ad Optimization",
+          description: "AI automatically optimizes ads for maximum ROI"
+        },
+        {
+          title: "Content Generation",
+          description: "AI helps create personalized content at scale"
+        },
+        {
+          title: "Behavior Analysis",
+          description: "AI analyzes customer behavior to improve targeting"
+        }
+      ].map(
+        (tool, idx) => /* @__PURE__ */ jsxDEV(
+          motion.div,
+          {
+            "data-loc": "client\\src\\pages\\AIMarketing.tsx:168",
+            initial: { opacity: 0, y: 20 },
+            whileInView: { opacity: 1, y: 0 },
+            transition: { duration: 0.6, delay: idx * 0.1 },
+            viewport: { once: true },
+            children: /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\AIMarketing.tsx:175", className: "glass-card p-8", children: [
+              /* @__PURE__ */ jsxDEV("h3", { "data-loc": "client\\src\\pages\\AIMarketing.tsx:176", className: "text-lg font-semibold text-foreground mb-2", children: tool.title }, void 0, false, {
+                fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+                lineNumber: 176,
+                columnNumber: 19
+              }, this),
+              /* @__PURE__ */ jsxDEV("p", { "data-loc": "client\\src\\pages\\AIMarketing.tsx:177", className: "text-foreground/70", children: tool.description }, void 0, false, {
+                fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+                lineNumber: 177,
+                columnNumber: 19
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+              lineNumber: 175,
+              columnNumber: 17
+            }, this)
+          },
+          idx,
+          false,
+          {
+            fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+            lineNumber: 168,
+            columnNumber: 13
+          },
+          this
+        )
+      ) }, void 0, false, {
+        fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+        lineNumber: 141,
+        columnNumber: 11
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+      lineNumber: 134,
+      columnNumber: 9
+    }, this) }, void 0, false, {
+      fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+      lineNumber: 133,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("section", { "data-loc": "client\\src\\pages\\AIMarketing.tsx:186", className: "surface-band py-24", children: /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\AIMarketing.tsx:187", className: "container", children: [
+      /* @__PURE__ */ jsxDEV(
+        SectionHeading,
+        {
+          "data-loc": "client\\src\\pages\\AIMarketing.tsx:188",
+          title: "Results with AI Marketing",
+          subtitle: "Proven Impact",
+          description: "See what's possible with AI-powered marketing"
+        },
+        void 0,
+        false,
+        {
+          fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+          lineNumber: 188,
+          columnNumber: 11
+        },
+        this
+      ),
+      /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\AIMarketing.tsx:194", className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16", children: [
+        { metric: "45%", label: "Average Lead Increase" },
+        { metric: "3.2x", label: "Average ROI Improvement" },
+        { metric: "60%", label: "Time Saved on Management" },
+        { metric: "52%", label: "Conversion Rate Improvement" }
+      ].map(
+        (item, idx) => /* @__PURE__ */ jsxDEV(ScrollReveal, { "data-loc": "client\\src\\pages\\AIMarketing.tsx:201", delay: idx, direction: "up", children: /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\AIMarketing.tsx:202", className: "glass-card p-8 text-center", children: [
+          /* @__PURE__ */ jsxDEV("p", { "data-loc": "client\\src\\pages\\AIMarketing.tsx:203", className: "text-4xl font-bold text-transparent bg-gradient-to-r from-cyan-500 to-violet-600 bg-clip-text mb-2", children: item.metric }, void 0, false, {
+            fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+            lineNumber: 203,
+            columnNumber: 19
+          }, this),
+          /* @__PURE__ */ jsxDEV("p", { "data-loc": "client\\src\\pages\\AIMarketing.tsx:206", className: "text-foreground/70", children: item.label }, void 0, false, {
+            fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+            lineNumber: 206,
+            columnNumber: 19
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+          lineNumber: 202,
+          columnNumber: 17
+        }, this) }, idx, false, {
+          fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+          lineNumber: 201,
+          columnNumber: 13
+        }, this)
+      ) }, void 0, false, {
+        fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+        lineNumber: 194,
+        columnNumber: 11
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+      lineNumber: 187,
+      columnNumber: 9
+    }, this) }, void 0, false, {
+      fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+      lineNumber: 186,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("section", { "data-loc": "client\\src\\pages\\AIMarketing.tsx:215", className: "py-24", children: /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\AIMarketing.tsx:216", className: "container", children: /* @__PURE__ */ jsxDEV(
+      motion.div,
+      {
+        "data-loc": "client\\src\\pages\\AIMarketing.tsx:217",
+        className: "glass-card p-12 md:p-16 text-center",
+        initial: { opacity: 0, y: 40 },
+        whileInView: { opacity: 1, y: 0 },
+        transition: { duration: 0.8 },
+        viewport: { once: true },
+        children: [
+          /* @__PURE__ */ jsxDEV("h2", { "data-loc": "client\\src\\pages\\AIMarketing.tsx:224", className: "text-4xl md:text-5xl font-bold text-foreground mb-6", children: "Ready to Harness AI for Your Business?" }, void 0, false, {
+            fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+            lineNumber: 224,
+            columnNumber: 13
+          }, this),
+          /* @__PURE__ */ jsxDEV("p", { "data-loc": "client\\src\\pages\\AIMarketing.tsx:227", className: "text-xl text-foreground/70 mb-8 max-w-2xl mx-auto", children: "Let's discuss how AI marketing can transform your growth strategy." }, void 0, false, {
+            fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+            lineNumber: 227,
+            columnNumber: 13
+          }, this),
+          /* @__PURE__ */ jsxDEV(GradientButton, { "data-loc": "client\\src\\pages\\AIMarketing.tsx:230", href: "/contact", size: "lg", children: "Schedule Free Consultation" }, void 0, false, {
+            fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+            lineNumber: 230,
+            columnNumber: 13
+          }, this)
+        ]
+      },
+      void 0,
+      true,
+      {
+        fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+        lineNumber: 217,
+        columnNumber: 11
+      },
+      this
+    ) }, void 0, false, {
+      fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+      lineNumber: 216,
+      columnNumber: 9
+    }, this) }, void 0, false, {
+      fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+      lineNumber: 215,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx",
+    lineNumber: 11,
+    columnNumber: 5
+  }, this);
+}
+_c = AIMarketing;
+var _c;
+$RefreshReg$(_c, "AIMarketing");
+import * as RefreshRuntime from "/@react-refresh";
+const inWebWorker = typeof WorkerGlobalScope !== "undefined" && self instanceof WorkerGlobalScope;
+if (import.meta.hot && !inWebWorker) {
+  if (!window.$RefreshReg$) {
+    throw new Error(
+      "@vitejs/plugin-react can't detect preamble. Something is wrong."
+    );
+  }
+  RefreshRuntime.__hmr_import(import.meta.url).then((currentExports) => {
+    RefreshRuntime.registerExportsForReactRefresh("C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx", currentExports);
+    import.meta.hot.accept((nextExports) => {
+      if (!nextExports) return;
+      const invalidateMessage = RefreshRuntime.validateRefreshBoundaryAndEnqueueUpdate("C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx", currentExports, nextExports);
+      if (invalidateMessage) import.meta.hot.invalidate(invalidateMessage);
+    });
+  });
+}
+function $RefreshReg$(type, id) {
+  return RefreshRuntime.register(type, "C:/Users/badgu/Desktop/all new niw/client/src/pages/AIMarketing.tsx " + id);
+}
+function $RefreshSig$() {
+  return RefreshRuntime.createSignatureFunctionForTransform();
+}
+
+//# sourceMappingURL=data:application/json;base64,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cmQiLCJHcmFkaWVudEJ1dHRvbiIsIlNjcm9sbFJldmVhbCIsIkFJV29ya2Zsb3ciLCJCcmFpbiIsIlphcCIsIlRhcmdldCIsIlRyZW5kaW5nVXAiLCJBSU1hcmtldGluZyIsIm9wYWNpdHkiLCJ5IiwiZHVyYXRpb24iLCJ4Iiwib25jZSIsImljb24iLCJ0aXRsZSIsImRlc2NyaXB0aW9uIiwibWFwIiwiZmVhdHVyZSIsImlkeCIsIkljb24iLCJ0b29sIiwiZGVsYXkiLCJtZXRyaWMiLCJsYWJlbCIsIml0ZW0iLCJfYyJdLCJpZ25vcmVMaXN0IjpbXSwic291cmNlcyI6WyJBSU1hcmtldGluZy50c3giXSwic291cmNlc0NvbnRlbnQiOlsi77u/aW1wb3J0IHsgbW90aW9uIH0gZnJvbSAnZnJhbWVyLW1vdGlvbic7XG5pbXBvcnQgU2VjdGlvbkhlYWRpbmcgZnJvbSAnQC9jb21wb25lbnRzL1NlY3Rpb25IZWFkaW5nJztcbmltcG9ydCBHbGFzc0NhcmQgZnJvbSAnQC9jb21wb25lbnRzL0dsYXNzQ2FyZCc7XG5pbXBvcnQgR3JhZGllbnRCdXR0b24gZnJvbSAnQC9jb21wb25lbnRzL0dyYWRpZW50QnV0dG9uJztcbmltcG9ydCBTY3JvbGxSZXZlYWwgZnJvbSAnQC9jb21wb25lbnRzL1Njcm9sbFJldmVhbCc7XG5pbXBvcnQgQUlXb3JrZmxvdyBmcm9tICdAL2NvbXBvbmVudHMvQUlXb3JrZmxvdyc7XG5pbXBvcnQgeyBCcmFpbiwgWmFwLCBUYXJnZXQsIFRyZW5kaW5nVXAgfSBmcm9tICdsdWNpZGUtcmVhY3QnO1xuXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBBSU1hcmtldGluZygpIHtcbiAgcmV0dXJuIChcbiAgICA8ZGl2IGNsYXNzTmFtZT1cIm1pbi1oLXNjcmVlblwiPlxuICAgICAgey8qIEhlcm8gU2VjdGlvbiAqL31cbiAgICAgIDxzZWN0aW9uIGNsYXNzTmFtZT1cInJlbGF0aXZlIG1pbi1oLVs2MHZoXSBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBvdmVyZmxvdy1oaWRkZW4gcHQtMjBcIj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJhYnNvbHV0ZSBpbnNldC0wIC16LTEwXCI+XG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJhYnNvbHV0ZSB0b3AtMCBsZWZ0LTEvNCB3LTk2IGgtOTYgYmctZ3JhZGllbnQtdG8tYnIgZnJvbS1jeWFuLTIwMC8zMCB0by1ibHVlLTIwMC8yMCByb3VuZGVkLWZ1bGwgYmx1ci0zeGxcIj48L2Rpdj5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImFic29sdXRlIGJvdHRvbS0xLzQgcmlnaHQtMS80IHctOTYgaC05NiBiZy1ncmFkaWVudC10by1iciBmcm9tLXZpb2xldC0yMDAvMzAgdG8tcHVycGxlLTIwMC8yMCByb3VuZGVkLWZ1bGwgYmx1ci0zeGxcIj48L2Rpdj5cbiAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb250YWluZXJcIj5cbiAgICAgICAgICA8bW90aW9uLmRpdlxuICAgICAgICAgICAgaW5pdGlhbD17eyBvcGFjaXR5OiAwLCB5OiAyMCB9fVxuICAgICAgICAgICAgYW5pbWF0ZT17eyBvcGFjaXR5OiAxLCB5OiAwIH19XG4gICAgICAgICAgICB0cmFuc2l0aW9uPXt7IGR1cmF0aW9uOiAwLjggfX1cbiAgICAgICAgICA+XG4gICAgICAgICAgICA8U2VjdGlvbkhlYWRpbmdcbiAgICAgICAgICAgICAgdGl0bGU9XCJBSS1Qb3dlcmVkIE1hcmtldGluZ1wiXG4gICAgICAgICAgICAgIHN1YnRpdGxlPVwiVGhlIEZ1dHVyZSBvZiBHcm93dGhcIlxuICAgICAgICAgICAgICBkZXNjcmlwdGlvbj1cIkxldmVyYWdlIGFydGlmaWNpYWwgaW50ZWxsaWdlbmNlIGZvciBzbWFydGVyLCBmYXN0ZXIsIGFuZCBtb3JlIGVmZmVjdGl2ZSBtYXJrZXRpbmdcIlxuICAgICAgICAgICAgICBhbmltYXRlZD17ZmFsc2V9XG4gICAgICAgICAgICAvPlxuICAgICAgICAgIDwvbW90aW9uLmRpdj5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L3NlY3Rpb24+XG5cbiAgICAgIHsvKiBXaGF0IGlzIEFJIE1hcmtldGluZyAqL31cbiAgICAgIDxzZWN0aW9uIGNsYXNzTmFtZT1cInB5LTI0XCI+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY29udGFpbmVyXCI+XG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJncmlkIGdyaWQtY29scy0xIGxnOmdyaWQtY29scy0yIGdhcC0xMiBpdGVtcy1jZW50ZXJcIj5cbiAgICAgICAgICAgIDxtb3Rpb24uZGl2XG4gICAgICAgICAgICAgIGluaXRpYWw9e3sgb3BhY2l0eTogMCwgeDogLTQwIH19XG4gICAgICAgICAgICAgIHdoaWxlSW5WaWV3PXt7IG9wYWNpdHk6IDEsIHg6IDAgfX1cbiAgICAgICAgICAgICAgdHJhbnNpdGlvbj17eyBkdXJhdGlvbjogMC42IH19XG4gICAgICAgICAgICAgIHZpZXdwb3J0PXt7IG9uY2U6IHRydWUgfX1cbiAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgPGgyIGNsYXNzTmFtZT1cInRleHQtNHhsIGZvbnQtYm9sZCB0ZXh0LWZvcmVncm91bmQgbWItNlwiPldoYXQgaXMgQUkgTWFya2V0aW5nPzwvaDI+XG4gICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQtbGcgdGV4dC1mb3JlZ3JvdW5kLzcwIG1iLTRcIj5cbiAgICAgICAgICAgICAgICBBSSBNYXJrZXRpbmcgdXNlcyBhcnRpZmljaWFsIGludGVsbGlnZW5jZSBhbmQgbWFjaGluZSBsZWFybmluZyB0byBhdXRvbWF0ZSwgb3B0aW1pemUsIGFuZCBwZXJzb25hbGl6ZSBtYXJrZXRpbmcgY2FtcGFpZ25zIGF0IHNjYWxlLlxuICAgICAgICAgICAgICA8L3A+XG4gICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQtbGcgdGV4dC1mb3JlZ3JvdW5kLzcwIG1iLTRcIj5cbiAgICAgICAgICAgICAgICBJbnN0ZWFkIG9mIG1hbnVhbGx5IG1hbmFnaW5nIGNhbXBhaWducywgQUkgc3lzdGVtcyBhbmFseXplIGRhdGEsIHByZWRpY3QgY3VzdG9tZXIgYmVoYXZpb3IsIGFuZCBhdXRvbWF0aWNhbGx5IG9wdGltaXplIGZvciBiZXR0ZXIgcmVzdWx0cy5cbiAgICAgICAgICAgICAgPC9wPlxuICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LWxnIHRleHQtZm9yZWdyb3VuZC83MFwiPlxuICAgICAgICAgICAgICAgIFRoZSByZXN1bHQ/IEZhc3RlciBsZWFkIGdlbmVyYXRpb24sIGhpZ2hlciBjb252ZXJzaW9uIHJhdGVzLCBhbmQgYmV0dGVyIFJPSSAtIGFsbCB3aXRoIGxlc3MgbWFudWFsIHdvcmsuXG4gICAgICAgICAgICAgIDwvcD5cbiAgICAgICAgICAgIDwvbW90aW9uLmRpdj5cblxuICAgICAgICAgICAgPG1vdGlvbi5kaXZcbiAgICAgICAgICAgICAgaW5pdGlhbD17eyBvcGFjaXR5OiAwLCB4OiA0MCB9fVxuICAgICAgICAgICAgICB3aGlsZUluVmlldz17eyBvcGFjaXR5OiAxLCB4OiAwIH19XG4gICAgICAgICAgICAgIHRyYW5zaXRpb249e3sgZHVyYXRpb246IDAuNiB9fVxuICAgICAgICAgICAgICB2aWV3cG9ydD17eyBvbmNlOiB0cnVlIH19XG4gICAgICAgICAgICA+XG4gICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZ2xhc3MtY2FyZCBwLTEyIHNwYWNlLXktNlwiPlxuICAgICAgICAgICAgICAgIDxkaXY+XG4gICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LXNtIHRleHQtY3lhbi02MDAgZm9udC1zZW1pYm9sZCBtYi0yXCI+NDUlIEZhc3RlcjwvcD5cbiAgICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQtZm9yZWdyb3VuZC83MFwiPkNhbXBhaWduIG9wdGltaXphdGlvbiB3aXRoIEFJPC9wPlxuICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgIDxkaXY+XG4gICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LXNtIHRleHQtY3lhbi02MDAgZm9udC1zZW1pYm9sZCBtYi0yXCI+M3ggQmV0dGVyPC9wPlxuICAgICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwidGV4dC1mb3JlZ3JvdW5kLzcwXCI+TGVhZCBxdWFsaXR5IGFuZCBjb252ZXJzaW9uIHJhdGVzPC9wPlxuICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgIDxkaXY+XG4gICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LXNtIHRleHQtY3lhbi02MDAgZm9udC1zZW1pYm9sZCBtYi0yXCI+NTAlIExlc3M8L3A+XG4gICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LWZvcmVncm91bmQvNzBcIj5NYW51YWwgd29yayBhbmQgbWFuYWdlbWVudCB0aW1lPC9wPlxuICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgIDwvbW90aW9uLmRpdj5cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L3NlY3Rpb24+XG5cbiAgICAgIHsvKiBBSSBXb3JrZmxvdyBTZWN0aW9uICovfVxuICAgICAgPEFJV29ya2Zsb3cgLz5cblxuICAgICAgey8qIEFJIEZlYXR1cmVzICovfVxuICAgICAgPHNlY3Rpb24gY2xhc3NOYW1lPVwic3VyZmFjZS1iYW5kIHB5LTI0XCI+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY29udGFpbmVyXCI+XG4gICAgICAgICAgPFNlY3Rpb25IZWFkaW5nXG4gICAgICAgICAgICB0aXRsZT1cIk91ciBBSSBNYXJrZXRpbmcgRmVhdHVyZXNcIlxuICAgICAgICAgICAgc3VidGl0bGU9XCJQb3dlcmVkIGJ5IEFJXCJcbiAgICAgICAgICAgIGRlc2NyaXB0aW9uPVwiQWR2YW5jZWQgdGVjaG5vbG9neSBmb3IgYmV0dGVyIHJlc3VsdHNcIlxuICAgICAgICAgIC8+XG5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImdyaWQgZ3JpZC1jb2xzLTEgbWQ6Z3JpZC1jb2xzLTIgbGc6Z3JpZC1jb2xzLTQgZ2FwLTYgbXQtMTZcIj5cbiAgICAgICAgICAgIHtbXG4gICAgICAgICAgICAgIHtcbiAgICAgICAgICAgICAgICBpY29uOiBCcmFpbixcbiAgICAgICAgICAgICAgICB0aXRsZTogJ1ByZWRpY3RpdmUgQW5hbHl0aWNzJyxcbiAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbjogJ0FJIHByZWRpY3RzIHdoaWNoIGxlYWRzIGFyZSBtb3N0IGxpa2VseSB0byBjb252ZXJ0JyxcbiAgICAgICAgICAgICAgfSxcbiAgICAgICAgICAgICAge1xuICAgICAgICAgICAgICAgIGljb246IFphcCxcbiAgICAgICAgICAgICAgICB0aXRsZTogJ0F1dG9tYXRlZCBPcHRpbWl6YXRpb24nLFxuICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uOiAnQUkgYXV0b21hdGljYWxseSBhZGp1c3RzIGNhbXBhaWducyBmb3IgYmV0dGVyIHBlcmZvcm1hbmNlJyxcbiAgICAgICAgICAgICAgfSxcbiAgICAgICAgICAgICAge1xuICAgICAgICAgICAgICAgIGljb246IFRhcmdldCxcbiAgICAgICAgICAgICAgICB0aXRsZTogJ1NtYXJ0IFRhcmdldGluZycsXG4gICAgICAgICAgICAgICAgZGVzY3JpcHRpb246ICdBSSBpZGVudGlmaWVzIGFuZCB0YXJnZXRzIHlvdXIgaWRlYWwgY3VzdG9tZXJzJyxcbiAgICAgICAgICAgICAgfSxcbiAgICAgICAgICAgICAge1xuICAgICAgICAgICAgICAgIGljb246IFRyZW5kaW5nVXAsXG4gICAgICAgICAgICAgICAgdGl0bGU6ICdSZWFsLXRpbWUgSW5zaWdodHMnLFxuICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uOiAnQUkgcHJvdmlkZXMgYWN0aW9uYWJsZSBpbnNpZ2h0cyBpbiByZWFsLXRpbWUnLFxuICAgICAgICAgICAgICB9LFxuICAgICAgICAgICAgXS5tYXAoKGZlYXR1cmUsIGlkeCkgPT4ge1xuICAgICAgICAgICAgICBjb25zdCBJY29uID0gZmVhdHVyZS5pY29uO1xuICAgICAgICAgICAgICByZXR1cm4gKFxuICAgICAgICAgICAgICAgIDxTY3JvbGxSZXZlYWwga2V5PXtpZHh9IGRlbGF5PXtpZHh9IGRpcmVjdGlvbj1cInVwXCI+XG4gICAgICAgICAgICAgICAgICA8R2xhc3NDYXJkIGhvdmVyPXtmYWxzZX0+XG4gICAgICAgICAgICAgICAgICAgIDxJY29uIHNpemU9ezMyfSBjbGFzc05hbWU9XCJ0ZXh0LXRyYW5zcGFyZW50IGJnLWdyYWRpZW50LXRvLXIgZnJvbS1jeWFuLTUwMCB0by12aW9sZXQtNjAwIGJnLWNsaXAtdGV4dCBtYi00XCIgLz5cbiAgICAgICAgICAgICAgICAgICAgPGgzIGNsYXNzTmFtZT1cInRleHQtbGcgZm9udC1zZW1pYm9sZCB0ZXh0LWZvcmVncm91bmQgbWItMlwiPntmZWF0dXJlLnRpdGxlfTwvaDM+XG4gICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQtZm9yZWdyb3VuZC83MCB0ZXh0LXNtXCI+e2ZlYXR1cmUuZGVzY3JpcHRpb259PC9wPlxuICAgICAgICAgICAgICAgICAgPC9HbGFzc0NhcmQ+XG4gICAgICAgICAgICAgICAgPC9TY3JvbGxSZXZlYWw+XG4gICAgICAgICAgICAgICk7XG4gICAgICAgICAgICB9KX1cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L3NlY3Rpb24+XG5cbiAgICAgIHsvKiBBSSBUb29scyBXZSBVc2UgKi99XG4gICAgICA8c2VjdGlvbiBjbGFzc05hbWU9XCJweS0yNFwiPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbnRhaW5lclwiPlxuICAgICAgICAgIDxTZWN0aW9uSGVhZGluZ1xuICAgICAgICAgICAgdGl0bGU9XCJBSSBUb29scyAmIFRlY2hub2xvZ2llc1wiXG4gICAgICAgICAgICBzdWJ0aXRsZT1cIk91ciBUZWNoIFN0YWNrXCJcbiAgICAgICAgICAgIGRlc2NyaXB0aW9uPVwiV2UgdXNlIHRoZSBsYXRlc3QgQUkgYW5kIG1hY2hpbmUgbGVhcm5pbmcgdGVjaG5vbG9naWVzXCJcbiAgICAgICAgICAvPlxuXG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJncmlkIGdyaWQtY29scy0xIG1kOmdyaWQtY29scy0yIGdhcC04IG10LTE2XCI+XG4gICAgICAgICAgICB7W1xuICAgICAgICAgICAgICB7XG4gICAgICAgICAgICAgICAgdGl0bGU6ICdBSSBDaGF0Ym90cycsXG4gICAgICAgICAgICAgICAgZGVzY3JpcHRpb246ICdBdXRvbWF0ZWQgY3VzdG9tZXIgc2VydmljZSBhbmQgbGVhZCBxdWFsaWZpY2F0aW9uIDI0LzcnLFxuICAgICAgICAgICAgICB9LFxuICAgICAgICAgICAgICB7XG4gICAgICAgICAgICAgICAgdGl0bGU6ICdQcmVkaWN0aXZlIExlYWQgU2NvcmluZycsXG4gICAgICAgICAgICAgICAgZGVzY3JpcHRpb246ICdBSSBpZGVudGlmaWVzIHdoaWNoIGxlYWRzIGFyZSBtb3N0IGxpa2VseSB0byBidXknLFxuICAgICAgICAgICAgICB9LFxuICAgICAgICAgICAgICB7XG4gICAgICAgICAgICAgICAgdGl0bGU6ICdBdXRvbWF0ZWQgRW1haWwgU2VxdWVuY2VzJyxcbiAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbjogJ0FJLXBvd2VyZWQgZW1haWwgY2FtcGFpZ25zIHRoYXQgYWRhcHQgdG8gdXNlciBiZWhhdmlvcicsXG4gICAgICAgICAgICAgIH0sXG4gICAgICAgICAgICAgIHtcbiAgICAgICAgICAgICAgICB0aXRsZTogJ1NtYXJ0IEFkIE9wdGltaXphdGlvbicsXG4gICAgICAgICAgICAgICAgZGVzY3JpcHRpb246ICdBSSBhdXRvbWF0aWNhbGx5IG9wdGltaXplcyBhZHMgZm9yIG1heGltdW0gUk9JJyxcbiAgICAgICAgICAgICAgfSxcbiAgICAgICAgICAgICAge1xuICAgICAgICAgICAgICAgIHRpdGxlOiAnQ29udGVudCBHZW5lcmF0aW9uJyxcbiAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbjogJ0FJIGhlbHBzIGNyZWF0ZSBwZXJzb25hbGl6ZWQgY29udGVudCBhdCBzY2FsZScsXG4gICAgICAgICAgICAgIH0sXG4gICAgICAgICAgICAgIHtcbiAgICAgICAgICAgICAgICB0aXRsZTogJ0JlaGF2aW9yIEFuYWx5c2lzJyxcbiAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbjogJ0FJIGFuYWx5emVzIGN1c3RvbWVyIGJlaGF2aW9yIHRvIGltcHJvdmUgdGFyZ2V0aW5nJyxcbiAgICAgICAgICAgICAgfSxcbiAgICAgICAgICAgIF0ubWFwKCh0b29sLCBpZHgpID0+IChcbiAgICAgICAgICAgICAgPG1vdGlvbi5kaXZcbiAgICAgICAgICAgICAgICBrZXk9e2lkeH1cbiAgICAgICAgICAgICAgICBpbml0aWFsPXt7IG9wYWNpdHk6IDAsIHk6IDIwIH19XG4gICAgICAgICAgICAgICAgd2hpbGVJblZpZXc9e3sgb3BhY2l0eTogMSwgeTogMCB9fVxuICAgICAgICAgICAgICAgIHRyYW5zaXRpb249e3sgZHVyYXRpb246IDAuNiwgZGVsYXk6IGlkeCAqIDAuMSB9fVxuICAgICAgICAgICAgICAgIHZpZXdwb3J0PXt7IG9uY2U6IHRydWUgfX1cbiAgICAgICAgICAgICAgPlxuICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZ2xhc3MtY2FyZCBwLThcIj5cbiAgICAgICAgICAgICAgICAgIDxoMyBjbGFzc05hbWU9XCJ0ZXh0LWxnIGZvbnQtc2VtaWJvbGQgdGV4dC1mb3JlZ3JvdW5kIG1iLTJcIj57dG9vbC50aXRsZX08L2gzPlxuICAgICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwidGV4dC1mb3JlZ3JvdW5kLzcwXCI+e3Rvb2wuZGVzY3JpcHRpb259PC9wPlxuICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICA8L21vdGlvbi5kaXY+XG4gICAgICAgICAgICApKX1cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L3NlY3Rpb24+XG5cbiAgICAgIHsvKiBSZXN1bHRzICovfVxuICAgICAgPHNlY3Rpb24gY2xhc3NOYW1lPVwic3VyZmFjZS1iYW5kIHB5LTI0XCI+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY29udGFpbmVyXCI+XG4gICAgICAgICAgPFNlY3Rpb25IZWFkaW5nXG4gICAgICAgICAgICB0aXRsZT1cIlJlc3VsdHMgd2l0aCBBSSBNYXJrZXRpbmdcIlxuICAgICAgICAgICAgc3VidGl0bGU9XCJQcm92ZW4gSW1wYWN0XCJcbiAgICAgICAgICAgIGRlc2NyaXB0aW9uPVwiU2VlIHdoYXQncyBwb3NzaWJsZSB3aXRoIEFJLXBvd2VyZWQgbWFya2V0aW5nXCJcbiAgICAgICAgICAvPlxuXG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJncmlkIGdyaWQtY29scy0xIG1kOmdyaWQtY29scy0yIGxnOmdyaWQtY29scy00IGdhcC02IG10LTE2XCI+XG4gICAgICAgICAgICB7W1xuICAgICAgICAgICAgICB7IG1ldHJpYzogJzQ1JScsIGxhYmVsOiAnQXZlcmFnZSBMZWFkIEluY3JlYXNlJyB9LFxuICAgICAgICAgICAgICB7IG1ldHJpYzogJzMuMngnLCBsYWJlbDogJ0F2ZXJhZ2UgUk9JIEltcHJvdmVtZW50JyB9LFxuICAgICAgICAgICAgICB7IG1ldHJpYzogJzYwJScsIGxhYmVsOiAnVGltZSBTYXZlZCBvbiBNYW5hZ2VtZW50JyB9LFxuICAgICAgICAgICAgICB7IG1ldHJpYzogJzUyJScsIGxhYmVsOiAnQ29udmVyc2lvbiBSYXRlIEltcHJvdmVtZW50JyB9LFxuICAgICAgICAgICAgXS5tYXAoKGl0ZW0sIGlkeCkgPT4gKFxuICAgICAgICAgICAgICA8U2Nyb2xsUmV2ZWFsIGtleT17aWR4fSBkZWxheT17aWR4fSBkaXJlY3Rpb249XCJ1cFwiPlxuICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZ2xhc3MtY2FyZCBwLTggdGV4dC1jZW50ZXJcIj5cbiAgICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQtNHhsIGZvbnQtYm9sZCB0ZXh0LXRyYW5zcGFyZW50IGJnLWdyYWRpZW50LXRvLXIgZnJvbS1jeWFuLTUwMCB0by12aW9sZXQtNjAwIGJnLWNsaXAtdGV4dCBtYi0yXCI+XG4gICAgICAgICAgICAgICAgICAgIHtpdGVtLm1ldHJpY31cbiAgICAgICAgICAgICAgICAgIDwvcD5cbiAgICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQtZm9yZWdyb3VuZC83MFwiPntpdGVtLmxhYmVsfTwvcD5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgPC9TY3JvbGxSZXZlYWw+XG4gICAgICAgICAgICApKX1cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L3NlY3Rpb24+XG5cbiAgICAgIHsvKiBDVEEgKi99XG4gICAgICA8c2VjdGlvbiBjbGFzc05hbWU9XCJweS0yNFwiPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbnRhaW5lclwiPlxuICAgICAgICAgIDxtb3Rpb24uZGl2XG4gICAgICAgICAgICBjbGFzc05hbWU9XCJnbGFzcy1jYXJkIHAtMTIgbWQ6cC0xNiB0ZXh0LWNlbnRlclwiXG4gICAgICAgICAgICBpbml0aWFsPXt7IG9wYWNpdHk6IDAsIHk6IDQwIH19XG4gICAgICAgICAgICB3aGlsZUluVmlldz17eyBvcGFjaXR5OiAxLCB5OiAwIH19XG4gICAgICAgICAgICB0cmFuc2l0aW9uPXt7IGR1cmF0aW9uOiAwLjggfX1cbiAgICAgICAgICAgIHZpZXdwb3J0PXt7IG9uY2U6IHRydWUgfX1cbiAgICAgICAgICA+XG4gICAgICAgICAgICA8aDIgY2xhc3NOYW1lPVwidGV4dC00eGwgbWQ6dGV4dC01eGwgZm9udC1ib2xkIHRleHQtZm9yZWdyb3VuZCBtYi02XCI+XG4gICAgICAgICAgICAgIFJlYWR5IHRvIEhhcm5lc3MgQUkgZm9yIFlvdXIgQnVzaW5lc3M/XG4gICAgICAgICAgICA8L2gyPlxuICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwidGV4dC14bCB0ZXh0LWZvcmVncm91bmQvNzAgbWItOCBtYXgtdy0yeGwgbXgtYXV0b1wiPlxuICAgICAgICAgICAgICBMZXQncyBkaXNjdXNzIGhvdyBBSSBtYXJrZXRpbmcgY2FuIHRyYW5zZm9ybSB5b3VyIGdyb3d0aCBzdHJhdGVneS5cbiAgICAgICAgICAgIDwvcD5cbiAgICAgICAgICAgIDxHcmFkaWVudEJ1dHRvbiBocmVmPVwiL2NvbnRhY3RcIiBzaXplPVwibGdcIj5cbiAgICAgICAgICAgICAgU2NoZWR1bGUgRnJlZSBDb25zdWx0YXRpb25cbiAgICAgICAgICAgIDwvR3JhZGllbnRCdXR0b24+XG4gICAgICAgICAgPC9tb3Rpb24uZGl2PlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvc2VjdGlvbj5cbiAgICA8L2Rpdj5cbiAgKTtcbn1cblxyXG4iXSwiZmlsZSI6IkM6L1VzZXJzL2JhZGd1L0Rlc2t0b3AvYWxsIG5ldyBuaXcvY2xpZW50L3NyYy9wYWdlcy9BSU1hcmtldGluZy50c3gifQ==

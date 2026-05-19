@@ -1,282 +1,330 @@
-import { motion, useScroll, useTransform } from 'framer-motion';
-import { useRef, useMemo } from 'react';
-import SectionHeading from '@/components/SectionHeading';
-import GlassCard from '@/components/GlassCard';
-import GradientButton from '@/components/GradientButton';
-import ScrollReveal from '@/components/ScrollReveal';
-import PremiumHeroSticky from '@/components/PremiumHeroSticky';
-import {
-  ArrowRight,
-  Zap,
-  TrendingUp,
-  Users,
-  BarChart3,
-  MessageSquare,
-  Globe,
-  Smartphone,
-  type LucideIcon,
-} from 'lucide-react';
-import { useIsMobile } from '@/hooks/useMobile';
+import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
+import { useEffect, useState } from "react";
+import RetroBootOverlay from "@/components/RetroBootOverlay";
 
-function ServiceParallaxCard({
-  service,
-  index,
-  scrollProgress,
-  shouldAnimate,
-}: {
-  service: {
-    icon: LucideIcon;
-    title: string;
-    description: string;
-  };
-  index: number;
-  scrollProgress: ReturnType<typeof useScroll>['scrollYProgress'];
-  shouldAnimate: boolean;
-}) {
-  const Icon = service.icon;
-  const cardRotation = useTransform(
-    scrollProgress,
-    [0, 1],
-    [-2 + index * 0.5, 2 - index * 0.5]
-  );
+const selectedWork = [
+  {
+    title: "Ads engine",
+    copy: "Meta and Google campaigns tuned around real enquiries, local intent, and booked calls — not vanity clicks.",
+  },
+  {
+    title: "AI calling agent",
+    copy: "An always-on voice agent that answers, qualifies, follows up, and pushes serious leads toward booking.",
+  },
+  {
+    title: "WhatsApp follow-up",
+    copy: "Fast response flows, reminders, and reactivation sequences so interested leads do not disappear.",
+  },
+  {
+    title: "Landing pages",
+    copy: "Conversion-focused pages with clear offers, local trust, tracking, and CRM-ready lead capture.",
+  },
+  {
+    title: "CRM pipelines",
+    copy: "A clean system for every enquiry: source, status, follow-up, appointment, and revenue visibility.",
+  },
+  {
+    title: "Local SEO",
+    copy: "Google Business, content, and local search signals shaped to turn nearby demand into inbound leads.",
+  },
+];
 
-  return (
-    <motion.div style={shouldAnimate ? { rotateZ: cardRotation } : undefined}>
-      <GlassCard delay={index}>
-        <Icon size={32} className="text-transparent bg-gradient-to-r from-cyan-500 to-violet-600 bg-clip-text mb-4" />
-        <h3 className="text-xl font-semibold text-foreground mb-2">{service.title}</h3>
-        <p className="text-foreground/70">{service.description}</p>
-      </GlassCard>
-    </motion.div>
-  );
-}
+const capabilities = [
+  "Meta & Google Ads",
+  "AI Calling Agents",
+  "WhatsApp Automation",
+  "CRM Pipelines",
+  "Landing Pages",
+  "SEO & Content",
+];
+
+const flowSteps = [
+  "Attention",
+  "Qualification",
+  "Follow-up",
+  "Booking",
+];
 
 export default function Home() {
-  const servicesRef = useRef<HTMLDivElement>(null);
-  const isMobile = useIsMobile();
-  const prefersReducedMotion = useMemo(() => {
-    if (typeof window === 'undefined') return false;
-    return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const [targetProgress, setTargetProgress] = useState(0);
+  const [heroProgress, setHeroProgress] = useState(0);
+  const [viewportWidth, setViewportWidth] = useState(1440);
+  const [viewportHeight, setViewportHeight] = useState(900);
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const clamp = (value: number) => Math.max(0, Math.min(value, 1));
+    const onScroll = () => {
+      const currentY = window.scrollY;
+      const maxScroll = window.innerHeight * 1.9;
+      setScrollPosition(currentY);
+      setTargetProgress(clamp(currentY / maxScroll));
+    };
+    const onResize = () => {
+      setViewportWidth(window.innerWidth);
+      setViewportHeight(window.innerHeight);
+    };
+
+    onResize();
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onResize);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onResize);
+    };
   }, []);
 
-  const { scrollYProgress: servicesScrollProgress } = useScroll({
-    target: servicesRef,
-    offset: ['start center', 'end center'],
-  });
+  useEffect(() => {
+    let frame = 0;
 
-  const shouldAnimate = !isMobile && !prefersReducedMotion;
+    const tick = () => {
+      setHeroProgress((current) => current + (targetProgress - current) * 0.11);
+      frame = window.requestAnimationFrame(tick);
+    };
 
-  const services = [
-    { icon: Globe, title: 'Social Media Marketing', description: 'Engage and grow your audience across all platforms' },
-    { icon: BarChart3, title: 'Google Growth', description: 'Dominate local search and Google My Business' },
-    { icon: TrendingUp, title: 'SEO & Content', description: 'Rank higher and attract organic traffic' },
-    { icon: Smartphone, title: 'Websites & Landing Pages', description: 'High-converting pages that drive sales' },
-    { icon: MessageSquare, title: 'WhatsApp Marketing', description: 'Direct communication with your customers' },
-    { icon: Zap, title: 'AI Chatbots', description: 'Automate customer interactions 24/7' },
-  ];
+    frame = window.requestAnimationFrame(tick);
+    return () => window.cancelAnimationFrame(frame);
+  }, [targetProgress]);
 
-  const benefits = [
-    { title: 'Affordable Packages', description: 'Starting from ₹3,990/week for growing businesses' },
-    { title: 'Clear Deliverables', description: 'Know exactly what you\'re getting each month' },
-    { title: 'AI-Assisted Speed', description: 'Faster execution with AI-powered systems' },
-    { title: 'Lead-Focused', description: 'Everything designed to generate qualified leads' },
-    { title: 'Transparent Reporting', description: 'Real-time dashboards and monthly reports' },
-    { title: 'Industry Expertise', description: 'Strategies tailored to your specific industry' },
-  ];
-
-  const pricingPlans = [
-    {
-      name: 'Silver',
-      weekly: '₹3,990',
-      monthly: '₹12,990',
-      popular: false,
-    },
-    {
-      name: 'Gold',
-      weekly: '₹5,990',
-      monthly: '₹23,990',
-      popular: true,
-    },
-    {
-      name: 'Diamond',
-      weekly: '₹9,900',
-      monthly: '₹39,990',
-      popular: false,
-    },
-  ];
-
-  const industries = [
-    'Restaurants & Cafes',
-    'Furniture & Interiors',
-    'Retail Shops',
-    'Salons & Clinics',
-    'Real Estate',
-    'Education & Coaching',
-    'Ecommerce Brands',
-    'Gift / Toy / Decor Shops',
-  ];
+  const easedProgress = 1 - Math.pow(1 - heroProgress, 3);
+  const isCompactViewport = viewportWidth < 1024;
+  const cameraProgress = Math.max(0, Math.min((heroProgress - 0.18) / 0.66, 1));
+  const cameraEase = 1 - Math.pow(1 - cameraProgress, 3.1);
+  const sceneScale = isCompactViewport
+    ? 1 + cameraEase * 0.22
+    : 1 + cameraEase * 2.28;
+  const sceneX = isCompactViewport
+    ? `${cameraEase * -1}%`
+    : `${cameraEase * -26}vw`;
+  const sceneY = isCompactViewport
+    ? `${cameraEase * 2.4}%`
+    : `${cameraEase * 7.2}vh`;
+  const copyY =
+    easedProgress < 0.28 ? easedProgress * -8 : -8 - ((easedProgress - 0.28) / 0.72) * 86;
+  const copyOpacity = easedProgress < 0.2 ? 1 : Math.max(0, 1 - (easedProgress - 0.2) / 0.2);
+  const scrollOpacity = easedProgress < 0.16 ? 1 : Math.max(0, 1 - (easedProgress - 0.16) / 0.16);
+  const scanOpacity = Math.min(easedProgress / 0.68, 1) * 0.5;
+  const revealIn = Math.max(0, Math.min((easedProgress - 0.34) / 0.22, 1));
+  const revealOut = Math.max(0, Math.min((easedProgress - 0.78) / 0.18, 1));
+  const revealOpacity = revealIn * (1 - revealOut);
+  const screenReveal = Math.max(0, Math.min((heroProgress - 0.68) / 0.24, 1));
+  const screenWipeOpacity =
+    screenReveal <= 0
+      ? 0
+      : screenReveal < 0.78
+        ? 0.1 + screenReveal * 0.78
+        : Math.max(0, 0.88 - (screenReveal - 0.78) / 0.22);
+  const screenWipeScale = isCompactViewport
+    ? 1 + screenReveal * 10.5
+    : 1 + screenReveal * 13.5;
+  const sceneFade = Math.max(
+    0,
+    Math.min((scrollPosition - viewportHeight * 2.08) / (viewportHeight * 0.34), 1),
+  );
+  const portalProgress = Math.max(
+    0,
+    Math.min((scrollPosition - viewportHeight * 1.82) / (viewportHeight * 0.72), 1),
+  );
+  const portalOpacity = portalProgress <= 0 ? 0 : Math.min(1, portalProgress * 1.35);
+  const portalRadius = isCompactViewport
+    ? 9 + portalProgress * 138
+    : 6 + portalProgress * 142;
+  const portalCenter = isCompactViewport ? "50% 46%" : "69% 36%";
+  const portalClipPath = `circle(${portalRadius}% at ${portalCenter})`;
+  const sceneOpacity = 1 - Math.max(sceneFade, Math.max(0, (portalProgress - 0.78) / 0.22));
+  const workProgress = Math.max(
+    0,
+    Math.min((scrollPosition - viewportHeight * 2.35) / (viewportHeight * 1.25), 1),
+  );
+  const filmstripShift = isCompactViewport
+    ? `${workProgress * -24}%`
+    : `${workProgress * -54}%`;
+  const workLift = `${Math.max(0, easedProgress - 0.72) * -8}rem`;
 
   return (
-    <div className="min-h-screen">
-      {/* Premium Hero Section with Sticky Scroll Storytelling */}
-      <PremiumHeroSticky />
+    <div className="retro-page">
+      <RetroBootOverlay />
 
-      {/* Trust Strip */}
-      <section className="surface-band border-y border-white/55 bg-white/22 py-12 backdrop-blur-xl">
-        <div className="container">
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-            {['AI Marketing', 'Google Growth', 'Social Media', 'CRM', 'WhatsApp Automation', 'Lead Funnels'].map((item) => (
-              <motion.div
-                key={item}
-                className="flex items-center gap-2 text-foreground/70"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.6 }}
-                viewport={{ once: true }}
-              >
-                <div className="w-2 h-2 rounded-full bg-gradient-to-r from-cyan-500 to-violet-600"></div>
-                <span className="font-medium">{item}</span>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Services Section with Parallax Cards */}
-      <section ref={servicesRef} className="py-24">
-        <div className="container">
-          <SectionHeading
-            title="Everything Your Business Needs to Grow — In One Place"
-            subtitle="Our Services"
-            description="Comprehensive digital marketing solutions designed for local businesses"
+      <section id="home" className="retro-hero">
+        <motion.div
+          className="retro-hero-scene"
+          style={{ opacity: sceneOpacity }}
+        >
+          <motion.img
+            className="retro-hero-image"
+            src="/niw-hero-final-crt.png"
+            alt=""
+            aria-hidden="true"
+            style={{ scale: sceneScale, x: sceneX, y: sceneY }}
           />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
-            {services.map((service, idx) => (
-              <ServiceParallaxCard
-                key={service.title}
-                service={service}
-                index={idx}
-                scrollProgress={servicesScrollProgress}
-                shouldAnimate={shouldAnimate}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
+        </motion.div>
+        <div className="retro-hero-fog" />
+        <div className="retro-hero-noise" />
+        <motion.div className="retro-hero-scan" style={{ opacity: scanOpacity }} />
+        <motion.div
+          className="retro-screen-wipe"
+          style={{
+            opacity: screenWipeOpacity,
+            scale: screenWipeScale,
+          }}
+        />
 
-      {/* Why NIW Works */}
-      <section className="surface-band py-24">
-        <div className="container">
-          <SectionHeading
-            title="Why NIW Works"
-            subtitle="Our Advantage"
-            description="Proven systems that deliver results for local businesses"
-          />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
-            {benefits.map((benefit, idx) => (
-              <ScrollReveal key={idx} delay={idx} direction="up">
-                <div className="glass-card p-8">
-                  <h3 className="text-lg font-semibold text-foreground mb-3">{benefit.title}</h3>
-                  <p className="text-foreground/70">{benefit.description}</p>
-                </div>
-              </ScrollReveal>
-            ))}
+        <motion.div
+          className="retro-portal-preview"
+          style={{
+            opacity: portalOpacity,
+            clipPath: portalClipPath,
+          }}
+        >
+          <div className="retro-portal-heading">
+            <p>Selected Work</p>
+            <h2>Services wired into one growth machine</h2>
           </div>
-        </div>
-      </section>
 
-      {/* Pricing Preview */}
-      <section className="py-24">
-        <div className="container">
-          <SectionHeading
-            title="Simple, Transparent Pricing"
-            subtitle="Our Plans"
-            description="Choose the perfect package for your business"
-          />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
-            {pricingPlans.map((plan, idx) => (
-              <motion.div
-                key={idx}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: idx * 0.1 }}
-                viewport={{ once: true }}
-                className={`relative ${plan.popular ? 'md:scale-105' : ''}`}
-              >
-                {plan.popular && (
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-gradient-to-r from-cyan-500 to-violet-600 text-white text-sm font-semibold rounded-full">
-                    Most Popular
-                  </div>
-                )}
-                <div className={`glass-card h-full p-8 ${plan.popular ? 'popular-card ring-2 ring-cyan-400/50' : ''}`}>
-                  <h3 className="text-2xl font-bold text-foreground mb-4">{plan.name}</h3>
-                  <div className="mb-6">
-                    <p className="text-sm text-foreground/60 mb-1">Starting from</p>
-                    <p className="text-4xl font-bold text-foreground">{plan.weekly}</p>
-                    <p className="text-sm text-foreground/60">/week or {plan.monthly}/month</p>
-                  </div>
-                  <GradientButton href="/contact" size="md" className="w-full">
-                    Get Started
-                  </GradientButton>
-                </div>
-              </motion.div>
+          <motion.div className="retro-portal-film" style={{ x: filmstripShift }}>
+            {selectedWork.map((item, index) => (
+              <article key={`portal-${item.title}`} className="retro-portal-card">
+                <span>0{index + 1}</span>
+                <h3>{item.title}</h3>
+                <p>{item.copy}</p>
+              </article>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Industries */}
-      <section className="surface-band py-24">
-        <div className="container">
-          <SectionHeading
-            title="We Work With All Industries"
-            subtitle="Industry Solutions"
-            description="Tailored strategies for your specific business type"
-          />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-16">
-            {industries.map((industry, idx) => (
-              <ScrollReveal key={idx} delay={idx} direction="up">
-                <motion.div
-                  className="glass-card p-6 text-center transition-colors hover:bg-white/80 cursor-pointer"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.98 }}
-                >
-                  <p className="font-medium text-foreground">{industry}</p>
-                </motion.div>
-              </ScrollReveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Banner */}
-      <section className="py-24">
-        <div className="container">
-          <motion.div
-            className="glass-card p-12 text-center md:p-16"
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Ready to Build Your <span className="gradient-text">Growth System?</span>
-            </h2>
-            <p className="text-xl text-foreground/70 mb-8 max-w-2xl mx-auto">
-              Join hundreds of local businesses already using NIW to generate more leads, customers, and sales.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <GradientButton href="/contact" size="lg">
-                Book Free Consultation
-              </GradientButton>
-              <a
-                href="https://wa.me/91YOUR_NUMBER"
-                className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold text-white bg-green-500 hover:bg-green-600 transition-colors"
-              >
-                WhatsApp Us
-              </a>
-            </div>
           </motion.div>
+        </motion.div>
+
+        <div className="retro-hero-inner">
+          <motion.div className="retro-hero-copy" style={{ y: copyY, opacity: copyOpacity }}>
+            <h1 className="retro-title-desktop">
+              A Creative
+              <br />
+              Growth Systems
+              <br />
+              Studio,
+              <br />
+              Plugged into
+              <br />
+              Local Growth
+            </h1>
+
+            <h1 className="retro-title-compact">
+              A Creative
+              <br />
+              Growth Systems Studio,
+              <br />
+              Plugged into Growth
+            </h1>
+
+            <p>
+              Built to attract attention, generate enquiries, qualify leads, and turn follow-up into confirmed bookings.
+            </p>
+
+            <a
+              href="#selected-work"
+              className="retro-scroll-link"
+              style={{ opacity: scrollOpacity }}
+            >
+              Scroll to inspect our growth systems
+              <span className="retro-hand-cues">☞ ☞ ☞</span>
+              <ArrowRight size={18} />
+            </a>
+          </motion.div>
+
+          <motion.div className="retro-hero-object" aria-hidden="true" />
+        </div>
+
+        <motion.div className="retro-hero-reveal" style={{ opacity: revealOpacity }}>
+          <p>From attention</p>
+          <span />
+          <p>to booked business</p>
+        </motion.div>
+      </section>
+
+      <motion.section
+        id="selected-work"
+        className="retro-section retro-work"
+        style={{ y: workLift }}
+      >
+        <div className="retro-section-heading">
+          <p>Selected Work</p>
+          <h2>Services wired into one growth machine</h2>
+        </div>
+
+        <motion.div className="retro-work-grid" style={{ x: filmstripShift }}>
+          {selectedWork.map((item, index) => (
+            <motion.article
+              key={item.title}
+              className="retro-work-card"
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.35 }}
+              transition={{ delay: index * 0.08, duration: 0.55 }}
+            >
+              <span>0{index + 1}</span>
+              <h3>{item.title}</h3>
+              <p>{item.copy}</p>
+            </motion.article>
+          ))}
+        </motion.div>
+      </motion.section>
+
+      <section className="retro-transition-panel">
+        <div className="retro-transition-copy">
+          <p>The system flow</p>
+          <h2>Every lead moves through one connected journey.</h2>
+        </div>
+
+        <div className="retro-transition-rail">
+          {flowSteps.map((step, index) => (
+            <span key={step}>
+              <i>{String(index + 1).padStart(2, "0")}</i>
+              {step}
+            </span>
+          ))}
+        </div>
+      </section>
+
+      <section id="about" className="retro-section retro-story">
+        <div className="retro-story-copy">
+          <p>Making local growth more measurable, responsive, and alive</p>
+          <h2>
+            NIW combines creative marketing with automation systems that keep working after the click.
+          </h2>
+        </div>
+
+        <div className="retro-story-body">
+          <p>
+            We build growth engines for local businesses: ads that attract the right people, pages that convert,
+            AI agents that qualify enquiries, WhatsApp sequences that follow up instantly, and dashboards that show
+            what is actually moving revenue.
+          </p>
+          <p>
+            The goal is simple: fewer missed leads, faster response times, cleaner pipelines, and more confirmed
+            customers from the same marketing spend.
+          </p>
+        </div>
+      </section>
+
+      <section className="retro-section retro-capabilities">
+        <div className="retro-section-heading">
+          <p>Capabilities</p>
+          <h2>Everything needed to move a lead from click to booking</h2>
+        </div>
+
+        <div className="retro-capability-grid">
+          {capabilities.map((item) => (
+            <span key={item}>{item}</span>
+          ))}
+        </div>
+      </section>
+
+      <section id="contact" className="retro-section retro-contact">
+        <p>Ready to build your growth system?</p>
+        <h2>Let’s turn your next wave of attention into booked business.</h2>
+        <div className="retro-contact-actions">
+          <a href="#contact">Book a strategy call</a>
+          <a href="#selected-work">See the system</a>
         </div>
       </section>
     </div>

@@ -1,0 +1,665 @@
+import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/src/pages/Contact.tsx");import __vite__cjsImport0_react_jsxDevRuntime from "/@fs/C:/Users/badgu/Desktop/all new niw/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=04b549ff"; const jsxDEV = __vite__cjsImport0_react_jsxDevRuntime["jsxDEV"];
+var _s = $RefreshSig$();
+import __vite__cjsImport1_react from "/@fs/C:/Users/badgu/Desktop/all new niw/node_modules/.vite/deps/react.js?v=04b549ff"; const useState = __vite__cjsImport1_react["useState"];
+import { motion } from "/@fs/C:/Users/badgu/Desktop/all new niw/node_modules/.vite/deps/framer-motion.js?v=04b549ff";
+import SectionHeading from "/src/components/SectionHeading.tsx";
+import GlassCard from "/src/components/GlassCard.tsx";
+import { Mail, Phone, MapPin, Clock, Send } from "/@fs/C:/Users/badgu/Desktop/all new niw/node_modules/.vite/deps/lucide-react.js?v=04b549ff";
+export default function Contact() {
+  _s();
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    company: "",
+    message: ""
+  });
+  const [submitted, setSubmitted] = useState(false);
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form submitted:", formData);
+    setSubmitted(true);
+    setTimeout(() => {
+      setSubmitted(false);
+      setFormData({ name: "", email: "", phone: "", company: "", message: "" });
+    }, 3e3);
+  };
+  return /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Contact.tsx:37", className: "legacy-page min-h-screen", children: [
+    /* @__PURE__ */ jsxDEV("section", { "data-loc": "client\\src\\pages\\Contact.tsx:39", className: "relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-20", children: [
+      /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Contact.tsx:40", className: "absolute inset-0 -z-10", children: [
+        /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Contact.tsx:41", className: "absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-br from-cyan-200/30 to-blue-200/20 rounded-full blur-3xl" }, void 0, false, {
+          fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+          lineNumber: 41,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Contact.tsx:42", className: "absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-br from-violet-200/30 to-purple-200/20 rounded-full blur-3xl" }, void 0, false, {
+          fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+          lineNumber: 42,
+          columnNumber: 11
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+        lineNumber: 40,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Contact.tsx:45", className: "container", children: /* @__PURE__ */ jsxDEV(
+        motion.div,
+        {
+          "data-loc": "client\\src\\pages\\Contact.tsx:46",
+          initial: { opacity: 0, y: 20 },
+          animate: { opacity: 1, y: 0 },
+          transition: { duration: 0.8 },
+          children: /* @__PURE__ */ jsxDEV(
+            SectionHeading,
+            {
+              "data-loc": "client\\src\\pages\\Contact.tsx:51",
+              title: "Get in Touch",
+              subtitle: "Let's Talk",
+              description: "We'd love to hear about your business and discuss how we can help you grow",
+              animated: false
+            },
+            void 0,
+            false,
+            {
+              fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+              lineNumber: 51,
+              columnNumber: 13
+            },
+            this
+          )
+        },
+        void 0,
+        false,
+        {
+          fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+          lineNumber: 46,
+          columnNumber: 11
+        },
+        this
+      ) }, void 0, false, {
+        fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+        lineNumber: 45,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+      lineNumber: 39,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("section", { "data-loc": "client\\src\\pages\\Contact.tsx:62", className: "py-24", children: /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Contact.tsx:63", className: "container", children: /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Contact.tsx:64", className: "grid grid-cols-1 lg:grid-cols-2 gap-12", children: [
+      /* @__PURE__ */ jsxDEV(
+        motion.div,
+        {
+          "data-loc": "client\\src\\pages\\Contact.tsx:66",
+          initial: { opacity: 0, x: -40 },
+          whileInView: { opacity: 1, x: 0 },
+          transition: { duration: 0.6 },
+          viewport: { once: true },
+          children: [
+            /* @__PURE__ */ jsxDEV("h2", { "data-loc": "client\\src\\pages\\Contact.tsx:72", className: "text-3xl font-bold text-foreground mb-8", children: "Contact Information" }, void 0, false, {
+              fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+              lineNumber: 72,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Contact.tsx:74", className: "space-y-6", children: [
+              /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Contact.tsx:76", className: "glass-card p-6 flex gap-4", children: [
+                /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Contact.tsx:77", className: "flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-br from-cyan-500/20 to-violet-600/20 flex items-center justify-center", children: /* @__PURE__ */ jsxDEV(Mail, { "data-loc": "client\\src\\pages\\Contact.tsx:78", size: 24, className: "text-cyan-500" }, void 0, false, {
+                  fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                  lineNumber: 78,
+                  columnNumber: 21
+                }, this) }, void 0, false, {
+                  fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                  lineNumber: 77,
+                  columnNumber: 19
+                }, this),
+                /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Contact.tsx:80", children: [
+                  /* @__PURE__ */ jsxDEV("h3", { "data-loc": "client\\src\\pages\\Contact.tsx:81", className: "font-semibold text-foreground mb-1", children: "Email" }, void 0, false, {
+                    fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                    lineNumber: 81,
+                    columnNumber: 21
+                  }, this),
+                  /* @__PURE__ */ jsxDEV("a", { "data-loc": "client\\src\\pages\\Contact.tsx:82", href: "mailto:hello@niw.com", className: "text-foreground/70 hover:text-foreground transition-colors", children: "hello@niw.com" }, void 0, false, {
+                    fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                    lineNumber: 82,
+                    columnNumber: 21
+                  }, this)
+                ] }, void 0, true, {
+                  fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                  lineNumber: 80,
+                  columnNumber: 19
+                }, this)
+              ] }, void 0, true, {
+                fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                lineNumber: 76,
+                columnNumber: 17
+              }, this),
+              /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Contact.tsx:89", className: "glass-card p-6 flex gap-4", children: [
+                /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Contact.tsx:90", className: "flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-br from-cyan-500/20 to-violet-600/20 flex items-center justify-center", children: /* @__PURE__ */ jsxDEV(Phone, { "data-loc": "client\\src\\pages\\Contact.tsx:91", size: 24, className: "text-cyan-500" }, void 0, false, {
+                  fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                  lineNumber: 91,
+                  columnNumber: 21
+                }, this) }, void 0, false, {
+                  fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                  lineNumber: 90,
+                  columnNumber: 19
+                }, this),
+                /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Contact.tsx:93", children: [
+                  /* @__PURE__ */ jsxDEV("h3", { "data-loc": "client\\src\\pages\\Contact.tsx:94", className: "font-semibold text-foreground mb-1", children: "Phone" }, void 0, false, {
+                    fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                    lineNumber: 94,
+                    columnNumber: 21
+                  }, this),
+                  /* @__PURE__ */ jsxDEV("a", { "data-loc": "client\\src\\pages\\Contact.tsx:95", href: "tel:+91YOUR_NUMBER", className: "text-foreground/70 hover:text-foreground transition-colors", children: "+91 YOUR NUMBER" }, void 0, false, {
+                    fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                    lineNumber: 95,
+                    columnNumber: 21
+                  }, this)
+                ] }, void 0, true, {
+                  fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                  lineNumber: 93,
+                  columnNumber: 19
+                }, this)
+              ] }, void 0, true, {
+                fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                lineNumber: 89,
+                columnNumber: 17
+              }, this),
+              /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Contact.tsx:102", className: "glass-card p-6 flex gap-4", children: [
+                /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Contact.tsx:103", className: "flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-br from-green-500/20 to-emerald-600/20 flex items-center justify-center", children: /* @__PURE__ */ jsxDEV(Send, { "data-loc": "client\\src\\pages\\Contact.tsx:104", size: 24, className: "text-green-500" }, void 0, false, {
+                  fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                  lineNumber: 104,
+                  columnNumber: 21
+                }, this) }, void 0, false, {
+                  fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                  lineNumber: 103,
+                  columnNumber: 19
+                }, this),
+                /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Contact.tsx:106", children: [
+                  /* @__PURE__ */ jsxDEV("h3", { "data-loc": "client\\src\\pages\\Contact.tsx:107", className: "font-semibold text-foreground mb-1", children: "WhatsApp" }, void 0, false, {
+                    fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                    lineNumber: 107,
+                    columnNumber: 21
+                  }, this),
+                  /* @__PURE__ */ jsxDEV(
+                    "a",
+                    {
+                      "data-loc": "client\\src\\pages\\Contact.tsx:108",
+                      href: "https://wa.me/91YOUR_NUMBER",
+                      target: "_blank",
+                      rel: "noopener noreferrer",
+                      className: "text-foreground/70 hover:text-foreground transition-colors",
+                      children: "Chat with us"
+                    },
+                    void 0,
+                    false,
+                    {
+                      fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                      lineNumber: 108,
+                      columnNumber: 21
+                    },
+                    this
+                  )
+                ] }, void 0, true, {
+                  fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                  lineNumber: 106,
+                  columnNumber: 19
+                }, this)
+              ] }, void 0, true, {
+                fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                lineNumber: 102,
+                columnNumber: 17
+              }, this),
+              /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Contact.tsx:120", className: "glass-card p-6 flex gap-4", children: [
+                /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Contact.tsx:121", className: "flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-br from-cyan-500/20 to-violet-600/20 flex items-center justify-center", children: /* @__PURE__ */ jsxDEV(MapPin, { "data-loc": "client\\src\\pages\\Contact.tsx:122", size: 24, className: "text-cyan-500" }, void 0, false, {
+                  fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                  lineNumber: 122,
+                  columnNumber: 21
+                }, this) }, void 0, false, {
+                  fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                  lineNumber: 121,
+                  columnNumber: 19
+                }, this),
+                /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Contact.tsx:124", children: [
+                  /* @__PURE__ */ jsxDEV("h3", { "data-loc": "client\\src\\pages\\Contact.tsx:125", className: "font-semibold text-foreground mb-1", children: "Location" }, void 0, false, {
+                    fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                    lineNumber: 125,
+                    columnNumber: 21
+                  }, this),
+                  /* @__PURE__ */ jsxDEV("p", { "data-loc": "client\\src\\pages\\Contact.tsx:126", className: "text-foreground/70", children: "India" }, void 0, false, {
+                    fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                    lineNumber: 126,
+                    columnNumber: 21
+                  }, this)
+                ] }, void 0, true, {
+                  fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                  lineNumber: 124,
+                  columnNumber: 19
+                }, this)
+              ] }, void 0, true, {
+                fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                lineNumber: 120,
+                columnNumber: 17
+              }, this),
+              /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Contact.tsx:131", className: "glass-card p-6 flex gap-4", children: [
+                /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Contact.tsx:132", className: "flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-br from-cyan-500/20 to-violet-600/20 flex items-center justify-center", children: /* @__PURE__ */ jsxDEV(Clock, { "data-loc": "client\\src\\pages\\Contact.tsx:133", size: 24, className: "text-cyan-500" }, void 0, false, {
+                  fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                  lineNumber: 133,
+                  columnNumber: 21
+                }, this) }, void 0, false, {
+                  fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                  lineNumber: 132,
+                  columnNumber: 19
+                }, this),
+                /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Contact.tsx:135", children: [
+                  /* @__PURE__ */ jsxDEV("h3", { "data-loc": "client\\src\\pages\\Contact.tsx:136", className: "font-semibold text-foreground mb-1", children: "Business Hours" }, void 0, false, {
+                    fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                    lineNumber: 136,
+                    columnNumber: 21
+                  }, this),
+                  /* @__PURE__ */ jsxDEV("p", { "data-loc": "client\\src\\pages\\Contact.tsx:137", className: "text-foreground/70 text-sm", children: "Monday - Friday: 9 AM - 6 PM IST" }, void 0, false, {
+                    fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                    lineNumber: 137,
+                    columnNumber: 21
+                  }, this),
+                  /* @__PURE__ */ jsxDEV("p", { "data-loc": "client\\src\\pages\\Contact.tsx:138", className: "text-foreground/70 text-sm", children: "Saturday: 10 AM - 4 PM IST" }, void 0, false, {
+                    fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                    lineNumber: 138,
+                    columnNumber: 21
+                  }, this)
+                ] }, void 0, true, {
+                  fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                  lineNumber: 135,
+                  columnNumber: 19
+                }, this)
+              ] }, void 0, true, {
+                fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                lineNumber: 131,
+                columnNumber: 17
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+              lineNumber: 74,
+              columnNumber: 15
+            }, this)
+          ]
+        },
+        void 0,
+        true,
+        {
+          fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+          lineNumber: 66,
+          columnNumber: 13
+        },
+        this
+      ),
+      /* @__PURE__ */ jsxDEV(
+        motion.div,
+        {
+          "data-loc": "client\\src\\pages\\Contact.tsx:145",
+          initial: { opacity: 0, x: 40 },
+          whileInView: { opacity: 1, x: 0 },
+          transition: { duration: 0.6 },
+          viewport: { once: true },
+          children: /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Contact.tsx:151", className: "glass-card p-8 md:p-12", children: [
+            /* @__PURE__ */ jsxDEV("h2", { "data-loc": "client\\src\\pages\\Contact.tsx:152", className: "text-2xl font-bold text-foreground mb-6", children: "Send us a Message" }, void 0, false, {
+              fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+              lineNumber: 152,
+              columnNumber: 17
+            }, this),
+            submitted ? /* @__PURE__ */ jsxDEV(
+              motion.div,
+              {
+                "data-loc": "client\\src\\pages\\Contact.tsx:155",
+                initial: { opacity: 0, scale: 0.9 },
+                animate: { opacity: 1, scale: 1 },
+                className: "text-center py-12",
+                children: [
+                  /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Contact.tsx:160", className: "w-16 h-16 rounded-full bg-gradient-to-br from-cyan-500 to-violet-600 flex items-center justify-center mx-auto mb-4", children: /* @__PURE__ */ jsxDEV("span", { "data-loc": "client\\src\\pages\\Contact.tsx:161", className: "text-2xl", children: "âœ“" }, void 0, false, {
+                    fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                    lineNumber: 161,
+                    columnNumber: 23
+                  }, this) }, void 0, false, {
+                    fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                    lineNumber: 160,
+                    columnNumber: 21
+                  }, this),
+                  /* @__PURE__ */ jsxDEV("h3", { "data-loc": "client\\src\\pages\\Contact.tsx:163", className: "text-xl font-bold text-foreground mb-2", children: "Thank You!" }, void 0, false, {
+                    fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                    lineNumber: 163,
+                    columnNumber: 21
+                  }, this),
+                  /* @__PURE__ */ jsxDEV("p", { "data-loc": "client\\src\\pages\\Contact.tsx:164", className: "text-foreground/70", children: "We've received your message and will get back to you soon." }, void 0, false, {
+                    fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                    lineNumber: 164,
+                    columnNumber: 21
+                  }, this)
+                ]
+              },
+              void 0,
+              true,
+              {
+                fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                lineNumber: 155,
+                columnNumber: 17
+              },
+              this
+            ) : /* @__PURE__ */ jsxDEV("form", { "data-loc": "client\\src\\pages\\Contact.tsx:167", onSubmit: handleSubmit, className: "space-y-4", children: [
+              /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Contact.tsx:168", children: [
+                /* @__PURE__ */ jsxDEV("label", { "data-loc": "client\\src\\pages\\Contact.tsx:169", className: "block text-sm font-medium text-foreground mb-2", children: "Name" }, void 0, false, {
+                  fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                  lineNumber: 169,
+                  columnNumber: 23
+                }, this),
+                /* @__PURE__ */ jsxDEV(
+                  "input",
+                  {
+                    "data-loc": "client\\src\\pages\\Contact.tsx:170",
+                    type: "text",
+                    name: "name",
+                    value: formData.name,
+                    onChange: handleChange,
+                    required: true,
+                    className: "w-full px-4 py-3 rounded-lg bg-white/50 border border-white/20 text-foreground placeholder-foreground/50 focus:outline-none focus:ring-2 focus:ring-cyan-500",
+                    placeholder: "Your name"
+                  },
+                  void 0,
+                  false,
+                  {
+                    fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                    lineNumber: 170,
+                    columnNumber: 23
+                  },
+                  this
+                )
+              ] }, void 0, true, {
+                fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                lineNumber: 168,
+                columnNumber: 21
+              }, this),
+              /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Contact.tsx:181", children: [
+                /* @__PURE__ */ jsxDEV("label", { "data-loc": "client\\src\\pages\\Contact.tsx:182", className: "block text-sm font-medium text-foreground mb-2", children: "Email" }, void 0, false, {
+                  fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                  lineNumber: 182,
+                  columnNumber: 23
+                }, this),
+                /* @__PURE__ */ jsxDEV(
+                  "input",
+                  {
+                    "data-loc": "client\\src\\pages\\Contact.tsx:183",
+                    type: "email",
+                    name: "email",
+                    value: formData.email,
+                    onChange: handleChange,
+                    required: true,
+                    className: "w-full px-4 py-3 rounded-lg bg-white/50 border border-white/20 text-foreground placeholder-foreground/50 focus:outline-none focus:ring-2 focus:ring-cyan-500",
+                    placeholder: "your@email.com"
+                  },
+                  void 0,
+                  false,
+                  {
+                    fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                    lineNumber: 183,
+                    columnNumber: 23
+                  },
+                  this
+                )
+              ] }, void 0, true, {
+                fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                lineNumber: 181,
+                columnNumber: 21
+              }, this),
+              /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Contact.tsx:194", children: [
+                /* @__PURE__ */ jsxDEV("label", { "data-loc": "client\\src\\pages\\Contact.tsx:195", className: "block text-sm font-medium text-foreground mb-2", children: "Phone" }, void 0, false, {
+                  fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                  lineNumber: 195,
+                  columnNumber: 23
+                }, this),
+                /* @__PURE__ */ jsxDEV(
+                  "input",
+                  {
+                    "data-loc": "client\\src\\pages\\Contact.tsx:196",
+                    type: "tel",
+                    name: "phone",
+                    value: formData.phone,
+                    onChange: handleChange,
+                    className: "w-full px-4 py-3 rounded-lg bg-white/50 border border-white/20 text-foreground placeholder-foreground/50 focus:outline-none focus:ring-2 focus:ring-cyan-500",
+                    placeholder: "+91 XXXXXXXXXX"
+                  },
+                  void 0,
+                  false,
+                  {
+                    fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                    lineNumber: 196,
+                    columnNumber: 23
+                  },
+                  this
+                )
+              ] }, void 0, true, {
+                fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                lineNumber: 194,
+                columnNumber: 21
+              }, this),
+              /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Contact.tsx:206", children: [
+                /* @__PURE__ */ jsxDEV("label", { "data-loc": "client\\src\\pages\\Contact.tsx:207", className: "block text-sm font-medium text-foreground mb-2", children: "Company" }, void 0, false, {
+                  fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                  lineNumber: 207,
+                  columnNumber: 23
+                }, this),
+                /* @__PURE__ */ jsxDEV(
+                  "input",
+                  {
+                    "data-loc": "client\\src\\pages\\Contact.tsx:208",
+                    type: "text",
+                    name: "company",
+                    value: formData.company,
+                    onChange: handleChange,
+                    className: "w-full px-4 py-3 rounded-lg bg-white/50 border border-white/20 text-foreground placeholder-foreground/50 focus:outline-none focus:ring-2 focus:ring-cyan-500",
+                    placeholder: "Your company name"
+                  },
+                  void 0,
+                  false,
+                  {
+                    fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                    lineNumber: 208,
+                    columnNumber: 23
+                  },
+                  this
+                )
+              ] }, void 0, true, {
+                fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                lineNumber: 206,
+                columnNumber: 21
+              }, this),
+              /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Contact.tsx:218", children: [
+                /* @__PURE__ */ jsxDEV("label", { "data-loc": "client\\src\\pages\\Contact.tsx:219", className: "block text-sm font-medium text-foreground mb-2", children: "Message" }, void 0, false, {
+                  fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                  lineNumber: 219,
+                  columnNumber: 23
+                }, this),
+                /* @__PURE__ */ jsxDEV(
+                  "textarea",
+                  {
+                    "data-loc": "client\\src\\pages\\Contact.tsx:220",
+                    name: "message",
+                    value: formData.message,
+                    onChange: handleChange,
+                    required: true,
+                    rows: 4,
+                    className: "w-full px-4 py-3 rounded-lg bg-white/50 border border-white/20 text-foreground placeholder-foreground/50 focus:outline-none focus:ring-2 focus:ring-cyan-500 resize-none",
+                    placeholder: "Tell us about your business and goals..."
+                  },
+                  void 0,
+                  false,
+                  {
+                    fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                    lineNumber: 220,
+                    columnNumber: 23
+                  },
+                  this
+                )
+              ] }, void 0, true, {
+                fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                lineNumber: 218,
+                columnNumber: 21
+              }, this),
+              /* @__PURE__ */ jsxDEV(
+                "button",
+                {
+                  "data-loc": "client\\src\\pages\\Contact.tsx:231",
+                  type: "submit",
+                  className: "w-full btn-gradient py-3 rounded-full font-semibold text-white transition-transform hover:scale-105 active:scale-95",
+                  children: "Send Message"
+                },
+                void 0,
+                false,
+                {
+                  fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+                  lineNumber: 231,
+                  columnNumber: 21
+                },
+                this
+              )
+            ] }, void 0, true, {
+              fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+              lineNumber: 167,
+              columnNumber: 17
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+            lineNumber: 151,
+            columnNumber: 15
+          }, this)
+        },
+        void 0,
+        false,
+        {
+          fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+          lineNumber: 145,
+          columnNumber: 13
+        },
+        this
+      )
+    ] }, void 0, true, {
+      fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+      lineNumber: 64,
+      columnNumber: 11
+    }, this) }, void 0, false, {
+      fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+      lineNumber: 63,
+      columnNumber: 9
+    }, this) }, void 0, false, {
+      fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+      lineNumber: 62,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("section", { "data-loc": "client\\src\\pages\\Contact.tsx:246", className: "bg-gradient-to-b from-white to-slate-50 py-24", children: /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Contact.tsx:247", className: "container", children: [
+      /* @__PURE__ */ jsxDEV(
+        SectionHeading,
+        {
+          "data-loc": "client\\src\\pages\\Contact.tsx:248",
+          title: "We Respond Fast",
+          subtitle: "Quick Support",
+          description: "Expect a response within 24 hours"
+        },
+        void 0,
+        false,
+        {
+          fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+          lineNumber: 248,
+          columnNumber: 11
+        },
+        this
+      ),
+      /* @__PURE__ */ jsxDEV("div", { "data-loc": "client\\src\\pages\\Contact.tsx:254", className: "grid grid-cols-1 md:grid-cols-3 gap-6 mt-16", children: [
+        {
+          title: "Email Response",
+          time: "Within 24 hours",
+          description: "We check emails throughout the day"
+        },
+        {
+          title: "WhatsApp Response",
+          time: "Within 2 hours",
+          description: "Fastest way to reach us"
+        },
+        {
+          title: "Phone Call",
+          time: "Same day",
+          description: "Schedule a call at your convenience"
+        }
+      ].map(
+        (item, idx) => /* @__PURE__ */ jsxDEV(GlassCard, { "data-loc": "client\\src\\pages\\Contact.tsx:272", delay: idx, hover: false, children: [
+          /* @__PURE__ */ jsxDEV("h3", { "data-loc": "client\\src\\pages\\Contact.tsx:273", className: "text-lg font-semibold text-foreground mb-2", children: item.title }, void 0, false, {
+            fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+            lineNumber: 273,
+            columnNumber: 17
+          }, this),
+          /* @__PURE__ */ jsxDEV("p", { "data-loc": "client\\src\\pages\\Contact.tsx:274", className: "text-cyan-600 font-bold mb-2", children: item.time }, void 0, false, {
+            fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+            lineNumber: 274,
+            columnNumber: 17
+          }, this),
+          /* @__PURE__ */ jsxDEV("p", { "data-loc": "client\\src\\pages\\Contact.tsx:275", className: "text-foreground/70 text-sm", children: item.description }, void 0, false, {
+            fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+            lineNumber: 275,
+            columnNumber: 17
+          }, this)
+        ] }, idx, true, {
+          fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+          lineNumber: 272,
+          columnNumber: 13
+        }, this)
+      ) }, void 0, false, {
+        fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+        lineNumber: 254,
+        columnNumber: 11
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+      lineNumber: 247,
+      columnNumber: 9
+    }, this) }, void 0, false, {
+      fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+      lineNumber: 246,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx",
+    lineNumber: 37,
+    columnNumber: 5
+  }, this);
+}
+_s(Contact, "ohyzYtNViCm73McMllORo8jQyqM=");
+_c = Contact;
+var _c;
+$RefreshReg$(_c, "Contact");
+import * as RefreshRuntime from "/@react-refresh";
+const inWebWorker = typeof WorkerGlobalScope !== "undefined" && self instanceof WorkerGlobalScope;
+if (import.meta.hot && !inWebWorker) {
+  if (!window.$RefreshReg$) {
+    throw new Error(
+      "@vitejs/plugin-react can't detect preamble. Something is wrong."
+    );
+  }
+  RefreshRuntime.__hmr_import(import.meta.url).then((currentExports) => {
+    RefreshRuntime.registerExportsForReactRefresh("C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx", currentExports);
+    import.meta.hot.accept((nextExports) => {
+      if (!nextExports) return;
+      const invalidateMessage = RefreshRuntime.validateRefreshBoundaryAndEnqueueUpdate("C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx", currentExports, nextExports);
+      if (invalidateMessage) import.meta.hot.invalidate(invalidateMessage);
+    });
+  });
+}
+function $RefreshReg$(type, id) {
+  return RefreshRuntime.register(type, "C:/Users/badgu/Desktop/all new niw/client/src/pages/Contact.tsx " + id);
+}
+function $RefreshSig$() {
+  return RefreshRuntime.createSignatureFunctionForTransform();
+}
+
+//# sourceMappingURL=data:application/json;base64,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VUFDUEMsTUFBTTtBQUFBLFVBQ05DLGFBQWE7QUFBQSxRQUNmO0FBQUEsUUFDQTtBQUFBLFVBQ0VGLE9BQU87QUFBQSxVQUNQQyxNQUFNO0FBQUEsVUFDTkMsYUFBYTtBQUFBLFFBQ2Y7QUFBQSxNQUFDLEVBQ0RDO0FBQUFBLFFBQUksQ0FBQ0MsTUFBTUMsUUFDWCx1QkFBQyxnRUFBb0IsT0FBT0EsS0FBSyxPQUFPLE9BQ3RDO0FBQUEsaUNBQUMsMkRBQUcsV0FBVSw4Q0FBOENELGVBQUtKLFNBQWpFO0FBQUE7QUFBQTtBQUFBO0FBQUEsaUJBQXVFO0FBQUEsVUFDdkUsdUJBQUMsMERBQUUsV0FBVSxnQ0FBZ0NJLGVBQUtILFFBQWxEO0FBQUE7QUFBQTtBQUFBO0FBQUEsaUJBQXVEO0FBQUEsVUFDdkQsdUJBQUMsMERBQUUsV0FBVSw4QkFBOEJHLGVBQUtGLGVBQWhEO0FBQUE7QUFBQTtBQUFBO0FBQUEsaUJBQTREO0FBQUEsYUFIOUNHLEtBQWhCO0FBQUE7QUFBQTtBQUFBO0FBQUEsZUFJQTtBQUFBLE1BQ0QsS0F2Qkg7QUFBQTtBQUFBO0FBQUE7QUFBQSxhQXdCQTtBQUFBLFNBL0JGO0FBQUE7QUFBQTtBQUFBO0FBQUEsV0FnQ0EsS0FqQ0Y7QUFBQTtBQUFBO0FBQUE7QUFBQSxXQWtDQTtBQUFBLE9BblBGO0FBQUE7QUFBQTtBQUFBO0FBQUEsU0FvUEE7QUFFSjtBQUFDOUIsR0FuUnVCRCxTQUFPO0FBQUEsS0FBUEE7QUFBTyxJQUFBZ0M7QUFBQSxhQUFBQSxJQUFBIiwibmFtZXMiOlsidXNlU3RhdGUiLCJtb3Rpb24iLCJTZWN0aW9uSGVhZGluZyIsIkdsYXNzQ2FyZCIsIk1haWwiLCJQaG9uZSIsIk1hcFBpbiIsIkNsb2NrIiwiU2VuZCIsIkNvbnRhY3QiLCJfcyIsImZvcm1EYXRhIiwic2V0Rm9ybURhdGEiLCJuYW1lIiwiZW1haWwiLCJwaG9uZSIsImNvbXBhbnkiLCJtZXNzYWdlIiwic3VibWl0dGVkIiwic2V0U3VibWl0dGVkIiwiaGFuZGxlQ2hhbmdlIiwiZSIsInRhcmdldCIsInZhbHVlIiwiaGFuZGxlU3VibWl0IiwicHJldmVudERlZmF1bHQiLCJjb25zb2xlIiwibG9nIiwic2V0VGltZW91dCIsIm9wYWNpdHkiLCJ5IiwiZHVyYXRpb24iLCJ4Iiwib25jZSIsInNjYWxlIiwidGl0bGUiLCJ0aW1lIiwiZGVzY3JpcHRpb24iLCJtYXAiLCJpdGVtIiwiaWR4IiwiX2MiXSwiaWdub3JlTGlzdCI6W10sInNvdXJjZXMiOlsiQ29udGFjdC50c3giXSwic291cmNlc0NvbnRlbnQiOlsi77u/aW1wb3J0IHsgdXNlU3RhdGUgfSBmcm9tICdyZWFjdCc7XG5pbXBvcnQgeyBtb3Rpb24gfSBmcm9tICdmcmFtZXItbW90aW9uJztcbmltcG9ydCBTZWN0aW9uSGVhZGluZyBmcm9tICdAL2NvbXBvbmVudHMvU2VjdGlvbkhlYWRpbmcnO1xuaW1wb3J0IEdsYXNzQ2FyZCBmcm9tICdAL2NvbXBvbmVudHMvR2xhc3NDYXJkJztcbmltcG9ydCBHcmFkaWVudEJ1dHRvbiBmcm9tICdAL2NvbXBvbmVudHMvR3JhZGllbnRCdXR0b24nO1xuaW1wb3J0IHsgTWFpbCwgUGhvbmUsIE1hcFBpbiwgQ2xvY2ssIFNlbmQgfSBmcm9tICdsdWNpZGUtcmVhY3QnO1xuXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBDb250YWN0KCkge1xuICBjb25zdCBbZm9ybURhdGEsIHNldEZvcm1EYXRhXSA9IHVzZVN0YXRlKHtcbiAgICBuYW1lOiAnJyxcbiAgICBlbWFpbDogJycsXG4gICAgcGhvbmU6ICcnLFxuICAgIGNvbXBhbnk6ICcnLFxuICAgIG1lc3NhZ2U6ICcnLFxuICB9KTtcbiAgY29uc3QgW3N1Ym1pdHRlZCwgc2V0U3VibWl0dGVkXSA9IHVzZVN0YXRlKGZhbHNlKTtcblxuICBjb25zdCBoYW5kbGVDaGFuZ2UgPSAoZTogUmVhY3QuQ2hhbmdlRXZlbnQ8SFRNTElucHV0RWxlbWVudCB8IEhUTUxUZXh0QXJlYUVsZW1lbnQ+KSA9PiB7XG4gICAgc2V0Rm9ybURhdGEoe1xuICAgICAgLi4uZm9ybURhdGEsXG4gICAgICBbZS50YXJnZXQubmFtZV06IGUudGFyZ2V0LnZhbHVlLFxuICAgIH0pO1xuICB9O1xuXG4gIGNvbnN0IGhhbmRsZVN1Ym1pdCA9IChlOiBSZWFjdC5Gb3JtRXZlbnQpID0+IHtcbiAgICBlLnByZXZlbnREZWZhdWx0KCk7XG4gICAgLy8gSW4gYSByZWFsIGFwcCwgdGhpcyB3b3VsZCBzZW5kIHRvIGEgYmFja2VuZFxuICAgIGNvbnNvbGUubG9nKCdGb3JtIHN1Ym1pdHRlZDonLCBmb3JtRGF0YSk7XG4gICAgc2V0U3VibWl0dGVkKHRydWUpO1xuICAgIHNldFRpbWVvdXQoKCkgPT4ge1xuICAgICAgc2V0U3VibWl0dGVkKGZhbHNlKTtcbiAgICAgIHNldEZvcm1EYXRhKHsgbmFtZTogJycsIGVtYWlsOiAnJywgcGhvbmU6ICcnLCBjb21wYW55OiAnJywgbWVzc2FnZTogJycgfSk7XG4gICAgfSwgMzAwMCk7XG4gIH07XG5cbiAgcmV0dXJuIChcbiAgICA8ZGl2IGNsYXNzTmFtZT1cImxlZ2FjeS1wYWdlIG1pbi1oLXNjcmVlblwiPlxuICAgICAgey8qIEhlcm8gU2VjdGlvbiAqL31cbiAgICAgIDxzZWN0aW9uIGNsYXNzTmFtZT1cInJlbGF0aXZlIG1pbi1oLVs2MHZoXSBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBvdmVyZmxvdy1oaWRkZW4gcHQtMjBcIj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJhYnNvbHV0ZSBpbnNldC0wIC16LTEwXCI+XG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJhYnNvbHV0ZSB0b3AtMCBsZWZ0LTEvNCB3LTk2IGgtOTYgYmctZ3JhZGllbnQtdG8tYnIgZnJvbS1jeWFuLTIwMC8zMCB0by1ibHVlLTIwMC8yMCByb3VuZGVkLWZ1bGwgYmx1ci0zeGxcIj48L2Rpdj5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImFic29sdXRlIGJvdHRvbS0xLzQgcmlnaHQtMS80IHctOTYgaC05NiBiZy1ncmFkaWVudC10by1iciBmcm9tLXZpb2xldC0yMDAvMzAgdG8tcHVycGxlLTIwMC8yMCByb3VuZGVkLWZ1bGwgYmx1ci0zeGxcIj48L2Rpdj5cbiAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb250YWluZXJcIj5cbiAgICAgICAgICA8bW90aW9uLmRpdlxuICAgICAgICAgICAgaW5pdGlhbD17eyBvcGFjaXR5OiAwLCB5OiAyMCB9fVxuICAgICAgICAgICAgYW5pbWF0ZT17eyBvcGFjaXR5OiAxLCB5OiAwIH19XG4gICAgICAgICAgICB0cmFuc2l0aW9uPXt7IGR1cmF0aW9uOiAwLjggfX1cbiAgICAgICAgICA+XG4gICAgICAgICAgICA8U2VjdGlvbkhlYWRpbmdcbiAgICAgICAgICAgICAgdGl0bGU9XCJHZXQgaW4gVG91Y2hcIlxuICAgICAgICAgICAgICBzdWJ0aXRsZT1cIkxldCdzIFRhbGtcIlxuICAgICAgICAgICAgICBkZXNjcmlwdGlvbj1cIldlJ2QgbG92ZSB0byBoZWFyIGFib3V0IHlvdXIgYnVzaW5lc3MgYW5kIGRpc2N1c3MgaG93IHdlIGNhbiBoZWxwIHlvdSBncm93XCJcbiAgICAgICAgICAgICAgYW5pbWF0ZWQ9e2ZhbHNlfVxuICAgICAgICAgICAgLz5cbiAgICAgICAgICA8L21vdGlvbi5kaXY+XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9zZWN0aW9uPlxuXG4gICAgICB7LyogQ29udGFjdCBTZWN0aW9uICovfVxuICAgICAgPHNlY3Rpb24gY2xhc3NOYW1lPVwicHktMjRcIj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb250YWluZXJcIj5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImdyaWQgZ3JpZC1jb2xzLTEgbGc6Z3JpZC1jb2xzLTIgZ2FwLTEyXCI+XG4gICAgICAgICAgICB7LyogTGVmdDogQ29udGFjdCBJbmZvICovfVxuICAgICAgICAgICAgPG1vdGlvbi5kaXZcbiAgICAgICAgICAgICAgaW5pdGlhbD17eyBvcGFjaXR5OiAwLCB4OiAtNDAgfX1cbiAgICAgICAgICAgICAgd2hpbGVJblZpZXc9e3sgb3BhY2l0eTogMSwgeDogMCB9fVxuICAgICAgICAgICAgICB0cmFuc2l0aW9uPXt7IGR1cmF0aW9uOiAwLjYgfX1cbiAgICAgICAgICAgICAgdmlld3BvcnQ9e3sgb25jZTogdHJ1ZSB9fVxuICAgICAgICAgICAgPlxuICAgICAgICAgICAgICA8aDIgY2xhc3NOYW1lPVwidGV4dC0zeGwgZm9udC1ib2xkIHRleHQtZm9yZWdyb3VuZCBtYi04XCI+Q29udGFjdCBJbmZvcm1hdGlvbjwvaDI+XG5cbiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJzcGFjZS15LTZcIj5cbiAgICAgICAgICAgICAgICB7LyogRW1haWwgKi99XG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJnbGFzcy1jYXJkIHAtNiBmbGV4IGdhcC00XCI+XG4gICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImZsZXgtc2hyaW5rLTAgdy0xMiBoLTEyIHJvdW5kZWQtZnVsbCBiZy1ncmFkaWVudC10by1iciBmcm9tLWN5YW4tNTAwLzIwIHRvLXZpb2xldC02MDAvMjAgZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXJcIj5cbiAgICAgICAgICAgICAgICAgICAgPE1haWwgc2l6ZT17MjR9IGNsYXNzTmFtZT1cInRleHQtY3lhbi01MDBcIiAvPlxuICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICA8ZGl2PlxuICAgICAgICAgICAgICAgICAgICA8aDMgY2xhc3NOYW1lPVwiZm9udC1zZW1pYm9sZCB0ZXh0LWZvcmVncm91bmQgbWItMVwiPkVtYWlsPC9oMz5cbiAgICAgICAgICAgICAgICAgICAgPGEgaHJlZj1cIm1haWx0bzpoZWxsb0BuaXcuY29tXCIgY2xhc3NOYW1lPVwidGV4dC1mb3JlZ3JvdW5kLzcwIGhvdmVyOnRleHQtZm9yZWdyb3VuZCB0cmFuc2l0aW9uLWNvbG9yc1wiPlxuICAgICAgICAgICAgICAgICAgICAgIGhlbGxvQG5pdy5jb21cbiAgICAgICAgICAgICAgICAgICAgPC9hPlxuICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgICAgICAgICB7LyogUGhvbmUgKi99XG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJnbGFzcy1jYXJkIHAtNiBmbGV4IGdhcC00XCI+XG4gICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImZsZXgtc2hyaW5rLTAgdy0xMiBoLTEyIHJvdW5kZWQtZnVsbCBiZy1ncmFkaWVudC10by1iciBmcm9tLWN5YW4tNTAwLzIwIHRvLXZpb2xldC02MDAvMjAgZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXJcIj5cbiAgICAgICAgICAgICAgICAgICAgPFBob25lIHNpemU9ezI0fSBjbGFzc05hbWU9XCJ0ZXh0LWN5YW4tNTAwXCIgLz5cbiAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgPGRpdj5cbiAgICAgICAgICAgICAgICAgICAgPGgzIGNsYXNzTmFtZT1cImZvbnQtc2VtaWJvbGQgdGV4dC1mb3JlZ3JvdW5kIG1iLTFcIj5QaG9uZTwvaDM+XG4gICAgICAgICAgICAgICAgICAgIDxhIGhyZWY9XCJ0ZWw6KzkxWU9VUl9OVU1CRVJcIiBjbGFzc05hbWU9XCJ0ZXh0LWZvcmVncm91bmQvNzAgaG92ZXI6dGV4dC1mb3JlZ3JvdW5kIHRyYW5zaXRpb24tY29sb3JzXCI+XG4gICAgICAgICAgICAgICAgICAgICAgKzkxIFlPVVIgTlVNQkVSXG4gICAgICAgICAgICAgICAgICAgIDwvYT5cbiAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgIDwvZGl2PlxuXG4gICAgICAgICAgICAgICAgey8qIFdoYXRzQXBwICovfVxuICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZ2xhc3MtY2FyZCBwLTYgZmxleCBnYXAtNFwiPlxuICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmbGV4LXNocmluay0wIHctMTIgaC0xMiByb3VuZGVkLWZ1bGwgYmctZ3JhZGllbnQtdG8tYnIgZnJvbS1ncmVlbi01MDAvMjAgdG8tZW1lcmFsZC02MDAvMjAgZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXJcIj5cbiAgICAgICAgICAgICAgICAgICAgPFNlbmQgc2l6ZT17MjR9IGNsYXNzTmFtZT1cInRleHQtZ3JlZW4tNTAwXCIgLz5cbiAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgPGRpdj5cbiAgICAgICAgICAgICAgICAgICAgPGgzIGNsYXNzTmFtZT1cImZvbnQtc2VtaWJvbGQgdGV4dC1mb3JlZ3JvdW5kIG1iLTFcIj5XaGF0c0FwcDwvaDM+XG4gICAgICAgICAgICAgICAgICAgIDxhXG4gICAgICAgICAgICAgICAgICAgICAgaHJlZj1cImh0dHBzOi8vd2EubWUvOTFZT1VSX05VTUJFUlwiXG4gICAgICAgICAgICAgICAgICAgICAgdGFyZ2V0PVwiX2JsYW5rXCJcbiAgICAgICAgICAgICAgICAgICAgICByZWw9XCJub29wZW5lciBub3JlZmVycmVyXCJcbiAgICAgICAgICAgICAgICAgICAgICBjbGFzc05hbWU9XCJ0ZXh0LWZvcmVncm91bmQvNzAgaG92ZXI6dGV4dC1mb3JlZ3JvdW5kIHRyYW5zaXRpb24tY29sb3JzXCJcbiAgICAgICAgICAgICAgICAgICAgPlxuICAgICAgICAgICAgICAgICAgICAgIENoYXQgd2l0aCB1c1xuICAgICAgICAgICAgICAgICAgICA8L2E+XG4gICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cblxuICAgICAgICAgICAgICAgIHsvKiBMb2NhdGlvbiAqL31cbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImdsYXNzLWNhcmQgcC02IGZsZXggZ2FwLTRcIj5cbiAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZmxleC1zaHJpbmstMCB3LTEyIGgtMTIgcm91bmRlZC1mdWxsIGJnLWdyYWRpZW50LXRvLWJyIGZyb20tY3lhbi01MDAvMjAgdG8tdmlvbGV0LTYwMC8yMCBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlclwiPlxuICAgICAgICAgICAgICAgICAgICA8TWFwUGluIHNpemU9ezI0fSBjbGFzc05hbWU9XCJ0ZXh0LWN5YW4tNTAwXCIgLz5cbiAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgPGRpdj5cbiAgICAgICAgICAgICAgICAgICAgPGgzIGNsYXNzTmFtZT1cImZvbnQtc2VtaWJvbGQgdGV4dC1mb3JlZ3JvdW5kIG1iLTFcIj5Mb2NhdGlvbjwvaDM+XG4gICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQtZm9yZWdyb3VuZC83MFwiPkluZGlhPC9wPlxuICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgICAgICAgICB7LyogSG91cnMgKi99XG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJnbGFzcy1jYXJkIHAtNiBmbGV4IGdhcC00XCI+XG4gICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImZsZXgtc2hyaW5rLTAgdy0xMiBoLTEyIHJvdW5kZWQtZnVsbCBiZy1ncmFkaWVudC10by1iciBmcm9tLWN5YW4tNTAwLzIwIHRvLXZpb2xldC02MDAvMjAgZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXJcIj5cbiAgICAgICAgICAgICAgICAgICAgPENsb2NrIHNpemU9ezI0fSBjbGFzc05hbWU9XCJ0ZXh0LWN5YW4tNTAwXCIgLz5cbiAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgPGRpdj5cbiAgICAgICAgICAgICAgICAgICAgPGgzIGNsYXNzTmFtZT1cImZvbnQtc2VtaWJvbGQgdGV4dC1mb3JlZ3JvdW5kIG1iLTFcIj5CdXNpbmVzcyBIb3VyczwvaDM+XG4gICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQtZm9yZWdyb3VuZC83MCB0ZXh0LXNtXCI+TW9uZGF5IC0gRnJpZGF5OiA5IEFNIC0gNiBQTSBJU1Q8L3A+XG4gICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQtZm9yZWdyb3VuZC83MCB0ZXh0LXNtXCI+U2F0dXJkYXk6IDEwIEFNIC0gNCBQTSBJU1Q8L3A+XG4gICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8L21vdGlvbi5kaXY+XG5cbiAgICAgICAgICAgIHsvKiBSaWdodDogQ29udGFjdCBGb3JtICovfVxuICAgICAgICAgICAgPG1vdGlvbi5kaXZcbiAgICAgICAgICAgICAgaW5pdGlhbD17eyBvcGFjaXR5OiAwLCB4OiA0MCB9fVxuICAgICAgICAgICAgICB3aGlsZUluVmlldz17eyBvcGFjaXR5OiAxLCB4OiAwIH19XG4gICAgICAgICAgICAgIHRyYW5zaXRpb249e3sgZHVyYXRpb246IDAuNiB9fVxuICAgICAgICAgICAgICB2aWV3cG9ydD17eyBvbmNlOiB0cnVlIH19XG4gICAgICAgICAgICA+XG4gICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZ2xhc3MtY2FyZCBwLTggbWQ6cC0xMlwiPlxuICAgICAgICAgICAgICAgIDxoMiBjbGFzc05hbWU9XCJ0ZXh0LTJ4bCBmb250LWJvbGQgdGV4dC1mb3JlZ3JvdW5kIG1iLTZcIj5TZW5kIHVzIGEgTWVzc2FnZTwvaDI+XG5cbiAgICAgICAgICAgICAgICB7c3VibWl0dGVkID8gKFxuICAgICAgICAgICAgICAgICAgPG1vdGlvbi5kaXZcbiAgICAgICAgICAgICAgICAgICAgaW5pdGlhbD17eyBvcGFjaXR5OiAwLCBzY2FsZTogMC45IH19XG4gICAgICAgICAgICAgICAgICAgIGFuaW1hdGU9e3sgb3BhY2l0eTogMSwgc2NhbGU6IDEgfX1cbiAgICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPVwidGV4dC1jZW50ZXIgcHktMTJcIlxuICAgICAgICAgICAgICAgICAgPlxuICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInctMTYgaC0xNiByb3VuZGVkLWZ1bGwgYmctZ3JhZGllbnQtdG8tYnIgZnJvbS1jeWFuLTUwMCB0by12aW9sZXQtNjAwIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIG14LWF1dG8gbWItNFwiPlxuICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cInRleHQtMnhsXCI+w6LFk+KAnDwvc3Bhbj5cbiAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgIDxoMyBjbGFzc05hbWU9XCJ0ZXh0LXhsIGZvbnQtYm9sZCB0ZXh0LWZvcmVncm91bmQgbWItMlwiPlRoYW5rIFlvdSE8L2gzPlxuICAgICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LWZvcmVncm91bmQvNzBcIj5XZSd2ZSByZWNlaXZlZCB5b3VyIG1lc3NhZ2UgYW5kIHdpbGwgZ2V0IGJhY2sgdG8geW91IHNvb24uPC9wPlxuICAgICAgICAgICAgICAgICAgPC9tb3Rpb24uZGl2PlxuICAgICAgICAgICAgICAgICkgOiAoXG4gICAgICAgICAgICAgICAgICA8Zm9ybSBvblN1Ym1pdD17aGFuZGxlU3VibWl0fSBjbGFzc05hbWU9XCJzcGFjZS15LTRcIj5cbiAgICAgICAgICAgICAgICAgICAgPGRpdj5cbiAgICAgICAgICAgICAgICAgICAgICA8bGFiZWwgY2xhc3NOYW1lPVwiYmxvY2sgdGV4dC1zbSBmb250LW1lZGl1bSB0ZXh0LWZvcmVncm91bmQgbWItMlwiPk5hbWU8L2xhYmVsPlxuICAgICAgICAgICAgICAgICAgICAgIDxpbnB1dFxuICAgICAgICAgICAgICAgICAgICAgICAgdHlwZT1cInRleHRcIlxuICAgICAgICAgICAgICAgICAgICAgICAgbmFtZT1cIm5hbWVcIlxuICAgICAgICAgICAgICAgICAgICAgICAgdmFsdWU9e2Zvcm1EYXRhLm5hbWV9XG4gICAgICAgICAgICAgICAgICAgICAgICBvbkNoYW5nZT17aGFuZGxlQ2hhbmdlfVxuICAgICAgICAgICAgICAgICAgICAgICAgcmVxdWlyZWRcbiAgICAgICAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT1cInctZnVsbCBweC00IHB5LTMgcm91bmRlZC1sZyBiZy13aGl0ZS81MCBib3JkZXIgYm9yZGVyLXdoaXRlLzIwIHRleHQtZm9yZWdyb3VuZCBwbGFjZWhvbGRlci1mb3JlZ3JvdW5kLzUwIGZvY3VzOm91dGxpbmUtbm9uZSBmb2N1czpyaW5nLTIgZm9jdXM6cmluZy1jeWFuLTUwMFwiXG4gICAgICAgICAgICAgICAgICAgICAgICBwbGFjZWhvbGRlcj1cIllvdXIgbmFtZVwiXG4gICAgICAgICAgICAgICAgICAgICAgLz5cbiAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgICAgICAgICAgICAgPGRpdj5cbiAgICAgICAgICAgICAgICAgICAgICA8bGFiZWwgY2xhc3NOYW1lPVwiYmxvY2sgdGV4dC1zbSBmb250LW1lZGl1bSB0ZXh0LWZvcmVncm91bmQgbWItMlwiPkVtYWlsPC9sYWJlbD5cbiAgICAgICAgICAgICAgICAgICAgICA8aW5wdXRcbiAgICAgICAgICAgICAgICAgICAgICAgIHR5cGU9XCJlbWFpbFwiXG4gICAgICAgICAgICAgICAgICAgICAgICBuYW1lPVwiZW1haWxcIlxuICAgICAgICAgICAgICAgICAgICAgICAgdmFsdWU9e2Zvcm1EYXRhLmVtYWlsfVxuICAgICAgICAgICAgICAgICAgICAgICAgb25DaGFuZ2U9e2hhbmRsZUNoYW5nZX1cbiAgICAgICAgICAgICAgICAgICAgICAgIHJlcXVpcmVkXG4gICAgICAgICAgICAgICAgICAgICAgICBjbGFzc05hbWU9XCJ3LWZ1bGwgcHgtNCBweS0zIHJvdW5kZWQtbGcgYmctd2hpdGUvNTAgYm9yZGVyIGJvcmRlci13aGl0ZS8yMCB0ZXh0LWZvcmVncm91bmQgcGxhY2Vob2xkZXItZm9yZWdyb3VuZC81MCBmb2N1czpvdXRsaW5lLW5vbmUgZm9jdXM6cmluZy0yIGZvY3VzOnJpbmctY3lhbi01MDBcIlxuICAgICAgICAgICAgICAgICAgICAgICAgcGxhY2Vob2xkZXI9XCJ5b3VyQGVtYWlsLmNvbVwiXG4gICAgICAgICAgICAgICAgICAgICAgLz5cbiAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgICAgICAgICAgICAgPGRpdj5cbiAgICAgICAgICAgICAgICAgICAgICA8bGFiZWwgY2xhc3NOYW1lPVwiYmxvY2sgdGV4dC1zbSBmb250LW1lZGl1bSB0ZXh0LWZvcmVncm91bmQgbWItMlwiPlBob25lPC9sYWJlbD5cbiAgICAgICAgICAgICAgICAgICAgICA8aW5wdXRcbiAgICAgICAgICAgICAgICAgICAgICAgIHR5cGU9XCJ0ZWxcIlxuICAgICAgICAgICAgICAgICAgICAgICAgbmFtZT1cInBob25lXCJcbiAgICAgICAgICAgICAgICAgICAgICAgIHZhbHVlPXtmb3JtRGF0YS5waG9uZX1cbiAgICAgICAgICAgICAgICAgICAgICAgIG9uQ2hhbmdlPXtoYW5kbGVDaGFuZ2V9XG4gICAgICAgICAgICAgICAgICAgICAgICBjbGFzc05hbWU9XCJ3LWZ1bGwgcHgtNCBweS0zIHJvdW5kZWQtbGcgYmctd2hpdGUvNTAgYm9yZGVyIGJvcmRlci13aGl0ZS8yMCB0ZXh0LWZvcmVncm91bmQgcGxhY2Vob2xkZXItZm9yZWdyb3VuZC81MCBmb2N1czpvdXRsaW5lLW5vbmUgZm9jdXM6cmluZy0yIGZvY3VzOnJpbmctY3lhbi01MDBcIlxuICAgICAgICAgICAgICAgICAgICAgICAgcGxhY2Vob2xkZXI9XCIrOTEgWFhYWFhYWFhYWFwiXG4gICAgICAgICAgICAgICAgICAgICAgLz5cbiAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgICAgICAgICAgICAgPGRpdj5cbiAgICAgICAgICAgICAgICAgICAgICA8bGFiZWwgY2xhc3NOYW1lPVwiYmxvY2sgdGV4dC1zbSBmb250LW1lZGl1bSB0ZXh0LWZvcmVncm91bmQgbWItMlwiPkNvbXBhbnk8L2xhYmVsPlxuICAgICAgICAgICAgICAgICAgICAgIDxpbnB1dFxuICAgICAgICAgICAgICAgICAgICAgICAgdHlwZT1cInRleHRcIlxuICAgICAgICAgICAgICAgICAgICAgICAgbmFtZT1cImNvbXBhbnlcIlxuICAgICAgICAgICAgICAgICAgICAgICAgdmFsdWU9e2Zvcm1EYXRhLmNvbXBhbnl9XG4gICAgICAgICAgICAgICAgICAgICAgICBvbkNoYW5nZT17aGFuZGxlQ2hhbmdlfVxuICAgICAgICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPVwidy1mdWxsIHB4LTQgcHktMyByb3VuZGVkLWxnIGJnLXdoaXRlLzUwIGJvcmRlciBib3JkZXItd2hpdGUvMjAgdGV4dC1mb3JlZ3JvdW5kIHBsYWNlaG9sZGVyLWZvcmVncm91bmQvNTAgZm9jdXM6b3V0bGluZS1ub25lIGZvY3VzOnJpbmctMiBmb2N1czpyaW5nLWN5YW4tNTAwXCJcbiAgICAgICAgICAgICAgICAgICAgICAgIHBsYWNlaG9sZGVyPVwiWW91ciBjb21wYW55IG5hbWVcIlxuICAgICAgICAgICAgICAgICAgICAgIC8+XG4gICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuXG4gICAgICAgICAgICAgICAgICAgIDxkaXY+XG4gICAgICAgICAgICAgICAgICAgICAgPGxhYmVsIGNsYXNzTmFtZT1cImJsb2NrIHRleHQtc20gZm9udC1tZWRpdW0gdGV4dC1mb3JlZ3JvdW5kIG1iLTJcIj5NZXNzYWdlPC9sYWJlbD5cbiAgICAgICAgICAgICAgICAgICAgICA8dGV4dGFyZWFcbiAgICAgICAgICAgICAgICAgICAgICAgIG5hbWU9XCJtZXNzYWdlXCJcbiAgICAgICAgICAgICAgICAgICAgICAgIHZhbHVlPXtmb3JtRGF0YS5tZXNzYWdlfVxuICAgICAgICAgICAgICAgICAgICAgICAgb25DaGFuZ2U9e2hhbmRsZUNoYW5nZX1cbiAgICAgICAgICAgICAgICAgICAgICAgIHJlcXVpcmVkXG4gICAgICAgICAgICAgICAgICAgICAgICByb3dzPXs0fVxuICAgICAgICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPVwidy1mdWxsIHB4LTQgcHktMyByb3VuZGVkLWxnIGJnLXdoaXRlLzUwIGJvcmRlciBib3JkZXItd2hpdGUvMjAgdGV4dC1mb3JlZ3JvdW5kIHBsYWNlaG9sZGVyLWZvcmVncm91bmQvNTAgZm9jdXM6b3V0bGluZS1ub25lIGZvY3VzOnJpbmctMiBmb2N1czpyaW5nLWN5YW4tNTAwIHJlc2l6ZS1ub25lXCJcbiAgICAgICAgICAgICAgICAgICAgICAgIHBsYWNlaG9sZGVyPVwiVGVsbCB1cyBhYm91dCB5b3VyIGJ1c2luZXNzIGFuZCBnb2Fscy4uLlwiXG4gICAgICAgICAgICAgICAgICAgICAgPjwvdGV4dGFyZWE+XG4gICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuXG4gICAgICAgICAgICAgICAgICAgIDxidXR0b25cbiAgICAgICAgICAgICAgICAgICAgICB0eXBlPVwic3VibWl0XCJcbiAgICAgICAgICAgICAgICAgICAgICBjbGFzc05hbWU9XCJ3LWZ1bGwgYnRuLWdyYWRpZW50IHB5LTMgcm91bmRlZC1mdWxsIGZvbnQtc2VtaWJvbGQgdGV4dC13aGl0ZSB0cmFuc2l0aW9uLXRyYW5zZm9ybSBob3ZlcjpzY2FsZS0xMDUgYWN0aXZlOnNjYWxlLTk1XCJcbiAgICAgICAgICAgICAgICAgICAgPlxuICAgICAgICAgICAgICAgICAgICAgIFNlbmQgTWVzc2FnZVxuICAgICAgICAgICAgICAgICAgICA8L2J1dHRvbj5cbiAgICAgICAgICAgICAgICAgIDwvZm9ybT5cbiAgICAgICAgICAgICAgICApfVxuICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgIDwvbW90aW9uLmRpdj5cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L3NlY3Rpb24+XG5cbiAgICAgIHsvKiBRdWljayBSZXNwb25zZSAqL31cbiAgICAgIDxzZWN0aW9uIGNsYXNzTmFtZT1cImJnLWdyYWRpZW50LXRvLWIgZnJvbS13aGl0ZSB0by1zbGF0ZS01MCBweS0yNFwiPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbnRhaW5lclwiPlxuICAgICAgICAgIDxTZWN0aW9uSGVhZGluZ1xuICAgICAgICAgICAgdGl0bGU9XCJXZSBSZXNwb25kIEZhc3RcIlxuICAgICAgICAgICAgc3VidGl0bGU9XCJRdWljayBTdXBwb3J0XCJcbiAgICAgICAgICAgIGRlc2NyaXB0aW9uPVwiRXhwZWN0IGEgcmVzcG9uc2Ugd2l0aGluIDI0IGhvdXJzXCJcbiAgICAgICAgICAvPlxuXG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJncmlkIGdyaWQtY29scy0xIG1kOmdyaWQtY29scy0zIGdhcC02IG10LTE2XCI+XG4gICAgICAgICAgICB7W1xuICAgICAgICAgICAgICB7XG4gICAgICAgICAgICAgICAgdGl0bGU6ICdFbWFpbCBSZXNwb25zZScsXG4gICAgICAgICAgICAgICAgdGltZTogJ1dpdGhpbiAyNCBob3VycycsXG4gICAgICAgICAgICAgICAgZGVzY3JpcHRpb246ICdXZSBjaGVjayBlbWFpbHMgdGhyb3VnaG91dCB0aGUgZGF5JyxcbiAgICAgICAgICAgICAgfSxcbiAgICAgICAgICAgICAge1xuICAgICAgICAgICAgICAgIHRpdGxlOiAnV2hhdHNBcHAgUmVzcG9uc2UnLFxuICAgICAgICAgICAgICAgIHRpbWU6ICdXaXRoaW4gMiBob3VycycsXG4gICAgICAgICAgICAgICAgZGVzY3JpcHRpb246ICdGYXN0ZXN0IHdheSB0byByZWFjaCB1cycsXG4gICAgICAgICAgICAgIH0sXG4gICAgICAgICAgICAgIHtcbiAgICAgICAgICAgICAgICB0aXRsZTogJ1Bob25lIENhbGwnLFxuICAgICAgICAgICAgICAgIHRpbWU6ICdTYW1lIGRheScsXG4gICAgICAgICAgICAgICAgZGVzY3JpcHRpb246ICdTY2hlZHVsZSBhIGNhbGwgYXQgeW91ciBjb252ZW5pZW5jZScsXG4gICAgICAgICAgICAgIH0sXG4gICAgICAgICAgICBdLm1hcCgoaXRlbSwgaWR4KSA9PiAoXG4gICAgICAgICAgICAgIDxHbGFzc0NhcmQga2V5PXtpZHh9IGRlbGF5PXtpZHh9IGhvdmVyPXtmYWxzZX0+XG4gICAgICAgICAgICAgICAgPGgzIGNsYXNzTmFtZT1cInRleHQtbGcgZm9udC1zZW1pYm9sZCB0ZXh0LWZvcmVncm91bmQgbWItMlwiPntpdGVtLnRpdGxlfTwvaDM+XG4gICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwidGV4dC1jeWFuLTYwMCBmb250LWJvbGQgbWItMlwiPntpdGVtLnRpbWV9PC9wPlxuICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQtZm9yZWdyb3VuZC83MCB0ZXh0LXNtXCI+e2l0ZW0uZGVzY3JpcHRpb259PC9wPlxuICAgICAgICAgICAgICA8L0dsYXNzQ2FyZD5cbiAgICAgICAgICAgICkpfVxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvc2VjdGlvbj5cbiAgICA8L2Rpdj5cbiAgKTtcbn1cblxyXG4iXSwiZmlsZSI6IkM6L1VzZXJzL2JhZGd1L0Rlc2t0b3AvYWxsIG5ldyBuaXcvY2xpZW50L3NyYy9wYWdlcy9Db250YWN0LnRzeCJ9
